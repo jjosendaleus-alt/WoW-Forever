@@ -45,7 +45,37 @@ tr:nth-child(even) td{background:var(--panel2)}
 footer{color:var(--muted);font-size:.85rem;text-align:center;padding:20px 0;border-top:1px solid var(--line);margin-top:24px}
 </style>
 </head>
-<body>
+<body><!-- SITE-NAV:START -->
+<style>
+nav.wf-nav,nav.wf-nav a,nav.wf-nav span,nav.wf-nav b,nav.wf-foot,nav.wf-foot a,nav.wf-foot span,nav.wf-foot b,div.wf-cast,div.wf-cast i,div.wf-cast em{all:revert;box-sizing:border-box}
+nav.wf-nav,nav.wf-foot{display:flex;align-items:center;margin:0;width:auto;height:auto;max-height:none;overflow:visible;float:none;font:600 15px/1.2 "Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:#e9e2d6;text-align:left}
+nav.wf-nav{z-index:1000;top:0;min-height:52px;padding:4px max(12px,env(safe-area-inset-left));background:linear-gradient(180deg,#1d0c09,#120807);border:0;border-bottom:2px solid #8e1b14;box-shadow:0 2px 10px #000a,inset 0 -1px 0 #ff7a2f33}
+nav.wf-foot{justify-content:center;padding:22px 12px calc(26px + env(safe-area-inset-bottom));background:#0d0908;border:0;border-top:2px solid #8e1b14;clear:both;position:relative;z-index:1}
+nav.wf-nav a.wf-home,nav.wf-foot a.wf-home{display:inline-flex;align-items:center;gap:10px;min-height:44px;margin:0;padding:4px 16px 4px 5px;border-radius:999px;color:#e9eef6;text-decoration:none;border:1px solid #3a4250;background:linear-gradient(180deg,#1f2229,#15171c);cursor:pointer;-webkit-tap-highlight-color:transparent;transition:box-shadow .2s,border-color .2s,background .2s}
+nav.wf-nav a.wf-home:hover,nav.wf-nav a.wf-home:focus-visible,nav.wf-foot a.wf-home:hover,nav.wf-foot a.wf-home:focus-visible{border-color:#7fd0ff;box-shadow:0 0 0 1px #7fd0ff88,0 0 16px #4fb8ff88;outline:none;background:linear-gradient(180deg,#232a35,#161a21)}
+nav.wf-nav span.wf-stone,nav.wf-foot span.wf-stone{display:block;position:relative;flex:0 0 auto;width:36px;height:36px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#b9c3cf 0,#7f8a99 28%,#4f5866 62%,#2c323b 100%);box-shadow:inset -3px -4px 6px #0008,inset 2px 2px 4px #fff3,0 1px 3px #000c}
+nav.wf-foot span.wf-stone{width:28px;height:28px}
+nav.wf-nav svg.wf-rune,nav.wf-foot svg.wf-rune{position:absolute;left:4px;top:4px;width:calc(100% - 8px);height:calc(100% - 8px);margin:0;fill:none;stroke:#9fe3ff;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round;filter:drop-shadow(0 0 2px #59c7ff) drop-shadow(0 0 4px #2fa8ff)}
+nav.wf-foot svg.wf-rune{left:3px;top:3px;width:calc(100% - 6px);height:calc(100% - 6px);stroke-width:2.1}
+nav.wf-nav svg.wf-rune .wf-tick,nav.wf-foot svg.wf-rune .wf-tick{stroke-width:1.5;opacity:.85}
+nav.wf-nav a.wf-home:hover svg.wf-rune,nav.wf-nav a.wf-home:focus-visible svg.wf-rune,nav.wf-foot a.wf-home:hover svg.wf-rune,nav.wf-foot a.wf-home:focus-visible svg.wf-rune{stroke:#d4f4ff;filter:drop-shadow(0 0 3px #8fdcff) drop-shadow(0 0 7px #3fb4ff)}
+nav.wf-nav a.wf-home:hover span.wf-stone,nav.wf-nav a.wf-home:focus-visible span.wf-stone,nav.wf-foot a.wf-home:hover span.wf-stone,nav.wf-foot a.wf-home:focus-visible span.wf-stone{box-shadow:inset -3px -4px 6px #0008,inset 2px 2px 4px #fff3,0 0 12px #4fb8ffaa}
+nav.wf-nav span.wf-label,nav.wf-foot span.wf-label{display:inline;color:#e9e2d6;font:inherit}
+nav.wf-nav span.wf-label b{color:#9fdcff;font-weight:700}
+nav.wf-nav span.wf-site{display:inline;color:#e9e2d6}
+div.wf-cast{position:fixed;left:50%;bottom:18%;z-index:2147483000;width:min(300px,80vw);margin:0;transform:translateX(-50%);padding:4px;border:1px solid #6b7686;border-radius:6px;background:#0b0d12e6;box-shadow:0 0 18px #2fa8ff66,0 4px 14px #000c;pointer-events:none;display:none}
+div.wf-cast.on{display:block}
+div.wf-cast i{display:block;height:12px;width:0;border-radius:3px;background:linear-gradient(90deg,#1f6fd1,#59c7ff 70%,#d4f4ff);box-shadow:0 0 8px #59c7ff}
+div.wf-cast.on i{animation:wf-fill .7s linear forwards}
+div.wf-cast em{display:block;margin-top:3px;text-align:center;font:600 12px/1.2 "Segoe UI",Roboto,Arial,sans-serif;font-style:normal;color:#cfe9ff;letter-spacing:.5px}
+@keyframes wf-fill{to{width:100%}}
+@media (max-width:480px){nav.wf-nav{min-height:50px}}@media (max-width:340px){nav.wf-nav span.wf-site{display:none}}
+@media (prefers-reduced-motion:reduce){nav.wf-nav a.wf-home,nav.wf-foot a.wf-home,div.wf-cast i{transition:none;animation:none}}
+nav.wf-nav{position:sticky;top:0}
+html{scroll-padding-top:64px}
+</style>
+<nav class="wf-nav" aria-label="Site"><a class="wf-home" href="./" title="Hearth: back to the WoW Forever Guides home page"><span class="wf-stone"><svg class="wf-rune" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12.6 12.2c.2-1-.9-1.6-1.6-1-1 .8-.4 2.5.9 2.7 1.9.3 3.2-1.6 2.6-3.4-.8-2.4-3.9-3-5.8-1.5-2.5 2-2 6 .8 7.4 3.2 1.6 7-.6 7.3-4.2"/><path d="M5.2 7.4l1.1.6M18.4 5.6l-.7 1M19.6 16.8l-1-.5M6.4 18.6l.6-1" class="wf-tick"/></svg></span><span class="wf-label"><b>Hearth</b><span class="wf-site"> — WoW Forever Guides</span></span></a></nav>
+<!-- SITE-NAV:END -->
 <div class="wrap">
 <header>
 <h1>WoW Forever: Mining, Blacksmithing &amp; Engineering</h1>
@@ -470,5 +500,15 @@ footer{color:var(--muted);font-size:.85rem;text-align:center;padding:20px 0;bord
 </section>
 <footer>Fan-made guide. World of Warcraft: Forever is a trademark of Blizzard Entertainment. Data is from pre-launch beta clients and may change.</footer>
 </div>
-</body>
+<!-- SITE-FOOTNAV:START -->
+<nav class="wf-foot" aria-label="Site footer"><a class="wf-home" href="./"><span class="wf-stone"><svg class="wf-rune" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12.6 12.2c.2-1-.9-1.6-1.6-1-1 .8-.4 2.5.9 2.7 1.9.3 3.2-1.6 2.6-3.4-.8-2.4-3.9-3-5.8-1.5-2.5 2-2 6 .8 7.4 3.2 1.6 7-.6 7.3-4.2"/><path d="M5.2 7.4l1.1.6M18.4 5.6l-.7 1M19.6 16.8l-1-.5M6.4 18.6l.6-1" class="wf-tick"/></svg></span><span class="wf-label"><span>← Back to all guides</span></span></a></nav>
+<div class="wf-cast" aria-hidden="true"><i></i><em>Hearthstone</em></div>
+<script>(function(){var R=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches,c=document.querySelector('.wf-cast'),busy=0;
+[].forEach.call(document.querySelectorAll('a.wf-home'),function(a){a.addEventListener('click',function(e){
+if(R||!c||busy||e.defaultPrevented||e.button!==0||e.metaKey||e.ctrlKey||e.shiftKey||e.altKey)return;
+e.preventDefault();busy=1;c.classList.add('on');var h=a.href;setTimeout(function(){location.href=h},700)})});
+window.addEventListener('pageshow',function(){busy=0;if(c)c.classList.remove('on')});
+var mb=document.getElementById('menuBtn'),dr=document.getElementById('drawer'),bar=document.querySelector('header.top .bar');
+if(mb&&dr&&bar)mb.addEventListener('click',function(){dr.style.top=Math.max(0,bar.getBoundingClientRect().bottom)+'px'})})();</script>
+<!-- SITE-FOOTNAV:END --></body>
 </html>
