@@ -86,6 +86,9 @@ main{flex:1;width:100%;max-width:1080px;margin:0 auto;padding:26px 16px 8px}
 .card[data-badge="new"]::after{background:#2f9e44;color:#fff;border:1px solid #8ce99a}
 .card[data-badge="updated"]::after{background:var(--gold);color:#1a0d00;border:1px solid #ffe08a}
 footer{text-align:center;color:var(--mute);font-size:13px;padding:18px 16px;border-top:1px solid #2e2a27}
+.hunter-aside{max-width:640px;margin:8px auto 22px;padding:10px 16px 10px 44px;position:relative;border:1px solid #AAD37233;border-left:3px solid #AAD372;border-radius:8px;background:#141712;color:var(--mute);font-size:13.5px;font-style:italic;line-height:1.5}
+.hunter-aside::before{content:"🐾";position:absolute;left:14px;top:50%;transform:translateY(-50%);font-style:normal;font-size:17px;opacity:.85}
+@media (max-width:520px){.hunter-aside{margin:8px 16px 20px}}
 @media (max-width:520px){.hero{padding:34px 12px 26px}.cd-units{gap:6px}.cd-units span{min-width:56px}.update-note{padding-left:42px;font-size:14px}.update-note::before{left:13px}.cards{grid-template-columns:1fr}}
 @media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.embers{display:none}.card:hover,.card:focus-visible{transform:none}}
 </style>
@@ -103,7 +106,7 @@ footer{text-align:center;color:var(--mute);font-size:13px;padding:18px 16px;bord
   </div>
 </header>
 <main>
-  <p class="update-note">Guides are checked for new data twice daily, at 06:00 and 18:00 CET, and updated whenever something changes.<br>Last updated: <span id="last-updated">31 Oct 2026, 20:51 CET</span></p>
+  <p class="update-note">Guides are checked for new data twice daily, at 06:00 and 18:00 CET, and updated whenever something changes.<br>Last updated: <span id="last-updated">31 Oct 2026, 21:04 CET</span></p>
   <div class="guides">
     <!-- ============================================================
          GUIDE CARDS — to add a new guide, copy one <li>…</li> block
@@ -250,6 +253,7 @@ footer{text-align:center;color:var(--mute);font-size:13px;padding:18px 16px;bord
     <!-- ===== END OF GUIDE CARDS — add new cards above this line ===== -->
   </div>
 </main>
+<aside class="hunter-aside" aria-label="A note from the author">Full disclosure: the author rolls a Hunter. If the guides seem a little Hunter-heavy, blame the pet, it wrote half of them. And no, you can't have the bow.</aside>
 <footer>WoW Forever Guides · fan-made, not affiliated with Blizzard Entertainment</footer>
 <script>
 (function(){var T=Date.UTC(2026,10,4,23,0,0),c=document.getElementById("countdown");if(!c)return;var u=c.querySelector(".cd-units"),l=c.querySelector(".cd-live"),q=function(k){return c.querySelector('[data-u="'+k+'"]')},D=q("d"),H=q("h"),M=q("m"),S=q("s"),id;function p(n){return(n<10?"0":"")+n}function tick(){var s=Math.floor((T-Date.now())/1000);if(s<=0){u.hidden=true;l.hidden=false;c.classList.add("is-live");clearInterval(id);return}u.hidden=false;D.textContent=Math.floor(s/86400);H.textContent=p(Math.floor(s%86400/3600));M.textContent=p(Math.floor(s%3600/60));S.textContent=p(s%60)}tick();id=setInterval(tick,1000)})();
