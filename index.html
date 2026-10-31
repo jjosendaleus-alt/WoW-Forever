@@ -45,12 +45,23 @@ a{color:inherit}
 .embers i:nth-child(11){left:93%;animation-delay:1.7s}
 .embers i:nth-child(12){left:47%;animation-delay:5.6s;animation-duration:10s;width:2px;height:2px}
 @keyframes rise{0%{transform:translate(0,0);opacity:0}10%{opacity:.9}60%{opacity:.6}100%{transform:translate(24px,-260px);opacity:0}}
+/* ---------- countdown ---------- */
+.countdown{margin:22px auto 0;max-width:560px;padding:14px 16px 12px;border:1px solid #e2b24a66;border-radius:12px;background:linear-gradient(180deg,#1a0605cc,#0c0b0bcc);box-shadow:0 0 0 1px #000,0 8px 24px #0008}
+.cd-label{margin:0;color:#f0d9cf;font-size:14px}
+.cd-label strong{color:var(--gold);font-weight:600;white-space:nowrap}
+.cd-units{display:flex;justify-content:center;gap:10px;margin:10px 0 2px}
+.cd-units[hidden],.cd-live[hidden]{display:none}
+.cd-units span{min-width:64px;padding:6px 4px;border-radius:8px;background:#000a;border:1px solid #5a524b}
+.cd-units b{display:block;font:700 clamp(22px,5vw,30px)/1.1 Georgia,serif;color:#fff;font-variant-numeric:tabular-nums}
+.cd-units small{color:var(--mute);font-size:11px;text-transform:uppercase;letter-spacing:1px}
+.cd-live{margin:10px 0 2px;font:700 22px/1.2 Georgia,serif;color:#9cff8a;text-shadow:0 0 12px #5dff4a88}
+.countdown.is-live{border-color:#7cdc6a}
 /* ---------- XP bar (launch progress) ---------- */
 .xpband{position:relative;z-index:2;background:linear-gradient(180deg,#120807,#0c0b0b);border-top:1px solid #000;box-shadow:0 -1px 0 #5a2a12,0 6px 14px -8px #000;padding:10px 12px 8px}
 .xp{display:flex;align-items:center;max-width:1080px;margin:0 auto}
-.xp-cap{flex:0 0 auto;width:92px;height:64px;fill:#b98a46;stroke:#3a2410;stroke-width:1.3;stroke-linejoin:round;filter:drop-shadow(0 2px 2px #000c);position:relative;z-index:2}
-.xp-cap .wing{fill:#8c6332}.xp-cap .eye{fill:#ff5a2a;stroke:none}.xp-cap .tail{fill:none;stroke:#b98a46;stroke-width:2.4;stroke-linecap:round}
-.xp-cap-l{margin-right:-12px}.xp-cap-r{margin-left:-12px;transform:scaleX(-1)}
+.xp-cap{flex:0 0 auto;width:96px;height:77px;position:relative;z-index:2;filter:drop-shadow(0 3px 3px #000d)}
+.xp-cap .st{fill:url(#wfx-stone);stroke:#26272b;stroke-width:1.2;stroke-linejoin:round}.xp-cap .br,.xp-cap .wg{fill:url(#wfx-bronze);stroke:#3a2410;stroke-width:1.1;stroke-linejoin:round}.xp-cap .rib,.xp-cap .trim{fill:none;stroke:#c89552;stroke-width:1.3;stroke-linecap:round}.xp-cap .eye{fill:#ff6a2a;filter:drop-shadow(0 0 2px #ff6a2a)}
+.xp-cap-l{margin-right:-14px}.xp-cap-r{margin-left:-14px;transform:scaleX(-1)}
 .xp-track{position:relative;flex:1;height:20px;border:1px solid #c79a52;border-radius:3px;background:linear-gradient(180deg,#07060a,#16121e 55%,#0b0910);box-shadow:0 0 0 1px #000,0 0 0 2px #5c4422,inset 0 2px 4px #000c;overflow:hidden}
 .xp-fill{position:absolute;left:0;top:0;bottom:0;background:linear-gradient(180deg,#b27cff 0,#7a3fe0 45%,#4b1fa6 100%),#6b34d6;background:linear-gradient(90deg,#6a24c9,#8a4bf0 45%,#3f74ff);box-shadow:inset 0 1px 0 #ffffff55,inset 0 -2px 3px #0006,0 0 10px #7a4dff88;overflow:hidden}
 .xp-fill::after{content:"";position:absolute;top:0;bottom:0;left:-40%;width:40%;background:linear-gradient(90deg,transparent,#ffffff55,transparent);animation:xpshine 3.2s linear infinite}
@@ -58,8 +69,6 @@ a{color:inherit}
 .xp-notch{position:absolute;inset:0;background:repeating-linear-gradient(90deg,transparent 0 calc(5% - 1px),#000c calc(5% - 1px) 5%);pointer-events:none}
 .xp-text{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;padding:0 6px;font:700 12.5px/1 "Segoe UI",Roboto,Arial,sans-serif;letter-spacing:.3px;color:#fff;text-shadow:1px 1px 0 #000,-1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000;white-space:nowrap;font-variant-numeric:tabular-nums}
 .xp.is-live .xp-fill{background:linear-gradient(90deg,#c9a23a,#ffe08a 50%,#c9a23a)}
-.xp-sub{margin:6px 0 0;text-align:center;color:var(--mute);font-size:12px}
-.xp-sub[hidden]{display:none}
 /* ---------- update note ---------- */
 main{flex:1;width:100%;max-width:1080px;margin:0 auto;padding:26px 16px 8px}
 .update-note{position:relative;margin:0 0 30px;padding:12px 16px 12px 48px;border:1px solid #e2b24a55;border-left:4px solid var(--gold);border-radius:10px;background:linear-gradient(90deg,#2a1c0d,#1d1a17);color:var(--ink);font-size:14.5px;line-height:1.55;box-shadow:0 2px 10px #0008}
@@ -91,7 +100,8 @@ main{flex:1;width:100%;max-width:1080px;margin:0 auto;padding:26px 16px 8px}
 .card[data-badge="new"]::after{background:#2f9e44;color:#fff;border:1px solid #8ce99a}
 .card[data-badge="updated"]::after{background:var(--gold);color:#1a0d00;border:1px solid #ffe08a}
 footer{text-align:center;color:var(--mute);font-size:13px;padding:18px 16px;border-top:1px solid #2e2a27}
-@media (max-width:520px){.hero .hunter-tag{border-radius:14px;padding:7px 12px;font-size:13px;gap:8px;text-align:left}.hero{padding:34px 12px 26px}.xp-cap{width:52px;height:36px}.xp-cap-l{margin-right:-6px}.xp-cap-r{margin-left:-6px}.xp-track{height:18px}.xp-text{font-size:11px;letter-spacing:0}.xpband{padding:8px 6px 6px}.update-note{padding-left:42px;font-size:14px}.update-note::before{left:13px}.cards{grid-template-columns:1fr}}
+footer .credit{display:block;margin-top:4px;font-size:11.5px;color:#8f8679}
+@media (max-width:520px){.hero .hunter-tag{border-radius:14px;padding:7px 12px;font-size:13px;gap:8px;text-align:left}.hero{padding:34px 12px 26px}.cd-units{gap:6px}.cd-units span{min-width:56px}.xp-cap{width:56px;height:45px}.xp-cap-l{margin-right:-6px}.xp-cap-r{margin-left:-6px}.xp-track{height:18px}.xp-text{font-size:11px;letter-spacing:0}.xpband{padding:8px 6px 6px}.update-note{padding-left:42px;font-size:14px}.update-note::before{left:13px}.cards{grid-template-columns:1fr}}
 @media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.embers{display:none}.card:hover,.card:focus-visible{transform:none}}
 </style>
 </head>
@@ -102,17 +112,21 @@ footer{text-align:center;color:var(--mute);font-size:13px;padding:18px 16px;bord
   <h1>WoW Forever Guides</h1>
   <p class="lead">Class, race, spec and talent guides for WoW Forever</p>
   <p class="hunter-tag"><span class="paw" aria-hidden="true">🐾</span><span>Full disclosure: the author rolls a Hunter. If the guides seem a little Hunter-heavy, blame the pet, it wrote half of them. And no, you can't have the bow.</span></p>
+  <div class="countdown" id="countdown">
+    <p class="cd-label">Launch: <strong>Nov 4, 3:00 pm PST</strong> · <strong>Nov 5, 00:00 CET</strong></p>
+    <div class="cd-units" hidden><span><b data-u="d">--</b><small>days</small></span><span><b data-u="h">--</b><small>hours</small></span><span><b data-u="m">--</b><small>min</small></span><span><b data-u="s">--</b><small>sec</small></span></div>
+    <p class="cd-live" hidden>Live now — WoW Forever has launched!</p>
+  </div>
 </header>
 <div class="xpband">
-  <div class="xp" id="xp" role="progressbar" aria-label="Time until WoW Forever launch" aria-valuemin="0" aria-valuemax="100" aria-valuenow="65" title="Launch: Nov 4, 3:00 pm PST · Nov 5, 00:00 CET">
-    <svg class="xp-cap xp-cap-l" viewBox="0 0 80 56" aria-hidden="true"><path class="tail" d="M16 45c-7 2-11-2-13 4"/><path class="eye" d="M2 49l-1-5 5 3z"/><path class="wing" d="M31 34C27 22 20 12 9 4c8 4 14 5 19 4 2 6 4 8 6 8 0-6 3-10 8-13 0 7 2 11 4 14 2-4 6-6 11-7-5 8-7 16-8 24z"/><path d="M14 46c6-8 16-12 28-12 8 0 12-4 16-10 2-4 6-6 10-5l6-3-2 5 6 2-6 2c-2 3-6 5-10 6-4 7-12 13-22 14-10 1-18 3-26 1z"/><path d="M66 19l-2-7 5 6" class="wing"/><path class="tail" d="M38 45l-2 6m10-8v6" style="stroke-width:1.8"/><circle class="eye" cx="68.4" cy="22.2" r="1.3"/></svg>
-    <div class="xp-track"><div class="xp-fill" style="width:65.8%"></div><div class="xp-notch"></div><span class="xp-text">Launch: Nov 4, 3:00 pm PST · Nov 5, 00:00 CET</span></div>
-    <svg class="xp-cap xp-cap-r" viewBox="0 0 80 56" aria-hidden="true"><path class="tail" d="M16 45c-7 2-11-2-13 4"/><path class="eye" d="M2 49l-1-5 5 3z"/><path class="wing" d="M31 34C27 22 20 12 9 4c8 4 14 5 19 4 2 6 4 8 6 8 0-6 3-10 8-13 0 7 2 11 4 14 2-4 6-6 11-7-5 8-7 16-8 24z"/><path d="M14 46c6-8 16-12 28-12 8 0 12-4 16-10 2-4 6-6 10-5l6-3-2 5 6 2-6 2c-2 3-6 5-10 6-4 7-12 13-22 14-10 1-18 3-26 1z"/><path d="M66 19l-2-7 5 6" class="wing"/><path class="tail" d="M38 45l-2 6m10-8v6" style="stroke-width:1.8"/><circle class="eye" cx="68.4" cy="22.2" r="1.3"/></svg>
+  <div class="xp" id="xp" role="progressbar" aria-label="Launch progress (XP)" aria-valuemin="0" aria-valuemax="100" aria-valuenow="65" title="Launch: Nov 4, 3:00 pm PST · Nov 5, 00:00 CET">
+    <svg class="xp-cap xp-cap-l" viewBox="0 0 80 64" aria-hidden="true"><defs><linearGradient id="wfx-stone" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a3a5aa"/><stop offset=".55" stop-color="#6a6d73"/><stop offset="1" stop-color="#3c3e43"/></linearGradient><linearGradient id="wfx-bronze" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f0c27a"/><stop offset=".5" stop-color="#b07a3c"/><stop offset="1" stop-color="#6b4520"/></linearGradient></defs><path class="br" d="M8 52h66l-3 10H11z"/><path class="st" d="M11 54h60l-2 6H13z"/><path class="trim" d="M22 52c-12 2-17-4-13-9 3-3 7-1 6 2"/><path class="wg" d="M37 25c-7-9-8-18-3-24 2 6 6 9 11 9-2 4-2 9 0 13-3 2-6 3-8 2z"/><path class="rib" d="M36 6c1 6 3 11 6 15M40 9c0 5 1 9 3 13"/><path class="st" d="M18 52c-2-10 4-18 14-18 9 0 13 8 11 18z"/><path class="st" d="M30 37c0-11 6-19 14-21 6-1 10 2 10 8 0 8-6 16-12 28z"/><path class="st" d="M46 21c2-8 8-12 14-11 4 1 8 3 12 3l7 2-6 3 4 3h-6c-4 0-8-2-12-2s-6 4-6 8z"/><path class="br" d="M60 10l-5-8 8 6z"/><path class="br" d="M65 12l-1-6 4 5z"/><path class="st" d="M45 40l5 10 5 2h-10z"/><path class="trim" d="M34 41c3 2 7 2 9 0M41 28c3-1 6-1 9 1"/><circle class="eye" cx="66.5" cy="14.3" r="1.4"/></svg>
+    <div class="xp-track"><div class="xp-fill" style="width:65.9%"></div><div class="xp-notch"></div><span class="xp-text">XP 65%</span></div>
+    <svg class="xp-cap xp-cap-r" viewBox="0 0 80 64" aria-hidden="true"><path class="br" d="M8 52h66l-3 10H11z"/><path class="st" d="M11 54h60l-2 6H13z"/><path class="trim" d="M22 52c-12 2-17-4-13-9 3-3 7-1 6 2"/><path class="wg" d="M37 25c-7-9-8-18-3-24 2 6 6 9 11 9-2 4-2 9 0 13-3 2-6 3-8 2z"/><path class="rib" d="M36 6c1 6 3 11 6 15M40 9c0 5 1 9 3 13"/><path class="st" d="M18 52c-2-10 4-18 14-18 9 0 13 8 11 18z"/><path class="st" d="M30 37c0-11 6-19 14-21 6-1 10 2 10 8 0 8-6 16-12 28z"/><path class="st" d="M46 21c2-8 8-12 14-11 4 1 8 3 12 3l7 2-6 3 4 3h-6c-4 0-8-2-12-2s-6 4-6 8z"/><path class="br" d="M60 10l-5-8 8 6z"/><path class="br" d="M65 12l-1-6 4 5z"/><path class="st" d="M45 40l5 10 5 2h-10z"/><path class="trim" d="M34 41c3 2 7 2 9 0M41 28c3-1 6-1 9 1"/><circle class="eye" cx="66.5" cy="14.3" r="1.4"/></svg>
   </div>
-  <p class="xp-sub" hidden>Launch: Nov 4, 3:00 pm PST · Nov 5, 00:00 CET</p>
 </div>
 <main>
-  <p class="update-note">Guides are checked for new data twice daily, at 06:00 and 18:00 CET, and updated whenever something changes.<br>Last updated: <span id="last-updated">31 Oct 2026, 21:17 CET</span></p>
+  <p class="update-note">Guides are checked for new data twice daily, at 06:00 and 18:00 CET, and updated whenever something changes.<br>Last updated: <span id="last-updated">31 Oct 2026, 21:19 CET</span></p>
   <div class="guides">
     <!-- ============================================================
          GUIDE CARDS — to add a new guide, copy one <li>…</li> block
@@ -259,9 +273,12 @@ footer{text-align:center;color:var(--mute);font-size:13px;padding:18px 16px;bord
     <!-- ===== END OF GUIDE CARDS — add new cards above this line ===== -->
   </div>
 </main>
-<footer>WoW Forever Guides · fan-made, not affiliated with Blizzard Entertainment</footer>
+<footer>WoW Forever Guides · fan-made<br><small class="credit">World of Warcraft and related art and names are trademarks of Blizzard Entertainment. This is an unofficial fan site.</small></footer>
 <script>
-(function(){var S=Date.UTC(2026,9,23,22,0,0),T=Date.UTC(2026,10,4,23,0,0),x=document.getElementById("xp");if(!x)return;var f=x.querySelector(".xp-fill"),t=x.querySelector(".xp-text"),sub=x.parentNode.querySelector(".xp-sub"),id;if(sub)sub.hidden=false;function p(n){return(n<10?"0":"")+n}function tick(){var n=Date.now(),s=Math.floor((T-n)/1000);if(s<=0){f.style.width="100%";t.textContent="Level 60 \u2014 Live now!";x.classList.add("is-live");x.setAttribute("aria-valuenow","100");clearInterval(id);return}var pc=Math.max(0,Math.min(100,(n-S)/(T-S)*100));f.style.width=pc.toFixed(2)+"%";x.setAttribute("aria-valuenow",Math.floor(pc));t.textContent="Launch in "+Math.floor(s/86400)+"d "+p(Math.floor(s%86400/3600))+":"+p(Math.floor(s%3600/60))+":"+p(s%60)+" \u00b7 "+Math.floor(pc)+"%"}tick();id=setInterval(tick,1000)})();
+(function(){var T=Date.UTC(2026,10,4,23,0,0),c=document.getElementById("countdown");if(!c)return;var u=c.querySelector(".cd-units"),l=c.querySelector(".cd-live"),q=function(k){return c.querySelector('[data-u="'+k+'"]')},D=q("d"),H=q("h"),M=q("m"),S=q("s"),id;function p(n){return(n<10?"0":"")+n}function tick(){var s=Math.floor((T-Date.now())/1000);if(s<=0){u.hidden=true;l.hidden=false;c.classList.add("is-live");clearInterval(id);return}u.hidden=false;D.textContent=Math.floor(s/86400);H.textContent=p(Math.floor(s%86400/3600));M.textContent=p(Math.floor(s%3600/60));S.textContent=p(s%60)}tick();id=setInterval(tick,1000)})();
+</script>
+<script>
+(function(){var S=Date.UTC(2026,9,23,22,0,0),T=Date.UTC(2026,10,4,23,0,0),x=document.getElementById("xp");if(!x)return;var f=x.querySelector(".xp-fill"),t=x.querySelector(".xp-text"),id;function tick(){var n=Date.now();if(n>=T){f.style.width="100%";t.textContent="Level 60 \u2014 Live now!";x.classList.add("is-live");x.setAttribute("aria-valuenow","100");clearInterval(id);return}var pc=Math.max(0,Math.min(100,(n-S)/(T-S)*100));f.style.width=pc.toFixed(2)+"%";x.setAttribute("aria-valuenow",Math.floor(pc));t.textContent="XP "+Math.floor(pc)+"%"}tick();id=setInterval(tick,1000)})();
 </script>
 </body>
 </html>
