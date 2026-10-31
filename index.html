@@ -22,6 +22,8 @@ body{margin:0;min-height:100vh;display:flex;flex-direction:column;background:var
 header{background:linear-gradient(180deg,#5c120d,var(--red) 45%,#3b0b08);border-bottom:4px solid var(--rivet);box-shadow:0 3px 0 #000;padding:28px 16px 22px;text-align:center}
 header h1{margin:0;font-family:Georgia,"Times New Roman",serif;color:var(--gold);font-size:clamp(26px,5vw,38px);letter-spacing:.5px;text-shadow:0 2px 0 #000}
 header p{margin:6px 0 0;color:#f0d9cf}
+.update-note{margin:0 0 18px;text-align:center;color:var(--mute);font-size:13px;line-height:1.5}
+#last-updated{color:var(--ink)}
 main{flex:1;width:100%;max-width:1000px;margin:0 auto;padding:24px 16px}
 .cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px;list-style:none;margin:0;padding:0}
 .card{display:block;height:100%;text-decoration:none;color:inherit;background:linear-gradient(180deg,#2a2725,#211f1d);border:1px solid #4a433d;border-top:3px solid var(--red2);border-radius:8px;padding:16px 18px;box-shadow:0 2px 6px #000a;transition:transform .15s,border-color .15s,box-shadow .15s}
@@ -38,6 +40,7 @@ footer{text-align:center;color:var(--mute);font-size:13px;padding:18px 16px;bord
   <p>Class, race, spec and talent guides for WoW Forever</p>
 </header>
 <main>
+  <p class="update-note">Guides are checked for new data twice daily, at 06:00 and 18:00 CET, and updated whenever something changes.<br>Last updated: <span id="last-updated">31 Oct 2026, 20:33 CET</span></p>
   <ul class="cards">
     <!-- ============================================================
          GUIDE CARDS — to add a new guide, copy one <li>…</li> block
