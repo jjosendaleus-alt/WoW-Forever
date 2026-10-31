@@ -15,155 +15,244 @@
 <meta name="twitter:title" content="WoW Forever Guides">
 <meta name="twitter:description" content="Community guides for WoW Forever: class, race, spec and talent picks for leveling, PvE, Battlegrounds and World PvP.">
 <style>
-:root{--black:#0c0b0b;--iron:#1b1a19;--iron2:#262422;--rivet:#5a524b;--red:#8e1b14;--red2:#b82a1e;--gold:#e2b24a;--ink:#ece4d6;--mute:#b3a898}
+:root{--black:#0c0b0b;--iron:#1b1a19;--iron2:#262422;--rivet:#5a524b;--red:#8e1b14;--red2:#b82a1e;--ember:#ff7a2f;--gold:#e2b24a;--ink:#ece4d6;--mute:#b8ad9d;
+--horde:#d23a2a;--alliance:#4a86e8;--prof:#e0a53a;--hunter:#AAD372;--paladin:#F48CBA;--mage:#3FC7EB;--rogue:#FFF468;--warrior:#C69B6D}
 *{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%}
-body{margin:0;min-height:100vh;display:flex;flex-direction:column;background:var(--black) radial-gradient(ellipse at 50% -10%,#3a1410 0,transparent 55%) fixed;color:var(--ink);font:16px/1.55 "Segoe UI",Roboto,Helvetica,Arial,sans-serif}
-header{background:linear-gradient(180deg,#5c120d,var(--red) 45%,#3b0b08);border-bottom:4px solid var(--rivet);box-shadow:0 3px 0 #000;padding:28px 16px 22px;text-align:center}
-header h1{margin:0;font-family:Georgia,"Times New Roman",serif;color:var(--gold);font-size:clamp(26px,5vw,38px);letter-spacing:.5px;text-shadow:0 2px 0 #000}
-header p{margin:6px 0 0;color:#f0d9cf}
-.update-note{margin:0 0 18px;text-align:center;color:var(--mute);font-size:13px;line-height:1.5}
-#last-updated{color:var(--ink)}
-main{flex:1;width:100%;max-width:1000px;margin:0 auto;padding:24px 16px}
+body{margin:0;min-height:100vh;display:flex;flex-direction:column;background:var(--black) radial-gradient(ellipse at 50% -10%,#4a1510 0,transparent 60%) fixed;color:var(--ink);font:16px/1.55 "Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+a{color:inherit}
+/* ---------- hero ---------- */
+.hero{position:relative;overflow:hidden;text-align:center;padding:44px 16px 34px;background:radial-gradient(ellipse at 50% 120%,#c2361d55 0,transparent 60%),linear-gradient(180deg,#3b0b08,var(--red) 55%,#2a0806);border-bottom:4px solid var(--rivet);box-shadow:0 3px 0 #000,inset 0 -40px 60px -30px #000c}
+.hero::after{content:"";position:absolute;left:0;right:0;bottom:0;height:4px;background:repeating-linear-gradient(90deg,var(--rivet) 0 18px,#8a7d70 18px 22px)}
+.hero>*{position:relative;z-index:1}
+.hero .eyebrow{display:inline-block;margin:0 0 10px;padding:2px 12px;border:1px solid #e2b24a88;border-radius:999px;background:#1a0605aa;color:var(--gold);font-size:12px;letter-spacing:2px;text-transform:uppercase}
+.hero h1{margin:0;font-family:Georgia,"Times New Roman",serif;color:var(--gold);font-size:clamp(32px,7vw,58px);line-height:1.1;letter-spacing:1px;text-shadow:0 2px 0 #000,0 0 18px #ff7a2f66;animation:glow 4s ease-in-out infinite}
+.hero .lead{margin:10px auto 0;max-width:40em;color:#f3ddd2;font-size:clamp(15px,2.4vw,18px)}
+@keyframes glow{0%,100%{text-shadow:0 2px 0 #000,0 0 14px #ff7a2f44}50%{text-shadow:0 2px 0 #000,0 0 30px #ff7a2fcc,0 0 60px #ff3b1f55}}
+.embers{position:absolute;inset:0;z-index:0;pointer-events:none}
+.embers i{position:absolute;bottom:-12px;width:4px;height:4px;border-radius:50%;background:var(--ember);box-shadow:0 0 6px 2px #ff7a2faa;opacity:0;animation:rise 7s linear infinite}
+.embers i:nth-child(1){left:6%;animation-delay:0s;animation-duration:8s}
+.embers i:nth-child(2){left:14%;animation-delay:2.5s;width:3px;height:3px}
+.embers i:nth-child(3){left:23%;animation-delay:5s;animation-duration:9s}
+.embers i:nth-child(4){left:31%;animation-delay:1.2s;width:5px;height:5px}
+.embers i:nth-child(5){left:42%;animation-delay:3.8s;animation-duration:6s}
+.embers i:nth-child(6){left:51%;animation-delay:.6s;width:3px;height:3px}
+.embers i:nth-child(7){left:60%;animation-delay:4.4s;animation-duration:8.5s}
+.embers i:nth-child(8){left:68%;animation-delay:2s;width:5px;height:5px}
+.embers i:nth-child(9){left:77%;animation-delay:6s}
+.embers i:nth-child(10){left:85%;animation-delay:3s;animation-duration:9.5s;width:3px;height:3px}
+.embers i:nth-child(11){left:93%;animation-delay:1.7s}
+.embers i:nth-child(12){left:47%;animation-delay:5.6s;animation-duration:10s;width:2px;height:2px}
+@keyframes rise{0%{transform:translate(0,0);opacity:0}10%{opacity:.9}60%{opacity:.6}100%{transform:translate(24px,-260px);opacity:0}}
+/* ---------- countdown ---------- */
+.countdown{margin:22px auto 0;max-width:560px;padding:14px 16px 12px;border:1px solid #e2b24a66;border-radius:12px;background:linear-gradient(180deg,#1a0605cc,#0c0b0bcc);box-shadow:0 0 0 1px #000,0 8px 24px #0008}
+.cd-label{margin:0;color:#f0d9cf;font-size:14px}
+.cd-label strong{color:var(--gold);font-weight:600;white-space:nowrap}
+.cd-units{display:flex;justify-content:center;gap:10px;margin:10px 0 2px}
+.cd-units[hidden],.cd-live[hidden]{display:none}
+.cd-units span{min-width:64px;padding:6px 4px;border-radius:8px;background:#000a;border:1px solid #5a524b}
+.cd-units b{display:block;font:700 clamp(22px,5vw,30px)/1.1 Georgia,serif;color:#fff;font-variant-numeric:tabular-nums}
+.cd-units small{color:var(--mute);font-size:11px;text-transform:uppercase;letter-spacing:1px}
+.cd-live{margin:10px 0 2px;font:700 22px/1.2 Georgia,serif;color:#9cff8a;text-shadow:0 0 12px #5dff4a88}
+.countdown.is-live{border-color:#7cdc6a}
+/* ---------- update note ---------- */
+main{flex:1;width:100%;max-width:1080px;margin:0 auto;padding:26px 16px 8px}
+.update-note{position:relative;margin:0 0 30px;padding:12px 16px 12px 48px;border:1px solid #e2b24a55;border-left:4px solid var(--gold);border-radius:10px;background:linear-gradient(90deg,#2a1c0d,#1d1a17);color:var(--ink);font-size:14.5px;line-height:1.55;box-shadow:0 2px 10px #0008}
+.update-note::before{content:"⟳";position:absolute;left:16px;top:50%;transform:translateY(-50%);font-size:22px;color:var(--gold)}
+#last-updated{color:var(--gold);font-weight:600}
+/* ---------- groups ---------- */
+.group{margin:0 0 34px}
+.group[data-group="horde"]{--band:var(--horde)}
+.group[data-group="alliance"]{--band:var(--alliance)}
+.group[data-group="prof"]{--band:var(--prof)}
+.group-title{display:flex;align-items:center;gap:10px;margin:0;padding-bottom:8px;font:700 24px/1.2 Georgia,serif;color:var(--band);border-bottom:3px solid var(--band);box-shadow:0 6px 12px -10px var(--band)}
+.group-title svg{width:28px;height:28px;flex:0 0 auto}
+.group-title span{color:var(--ink)}
+.group-sub{margin:6px 0 14px;color:var(--mute);font-size:14px}
+/* ---------- cards ---------- */
 .cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px;list-style:none;margin:0;padding:0}
-.card{display:block;height:100%;text-decoration:none;color:inherit;background:linear-gradient(180deg,#2a2725,#211f1d);border:1px solid #4a433d;border-top:3px solid var(--red2);border-radius:8px;padding:16px 18px;box-shadow:0 2px 6px #000a;transition:transform .15s,border-color .15s,box-shadow .15s}
-.card:hover,.card:focus-visible{transform:translateY(-2px);border-color:var(--gold);box-shadow:0 6px 16px #000c;outline:none}
-.card h2{margin:0 0 6px;font-family:Georgia,serif;color:var(--gold);font-size:20px}
+.card{--acc:var(--gold);position:relative;display:block;height:100%;text-decoration:none;color:inherit;background:linear-gradient(180deg,#2a2725,#1e1c1a);border:1px solid #4a433d;border-top:4px solid var(--acc);border-radius:10px;padding:16px 18px 16px;box-shadow:0 2px 6px #000a;transition:transform .18s ease,border-color .18s,box-shadow .18s}
+.card[data-accent="horde"]{--acc:var(--horde)}.card[data-accent="alliance"]{--acc:var(--alliance)}.card[data-accent="prof"]{--acc:var(--prof)}
+.card[data-accent="hunter"]{--acc:var(--hunter)}.card[data-accent="paladin"]{--acc:var(--paladin)}.card[data-accent="mage"]{--acc:var(--mage)}
+.card[data-accent="rogue"]{--acc:var(--rogue)}.card[data-accent="warrior"]{--acc:var(--warrior)}
+.card::before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;border-radius:0 0 0 10px;background:linear-gradient(180deg,var(--acc),transparent)}
+.card:hover,.card:focus-visible{transform:translateY(-4px);border-color:var(--acc);box-shadow:0 0 0 1px var(--acc),0 10px 26px #000c,0 0 22px -4px var(--acc);outline:none}
+.card-icon{float:right;margin:-2px 0 6px 10px;font-size:26px;line-height:1;filter:drop-shadow(0 0 6px #000)}
+.card h3{margin:0 0 6px;font:700 20px/1.25 Georgia,serif;color:var(--gold)}
+.card:hover h3,.card:focus-visible h3{color:#fff}
 .card p{margin:0;color:var(--mute);font-size:15px}
-.card .tag{display:inline-block;margin-top:12px;border:1px solid var(--gold);background:#1a0605;color:var(--gold);border-radius:999px;padding:1px 9px;font-size:12px}
+.card .tag{display:inline-block;margin-top:12px;border:1px solid var(--acc);background:#140606;color:var(--ink);border-radius:12px;padding:1px 9px;font-size:12px;line-height:1.5}
+.card[data-badge]::after{content:attr(data-badge);position:absolute;top:-11px;left:14px;padding:1px 9px;border-radius:999px;font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;box-shadow:0 2px 6px #000a}
+.card[data-badge="new"]::after{background:#2f9e44;color:#fff;border:1px solid #8ce99a}
+.card[data-badge="updated"]::after{background:var(--gold);color:#1a0d00;border:1px solid #ffe08a}
 footer{text-align:center;color:var(--mute);font-size:13px;padding:18px 16px;border-top:1px solid #2e2a27}
+@media (max-width:520px){.hero{padding:34px 12px 26px}.cd-units{gap:6px}.cd-units span{min-width:56px}.update-note{padding-left:42px;font-size:14px}.update-note::before{left:13px}.cards{grid-template-columns:1fr}}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.embers{display:none}.card:hover,.card:focus-visible{transform:none}}
 </style>
 </head>
 <body>
-<header>
+<header class="hero">
+  <div class="embers" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+  <p class="eyebrow">Fan-made guides · launch 4 November</p>
   <h1>WoW Forever Guides</h1>
-  <p>Class, race, spec and talent guides for WoW Forever</p>
+  <p class="lead">Class, race, spec and talent guides for WoW Forever</p>
+  <div class="countdown" id="countdown">
+    <p class="cd-label">Launch: <strong>Nov 4, 3:00 pm PST</strong> · <strong>Nov 5, 00:00 CET</strong></p>
+    <div class="cd-units" hidden><span><b data-u="d">--</b><small>days</small></span><span><b data-u="h">--</b><small>hours</small></span><span><b data-u="m">--</b><small>min</small></span><span><b data-u="s">--</b><small>sec</small></span></div>
+    <p class="cd-live" hidden>Live now — WoW Forever has launched!</p>
+  </div>
 </header>
 <main>
-  <p class="update-note">Guides are checked for new data twice daily, at 06:00 and 18:00 CET, and updated whenever something changes.<br>Last updated: <span id="last-updated">31 Oct 2026, 20:33 CET</span></p>
-  <ul class="cards">
+  <p class="update-note">Guides are checked for new data twice daily, at 06:00 and 18:00 CET, and updated whenever something changes.<br>Last updated: <span id="last-updated">31 Oct 2026, 20:42 CET</span></p>
+  <div class="guides">
     <!-- ============================================================
          GUIDE CARDS — to add a new guide, copy one <li>…</li> block
          below, paste it at the end of this list, and change the
          href (relative file name), the title, the description and
          the tag.
          ============================================================ -->
+    <!-- Cards are grouped: Horde, Alliance, Professions. Paste a new <li> into the matching group's <ul>.
+         Optional: data-badge="new" or data-badge="updated"; data-accent = horde, alliance, prof, hunter, paladin, mage, rogue, warrior. -->
 
+    <section class="group" data-group="horde" aria-labelledby="g-horde">
+      <h2 class="group-title" id="g-horde"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 21 6v6c0 5-4 8.5-9 10C7 20.5 3 17 3 12V6Z" fill="currentColor" opacity=".25"/><path d="M12 2 21 6v6c0 5-4 8.5-9 10C7 20.5 3 17 3 12V6Z" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M8 8l8 8M16 8l-8 8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg><span>Horde</span></h2>
+      <p class="group-sub">For the Horde: class guides and best-in-class picks</p>
+      <ul class="cards">
     <li>
-      <a class="card" href="Horde_BiC_Picks.html">
-        <h2>Horde Best-in-Class Picks</h2>
+      <a class="card" data-accent="horde" href="Horde_BiC_Picks.html">
+        <span class="card-icon" aria-hidden="true">⚔️</span>
+        <h3>Horde Best-in-Class Picks</h3>
         <p>Race, spec and talent picks for every Horde class: Leveling, PvE (dungeons and raids), Battlegrounds and World PvP.</p>
         <span class="tag">Horde · v1.1.0</span>
       </a>
     </li>
-
     <li>
-      <a class="card" href="Horde_Hunter_Guide.html">
-        <h2>Horde Hunter Guide</h2>
+      <a class="card" data-accent="hunter" href="Horde_Hunter_Guide.html">
+        <span class="card-icon" aria-hidden="true">🏹</span>
+        <h3>Horde Hunter Guide</h3>
         <p>Horde Hunter theorycraft: races, Leveling (Beast Mastery), PvE, World PvP (Survival) and Battlegrounds, plus a pet evaluator.</p>
         <span class="tag">Horde · Hunter · v2.0.0</span>
       </a>
     </li>
-
     <li>
-      <a class="card" href="Horde_BM_Hunter_Leveling_1-60.html">
-        <h2>Orc Beast Mastery Hunter 1-60 Leveling Route</h2>
+      <a class="card" data-accent="hunter" data-badge="new" href="Horde_BM_Hunter_Leveling_1-60.html">
+        <span class="card-icon" aria-hidden="true">🐾</span>
+        <h3>Orc Beast Mastery Hunter 1-60 Leveling Route</h3>
         <p>Balanced 1-60 route for an Orc Beast Mastery Hunter with Leatherworking and Skinning: zones, talents, gear quests, dungeons and pacing.</p>
         <span class="tag">Horde · Hunter · Leveling · v1.0.0</span>
       </a>
     </li>
-
     <li>
-      <a class="card" href="Horde_Paladin_Guide.html">
-        <h2>Horde Paladin Guide</h2>
+      <a class="card" data-accent="paladin" href="Horde_Paladin_Guide.html">
+        <span class="card-icon" aria-hidden="true">🛡️</span>
+        <h3>Horde Paladin Guide</h3>
         <p>Paladin theorycraft for the Horde (Undead): Leveling, PvE, World PvP and Battlegrounds on the launch talent tree. The 30 Oct talent rework is datamined and pending.</p>
         <span class="tag">Horde · Paladin · v2.0.0</span>
       </a>
     </li>
-
     <li>
-      <a class="card" href="Horde_Mage_Guide.html">
-        <h2>Horde Mage Guide</h2>
+      <a class="card" data-accent="mage" href="Horde_Mage_Guide.html">
+        <span class="card-icon" aria-hidden="true">🔮</span>
+        <h3>Horde Mage Guide</h3>
         <p>Arcane, Fire and Frost for leveling, PvE, world PvP and battlegrounds, with professions.</p>
         <span class="tag">Horde · Mage · v2.0.0</span>
       </a>
     </li>
-
     <li>
-      <a class="card" href="Horde_Rogue_Guide.html">
-        <h2>Horde Rogue Guide</h2>
+      <a class="card" data-accent="rogue" href="Horde_Rogue_Guide.html">
+        <span class="card-icon" aria-hidden="true">🗡️</span>
+        <h3>Horde Rogue Guide</h3>
         <p>Assassination, Combat and Subtlety for leveling, PvE, world PvP and battlegrounds, with professions.</p>
         <span class="tag">Horde · Rogue · v2.0.0</span>
       </a>
     </li>
-
     <li>
-      <a class="card" href="Horde_Warrior_Guide.html">
-        <h2>Horde Warrior Guide</h2>
+      <a class="card" data-accent="warrior" href="Horde_Warrior_Guide.html">
+        <span class="card-icon" aria-hidden="true">🪓</span>
+        <h3>Horde Warrior Guide</h3>
         <p>Arms, Fury and Protection spec by spec for leveling, PvE, world PvP and battlegrounds, with professions.</p>
         <span class="tag">Horde · Warrior · v2.0.0</span>
       </a>
     </li>
+      </ul>
+    </section>
 
+    <section class="group" data-group="alliance" aria-labelledby="g-alliance">
+      <h2 class="group-title" id="g-alliance"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 21 6v6c0 5-4 8.5-9 10C7 20.5 3 17 3 12V6Z" fill="currentColor" opacity=".25"/><path d="M12 2 21 6v6c0 5-4 8.5-9 10C7 20.5 3 17 3 12V6Z" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M12 6v11M8 10h8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg><span>Alliance</span></h2>
+      <p class="group-sub">For the Alliance: best-in-class picks and the Hunter guides</p>
+      <ul class="cards">
     <li>
-      <a class="card" href="Alliance_BiC_Picks.html">
-        <h2>Alliance Best-in-Class Picks</h2>
+      <a class="card" data-accent="alliance" href="Alliance_BiC_Picks.html">
+        <span class="card-icon" aria-hidden="true">⚜️</span>
+        <h3>Alliance Best-in-Class Picks</h3>
         <p>Race, spec and talent picks for every Alliance class: Leveling, PvE raids and Battlegrounds (incl. Alterac Valley), plus 3-button rotations.</p>
         <span class="tag">Alliance · v1.2.0</span>
       </a>
     </li>
-
     <li>
-      <a class="card" href="Hunter_Guide.html">
-        <h2>Alliance Hunter Guide</h2>
+      <a class="card" data-accent="hunter" href="Hunter_Guide.html">
+        <span class="card-icon" aria-hidden="true">🏹</span>
+        <h3>Alliance Hunter Guide</h3>
         <p>Alliance Hunter theorycraft: Leveling, PvE, World PvP and Battlegrounds.</p>
         <span class="tag">Alliance · Hunter · v1.4.0</span>
       </a>
     </li>
-
     <li>
-      <a class="card" href="Hunter_Rotations.html">
-        <h2>Hunter Rotations (all specs)</h2>
+      <a class="card" data-accent="hunter" href="Hunter_Rotations.html">
+        <span class="card-icon" aria-hidden="true">🎯</span>
+        <h3>Hunter Rotations (all specs)</h3>
         <p>Level-60 PvE rotations for Marksmanship, Beast Mastery and Survival, plus leveling and battleground priorities, with shot timing and theory.</p>
         <span class="tag">Alliance · Hunter · v1.4.0</span>
       </a>
     </li>
+      </ul>
+    </section>
 
+    <section class="group" data-group="prof" aria-labelledby="g-prof">
+      <h2 class="group-title" id="g-prof"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="currentColor" opacity=".25"/><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M8 16l6-6m-1-3 4 4-2 2-4-4z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round" stroke-linecap="round" fill="none"/></svg><span>Professions</span></h2>
+      <p class="group-sub">Gathering and crafting guides, Hunter-first</p>
+      <ul class="cards">
     <li>
-      <a class="card" href="Leatherworking_Skinning_Guide.html">
-        <h2>Leatherworking and Skinning Guide</h2>
+      <a class="card" data-accent="prof" data-badge="updated" href="Leatherworking_Skinning_Guide.html">
+        <span class="card-icon" aria-hidden="true">🧵</span>
+        <h3>Leatherworking and Skinning Guide</h3>
         <p>Horde-first Leatherworking and Skinning for Hunters: breakpoints, Hunter recipes, an efficient 1-225 path, shopping list and Skinning tips.</p>
         <span class="tag">Professions · Leatherworking &amp; Skinning · v2026-10-31.2</span>
       </a>
     </li>
-
     <li>
-      <a class="card" href="Mining_Blacksmithing_Engineering_Guide.html">
-        <h2>Mining, Blacksmithing &amp; Engineering Guide</h2>
+      <a class="card" data-accent="prof" data-badge="updated" href="Mining_Blacksmithing_Engineering_Guide.html">
+        <span class="card-icon" aria-hidden="true">⚒️</span>
+        <h3>Mining, Blacksmithing &amp; Engineering Guide</h3>
         <p>Horde-first Mining, Blacksmithing and Engineering: ranks, skill paths, shopping lists, Forever mechanics and a Hunter angle.</p>
         <span class="tag">Professions · Mining, Blacksmithing &amp; Engineering · v2026-10-31.2</span>
       </a>
     </li>
-
     <li>
-      <a class="card" href="Herbalism_Alchemy_Guide.html">
-        <h2>Herbalism &amp; Alchemy Guide</h2>
+      <a class="card" data-accent="prof" data-badge="updated" href="Herbalism_Alchemy_Guide.html">
+        <span class="card-icon" aria-hidden="true">🌿</span>
+        <h3>Herbalism &amp; Alchemy Guide</h3>
         <p>Horde-first Herbalism and Alchemy: herbs by skill, a 1-300 zone path, Alchemy path and shopping list, transmutes and Hunter recipes.</p>
         <span class="tag">Professions · Herbalism &amp; Alchemy · v2026-10-31.2</span>
       </a>
     </li>
-
     <li>
-      <a class="card" href="Cooking_First_Aid_Guide.html">
-        <h2>Cooking &amp; First Aid Guide</h2>
+      <a class="card" data-accent="prof" data-badge="new" href="Cooking_First_Aid_Guide.html">
+        <span class="card-icon" aria-hidden="true">🍳</span>
+        <h3>Cooking &amp; First Aid Guide</h3>
         <p>Horde-first Cooking and First Aid: 1-300 paths, shopping lists, buff foods, Fishing notes for cooks and the expanded First Aid.</p>
         <span class="tag">Professions · Cooking &amp; First Aid · v1.0.0</span>
       </a>
     </li>
+      </ul>
+    </section>
 
     <!-- ===== END OF GUIDE CARDS — add new cards above this line ===== -->
-  </ul>
+  </div>
 </main>
 <footer>WoW Forever Guides · fan-made, not affiliated with Blizzard Entertainment</footer>
+<script>
+(function(){var T=Date.UTC(2026,10,4,23,0,0),c=document.getElementById("countdown");if(!c)return;var u=c.querySelector(".cd-units"),l=c.querySelector(".cd-live"),q=function(k){return c.querySelector('[data-u="'+k+'"]')},D=q("d"),H=q("h"),M=q("m"),S=q("s"),id;function p(n){return(n<10?"0":"")+n}function tick(){var s=Math.floor((T-Date.now())/1000);if(s<=0){u.hidden=true;l.hidden=false;c.classList.add("is-live");clearInterval(id);return}u.hidden=false;D.textContent=Math.floor(s/86400);H.textContent=p(Math.floor(s%86400/3600));M.textContent=p(Math.floor(s%3600/60));S.textContent=p(s%60)}tick();id=setInterval(tick,1000)})();
+</script>
 </body>
 </html>
