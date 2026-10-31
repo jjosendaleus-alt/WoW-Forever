@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#b3161e">
+<meta name="description" content="Horde-first Herbalism and Alchemy guide for WoW Forever: herbs by skill, a 1-300 zone path, Alchemy path and shopping list, transmutes and Hunter recipes.">
+<meta property="og:title" content="WoW Forever: Herbalism &amp; Alchemy Guide (pre-launch)">
+<meta property="og:description" content="Horde-first Herbalism and Alchemy guide for WoW Forever: herbs by skill, a 1-300 zone path, Alchemy path and shopping list, transmutes and Hunter recipes.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://jjosendaleus-alt.github.io/WoW-Forever/Herbalism_Alchemy_Guide.html">
+<meta property="og:site_name" content="WoW Forever Guides">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="WoW Forever: Herbalism &amp; Alchemy Guide (pre-launch)">
+<meta name="twitter:description" content="Horde-first Herbalism and Alchemy guide for WoW Forever: herbs by skill, a 1-300 zone path, Alchemy path and shopping list, transmutes and Hunter recipes.">
+<title>WoW Forever: Herbalism &amp; Alchemy Guide (pre-launch)</title>
+<style>
+:root{--bg:#0b0708;--panel:#151012;--panel2:#1d1416;--red:#b3161e;--red2:#e0333b;--gold:#d4a54a;--bronze:#a8743a;--text:#ece4dc;--muted:#b9aca2;--line:#3a2326}
+*{box-sizing:border-box}
+body{margin:0;background:radial-gradient(ellipse at top,#1f0b0d 0%,var(--bg) 60%);color:var(--text);font:16px/1.6 Georgia,"Times New Roman",serif}
+.wrap{max-width:980px;margin:0 auto;padding:16px}
+header{border-bottom:3px solid var(--red);padding:20px 0 12px;text-align:center}
+h1{color:var(--gold);font-size:1.9rem;margin:.2em 0;letter-spacing:.02em;text-shadow:0 2px 0 #000}
+.sub{color:var(--muted);margin:0}
+.banner{background:linear-gradient(90deg,#4a0c10,#2a0a0c);border:1px solid var(--red);border-left:6px solid var(--gold);padding:10px 14px;margin:16px 0;border-radius:6px}
+h2{color:var(--gold);border-bottom:2px solid var(--red);padding-bottom:4px;margin-top:2em;font-size:1.4rem}
+h3{color:var(--red2);font-size:1.12rem;margin-bottom:.3em}
+a{color:#f0c46a}a:hover{color:#fff}
+section,nav{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:6px 18px 14px;margin:14px 0}
+nav ol{columns:2;margin:6px 0;padding-left:1.4em}
+@media(max-width:600px){nav ol{columns:1}h1{font-size:1.5rem}}
+.tbl{overflow-x:auto}
+table{border-collapse:collapse;width:100%;margin:8px 0;font-size:.93rem}
+th{background:#3a0d11;color:var(--gold);text-align:left}
+th,td{border:1px solid var(--line);padding:6px 8px;vertical-align:top}
+tr:nth-child(even) td{background:var(--panel2)}
+.badge{display:inline-block;font:bold .72rem/1.4 Arial,sans-serif;padding:1px 7px;border-radius:10px;margin-left:4px;white-space:nowrap;vertical-align:middle}
+.b-conf{background:#1f4a22;color:#d6f5d8;border:1px solid #3e8a43}
+.b-data{background:#4a3a12;color:#ffe9b0;border:1px solid var(--bronze)}
+.b-unc{background:#5c1015;color:#ffd6d8;border:1px solid var(--red2)}
+.b-cls{background:#2b2b44;color:#dcdcff;border:1px solid #6b6bb0}
+.horde{color:#ff6a6f;font-weight:bold}.alli{color:#8fb4ff;font-weight:bold}
+.note{color:var(--muted);font-size:.9rem}
+.legend li{margin:4px 0}
+footer{color:var(--muted);font-size:.85rem;text-align:center;padding:20px 0;border-top:1px solid var(--line);margin-top:24px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+<h1>WoW Forever: Herbalism &amp; Alchemy</h1>
+<p class="sub">Horde-first guide for the 4 Nov 2026 launch, with Hunter notes</p>
+</header>
+
+<div class="banner"><strong>Last updated 31 Oct 2026, pre-launch, based on beta client data.</strong> The beta stopped at character level 30 and skill 225, so anything above 225 has not been tested in play. Everything here can still change at launch.</div>
+
+<section>
+<h2 id="legend">Badge legend</h2>
+<ul class="legend">
+<li><span class="badge b-conf">Confirmed</span> Stated in Blizzard's own posts or patch notes.</li>
+<li><span class="badge b-data">Datamined</span> Read from the beta or launch client files by fan sites, not yet announced or verified in play.</li>
+<li><span class="badge b-unc">Unconfirmed</span> Player reports, one source only, or sources that disagree.</li>
+<li><span class="badge b-cls">Classic-inferred</span> Taken from Classic data; not shown in Forever data yet.</li>
+</ul>
+<p class="note">Unless marked otherwise, recipe, herb-skill, reagent and skill-color numbers are <span class="badge b-data">Datamined</span> from beta builds 1.60.1.70124 to 70707. Colors are written as orange / yellow / green / grey: the skill at which a recipe turns each color.</p>
+</section>
+
+<nav>
+<h2 style="margin-top:.4em">Contents</h2>
+<ol>
+<li><a href="#herb-train">Herbalism ranks and trainers</a></li>
+<li><a href="#herbs">Herbs by skill</a></li>
+<li><a href="#herb-path">Herbalism zone path 1-300</a></li>
+<li><a href="#herb-forever">Forever-only Herbalism</a></li>
+<li><a href="#alch-train">Alchemy ranks and trainers</a></li>
+<li><a href="#alch-path">Alchemy path 1-300</a></li>
+<li><a href="#shopping">Alchemy shopping list</a></li>
+<li><a href="#key">Key recipes (Hunter angle)</a></li>
+<li><a href="#healing">Healing potions moved</a></li>
+<li><a href="#transmutes">Transmutes and specializations</a></li>
+<li><a href="#systems">Legacy perks and Merchant's Favor</a></li>
+<li><a href="#changes">Recent changes</a></li>
+<li><a href="#sources">Sources</a></li>
+</ol>
+</nav>
+
+<section>
+<h2 id="herb-train">1. Herbalism ranks and trainers</h2>
+<div class="tbl"><table>
+<tr><th>Rank (skill cap)</th><th>Requirement</th><th>Cost</th></tr>
+<tr><td>Apprentice (75)</td><td>Character level 5 per one wiki; another guide says no level gate <span class="badge b-unc">Unconfirmed</span></td><td>10c <span class="badge b-cls">Classic-inferred</span></td></tr>
+<tr><td>Journeyman (150)</td><td>Skill 50, level 10</td><td>5s <span class="badge b-cls">Classic-inferred</span></td></tr>
+<tr><td>Expert (225)</td><td>Skill 125, level 20</td><td>50s <span class="badge b-cls">Classic-inferred</span></td></tr>
+<tr><td>Artisan (300)</td><td>Skill 200, level 35 <span class="badge b-unc">Unconfirmed</span> (above the beta cap)</td><td>5g <span class="badge b-cls">Classic-inferred</span></td></tr>
+</table></div>
+<p class="note">No Forever source lists Herbalism training costs yet, so the costs above are Classic's. The rank requirements are the same in every guide.</p>
+<ul>
+<li><span class="horde">Horde full trainers:</span> Jandi (Orgrimmar), Komin Winterhoof (Thunder Bluff), Martha Alliestar (Undercity), Mishiki (Sen'jin Village, Durotar), Faruza (Brill, Tirisfal).</li>
+<li><span class="horde">Horde Apprentice-only junior trainers:</span> Zor'la (Valley of Trials), Garan Sunstrider (Camp Narache), Florence Nightshade (Deathknell). They won't teach Journeyman.</li>
+<li><span class="alli">Alliance:</span> Tannysa (Stormwind), Reyna Stonebranch (Ironforge), Firodren Mooncaller (Darnassus), Herbalist Pomeroy (Elwynn), Kali Healtouch (Thelsamar, Loch Modan), Malorne Bladeleaf (Dolanaar). Junior trainers: Nancy Songflower, Emrys Flintbeard, Eleyna Duskbreeze.</li>
+<li><strong>Skyborne (Zephras Isle, either faction):</strong> Syriel Nightrain (Valanaar) and Halassa Fernbreeze (Shen'dar Village).</li>
+<li>One fan site says every full trainer teaches every rank in Forever. <span class="badge b-unc">Unconfirmed</span> In Classic, Artisan came from specific trainers, so check before you travel.</li>
+<li><strong>Wild Harvest:</strong> a reward choice from early starter quests ("Rascally Rodents", "Galgar's Cactus Apple Surprise", "Harvesting Windstones", "Marla's Last Wish", "Coldridge Valley Mail Delivery"). It teaches Herbalism if you know fewer than two professions and adds 2 skill, up to 15.</li>
+<li><strong>Find Herbs</strong> is learned with Herbalism but starts switched off. Turn it on from the Professions window. It switches off when you die.</li>
+</ul>
+</section>
+
+<section>
+<h2 id="herbs">2. Herbs by skill</h2>
+<p>Every herb needs the same skill as in Classic. Below are the main zones from each source's spawn data; most of that spawn data is still Classic's.</p>
+<div class="tbl"><table>
+<tr><th>Skill</th><th>Herb</th><th>Main zones (Horde-side first)</th></tr>
+<tr><td>1</td><td>Peacebloom, Silverleaf</td><td>Durotar, Mulgore, The Barrens, Tirisfal; Elwynn, Dun Morogh, Teldrassil</td></tr>
+<tr><td>15</td><td>Earthroot</td><td>The Barrens, Durotar, Tirisfal; Dun Morogh, Elwynn</td></tr>
+<tr><td>50</td><td>Mageroyal</td><td>The Barrens, Silverpine, Ashenvale; Darkshore, Westfall</td></tr>
+<tr><td>70</td><td>Briarthorn</td><td>The Barrens, Ashenvale, Duskwood</td></tr>
+<tr><td>85</td><td>Stranglekelp (underwater)</td><td>Stranglethorn Vale, Wetlands, Ashenvale coasts</td></tr>
+<tr><td>100</td><td>Bruiseweed</td><td>Stonetalon, The Barrens, Hillsbrad</td></tr>
+<tr><td>115</td><td>Wild Steelbloom</td><td>Arathi, Stonetalon, Stranglethorn</td></tr>
+<tr><td>120</td><td>Grave Moss</td><td>Duskwood, Desolace, Wetlands</td></tr>
+<tr><td>125</td><td>Kingsblood</td><td>Stranglethorn, Wetlands, Ashenvale</td></tr>
+<tr><td>150</td><td>Liferoot</td><td>Stranglethorn, Wetlands, Arathi</td></tr>
+<tr><td>160</td><td>Fadeleaf</td><td>Arathi, Swamp of Sorrows, Alterac Mountains</td></tr>
+<tr><td>170</td><td>Goldthorn</td><td>Stranglethorn, Arathi, Swamp of Sorrows</td></tr>
+<tr><td>185</td><td>Khadgar's Whisker</td><td>Stranglethorn, Arathi, Swamp of Sorrows</td></tr>
+<tr><td>195</td><td>Wintersbite</td><td>Alterac Mountains</td></tr>
+<tr><td>205</td><td>Firebloom</td><td>Tanaris, Searing Gorge, Badlands</td></tr>
+<tr><td>210</td><td>Purple Lotus</td><td>Azshara, The Hinterlands, Tanaris</td></tr>
+<tr><td>220</td><td>Arthas' Tears</td><td>Western and Eastern Plaguelands, Felwood</td></tr>
+<tr><td>230</td><td>Sungrass</td><td>Azshara, The Hinterlands, Feralas</td></tr>
+<tr><td>235</td><td>Blindweed</td><td>Swamp of Sorrows, Un'Goro Crater</td></tr>
+<tr><td>245</td><td>Ghost Mushroom</td><td>The Hinterlands, Desolace</td></tr>
+<tr><td>250</td><td>Gromsblood</td><td>Felwood, Desolace</td></tr>
+<tr><td>260</td><td>Golden Sansam</td><td>Un'Goro, Azshara, Eastern Plaguelands</td></tr>
+<tr><td>270</td><td>Dreamfoil</td><td>Azshara, Eastern Plaguelands, Un'Goro</td></tr>
+<tr><td>280</td><td>Mountain Silversage</td><td>Winterspring, Un'Goro, Azshara</td></tr>
+<tr><td>285</td><td>Plaguebloom</td><td>Eastern and Western Plaguelands</td></tr>
+<tr><td>290</td><td>Icecap</td><td>Winterspring</td></tr>
+<tr><td>300</td><td>Black Lotus</td><td>Burning Steppes, Winterspring, Eastern Plaguelands</td></tr>
+<tr><td>?</td><td>Marefoil, Demonsage, Death Lotus (new, item level 60)</td><td>Not known yet. Death Lotus: a small chance from any herb in Hyjal with Enchant Gloves - Lotus Claw (Enchanting 295). <span class="badge b-unc">Unconfirmed</span></td></tr>
+</table></div>
+<p class="note">Herb skill requirements: <span class="badge b-data">Datamined</span> from the client's lock table. Zone lists: <span class="badge b-cls">Classic-inferred</span> (fan sites count Classic spawn points; Forever's new zones aren't in that data). Skill-ups: a herb gives a point every time for its first 25 points, then less often until it goes grey 100 points past its requirement. <span class="badge b-cls">Classic-inferred</span></p>
+</section>
+
+<section>
+<h2 id="herb-path">3. Herbalism zone path 1-300 (Horde-friendly)</h2>
+<div class="tbl"><table>
+<tr><th>Skill</th><th>Pick</th><th>Where</th></tr>
+<tr><td>1-70</td><td>Peacebloom, Silverleaf, Earthroot (15)</td><td><span class="horde">Horde:</span> Durotar, Mulgore or Tirisfal. Respawns in starting zones were fast enough in the beta to run small loops on foot. <span class="alli">Alliance:</span> Elwynn, Dun Morogh, Teldrassil.</td></tr>
+<tr><td>50</td><td colspan="2">Train Journeyman (level 10) at a full trainer.</td></tr>
+<tr><td>70-115</td><td>Mageroyal, Briarthorn, Stranglekelp (85), Bruiseweed (100)</td><td><span class="horde">Horde:</span> southern Silverpine Forest, or The Barrens. <span class="alli">Alliance:</span> Loch Modan, Darkshore.</td></tr>
+<tr><td>115-170</td><td>Bruiseweed, Wild Steelbloom, Kingsblood (125), Liferoot (150)</td><td>Hillsbrad Foothills (loop from Tarren Mill), Stonetalon, Wetlands. Save the Kingsblood and Liferoot areas until you pass 125 and 150.</td></tr>
+<tr><td>125</td><td colspan="2">Train Expert (level 20).</td></tr>
+<tr><td>170-205</td><td>Goldthorn, Fadeleaf, Khadgar's Whisker (185), Wintersbite (195)</td><td>Arathi Highlands (Hammerfall), Stranglethorn Vale (Grom'gol), Swamp of Sorrows (Stonard), Alterac Mountains. <span class="badge b-cls">Classic-inferred</span></td></tr>
+<tr><td>200</td><td colspan="2">Train Artisan (level 35) before you leave; there is no trainer in Tanaris or Searing Gorge.</td></tr>
+<tr><td>205-230</td><td>Firebloom, Purple Lotus, Arthas' Tears (220)</td><td>Tanaris, Searing Gorge, Badlands; Western Plaguelands or Felwood for Arthas' Tears. <span class="badge b-cls">Classic-inferred</span></td></tr>
+<tr><td>230-270</td><td>Sungrass, Purple Lotus, Ghost Mushroom (245), Golden Sansam (260)</td><td>The Hinterlands (Revantusk Village; Ghost Mushroom cave from 245), Feralas, Azshara, Un'Goro. <span class="badge b-cls">Classic-inferred</span></td></tr>
+<tr><td>270-300</td><td>Dreamfoil, Mountain Silversage, Plaguebloom, Icecap</td><td>Eastern Plaguelands, Winterspring, Un'Goro, Felwood. <span class="badge b-cls">Classic-inferred</span></td></tr>
+</table></div>
+<p class="note">Routes up to about 170 were walked on the beta by one guide writer. Above that, the routes are Classic's, untested in Forever. <span class="badge b-unc">Unconfirmed</span> Blizzard raised respawn rates of "creatures and objects" in Hillsbrad, Ashenvale, Wetlands, Duskwood and Thousand Needles on 1 Oct. <span class="badge b-conf">Confirmed</span> Whether that includes herb nodes isn't stated.</p>
+<h3>Skill boosts</h3>
+<ul>
+<li>Herbalist's Gloves (Leatherworking 110) +5; Enchant Gloves - Herbalism +2; Enchant Gloves - Advanced Herbalism +5.</li>
+<li>Goldthorn Tea +15 Herbalism. Cooking 175; Henry Stern in Razorfen Downs teaches it. <span class="badge b-unc">Unconfirmed</span> (one guide)</li>
+<li>Tauren Cultivation (reworked): grows a copy of a nearby herb that you can pick without Herbalism skill. Your level must be at least the herb's skill requirement divided by 5 (level 60 for herbs above 300). Cooldown is 15 minutes. <span class="badge b-conf">Confirmed</span></li>
+</ul>
+</section>
+
+<section>
+<h2 id="herb-forever">4. Forever-only Herbalism</h2>
+<ul>
+<li><strong>Scarce materials:</strong> Frilled Lichen (from Earthroot, Mageroyal, Briarthorn and Stranglekelp, plus Peacebloom per testers), Rosecap (Kingsblood, Fadeleaf, Goldthorn) and Stranglevine (higher-level herbs, not pinned down). They drop while you pick. They go into Alchemy dyes (Cerulean, Viridian and a rosecap-based dye) and some enchants. <span class="badge b-unc">Unconfirmed</span> (drop sources)</li>
+<li><strong>Herb Seeds</strong> in four tiers (Commonplace, Uncommon, Unusual, Scarce) drop from herbs.</li>
+<li><strong>Camp objects</strong> are made in a new "Gardening" window; each craft makes 2.
+<ul>
+<li>Incense Candle (20; 1 Peacebloom + 1 Silverleaf): Intellect for everyone sitting nearby, 25 at level 60. It doesn't stack with Arcane Intellect.</li>
+<li>Greenhouse (140; blueprint from Shadetooth, Excavation Site: Wetlands): plant 1 seed and pick the herb about 8 minutes later. The Greenhouse lasts about 15 minutes, so you get one planting. Seen so far: Commonplace seeds grow Peacebloom or Earthroot, Uncommon grow Silverleaf or Kingsblood, Scarce grow Ghost Mushroom. <span class="badge b-unc">Unconfirmed</span> (tester reports)</li>
+<li>Seed Hybridizer (300): combine 2 seeds of a tier to multiply them or upgrade the tier.</li>
+<li>All camp objects share a 1-hour cooldown.</li>
+</ul> <span class="badge b-conf">Confirmed</span> (system) <span class="badge b-data">Datamined</span> (values)</li>
+<li><strong>Bags:</strong> new Apprentice's Herb Pouch (4 slots) from many trade vendors. Cenarion Herb Bag is 26 slots (20 in Classic) and Satchel of Cenarius is 32 (24 in Classic).</li>
+<li><strong>No Legacy points</strong> for gathering skill. Only the six crafting professions earn them.</li>
+</ul>
+</section>
+
+<section>
+<h2 id="alch-train">5. Alchemy ranks and trainers</h2>
+<div class="tbl"><table>
+<tr><th>Rank (skill cap)</th><th>Requirement</th><th>Trainer</th></tr>
+<tr><td>Apprentice (75)</td><td>Level 5, or none <span class="badge b-unc">Unconfirmed</span> (sources disagree)</td><td><span class="horde">Horde:</span> Whuut (Orgrimmar), Kray (Thunder Bluff), Doctor Martin Felben (Undercity), Miao'zan (Sen'jin Village), Carolai Anise (Brill). Mulgore has none.<br><span class="alli">Alliance:</span> Tel'Athir (Stormwind), Vosur Brakthel (Ironforge), Milla Fairancora (Darnassus), Alchemist Mallory (Elwynn), Cyndra Kindwhisper (Dolanaar), Ghak Healtouch (Thelsamar)<br><strong>Zephras Isle:</strong> Iaadaria Bitterwind or Valiena Swiftgale (Valanaar), Nyassa Swiftdraught (Shen'dar)</td></tr>
+<tr><td>Journeyman (150)</td><td>Skill 50, level 10</td><td><span class="horde">Horde:</span> Yelmak (Orgrimmar), Bena Winterhoof (Thunder Bluff), Doctor Marsh (Undercity), Serge Hinott (Tarren Mill)<br><span class="alli">Alliance:</span> Lilyssia Nightbreeze (Stormwind), Tally Berryfizz (Ironforge), Sylvanna Forestmoon (Darnassus), Kylanna (Ashenvale)<br><strong>Neutral:</strong> Jaxin Chong (Booty Bay)</td></tr>
+<tr><td>Expert (225)</td><td>Skill 125, level 20, 50s</td><td><span class="horde">Horde:</span> Doctor Herbert Halsey (Undercity)<br><span class="alli">Alliance:</span> Ainethil (Darnassus)</td></tr>
+<tr><td>Artisan (300)</td><td>Skill 200, level 35 <span class="badge b-unc">Unconfirmed</span> (above the beta cap)</td><td><span class="horde">Horde:</span> Rogvar (Stonard, Swamp of Sorrows)<br><span class="alli">Alliance:</span> Kylanna Windwhisper (Feathermoon, Feralas)</td></tr>
+</table></div>
+<p class="note">Costs other than Expert (50s, one guide) are not listed by Forever sources. Classic charged 10c, 5s and 5g for the other ranks. <span class="badge b-cls">Classic-inferred</span> Vials: Empty, Leaded and Crystal Vials come from Alchemy or Trade Supplies vendors near most trainers, such as Kor'geld in Orgrimmar.</p>
+<ul>
+<li><strong>Skill 150, 225 and 300:</strong> one account-wide Legacy point each, the first time any character on the account reaches them. <span class="badge b-conf">Confirmed</span></li>
+<li><strong>Skill 300:</strong> Alchemy Certification for 1,000 Merchant's Favor unlocks the account-wide "the Alchemist" title. <span class="badge b-data">Datamined</span></li>
+</ul>
+</section>
+
+<section>
+<h2 id="alch-path">6. Alchemy path 1-300</h2>
+<p>Craft the cheapest recipe that is still orange or yellow. The backbone below is one beta guide's route (wow-professions.com), so the shopping list in section 7 matches it. The colors are from the beta client. Two other guides use different steps; their swaps are in the last column.</p>
+<div class="tbl"><table>
+<tr><th>Skill</th><th>Craft (colors)</th><th>Each needs</th><th>Swaps and notes</th></tr>
+<tr><td>1-10</td><td>Minor Arcane Elixir or Elixir of Minor Force (orange to 10, grey at 15)</td><td>1 Peacebloom or 1 Silverleaf, 1 Empty Vial</td><td>Or start straight on Elixir of Minor Defense.</td></tr>
+<tr><td>10-55</td><td>Elixir of Minor Defense (1/55/75/95)</td><td>1 Silverleaf, 1 Peacebloom, 1 Empty Vial</td><td>Forever changed its reagents (Classic: 2 Silverleaf).</td></tr>
+<tr><td>50</td><td colspan="3">Train Journeyman (level 10).</td></tr>
+<tr><td>55-65</td><td>Minor Mana Potion (25/65/85/105)</td><td>1 Mageroyal, 1 Peacebloom, 1 Empty Vial</td><td>Another guide runs it to ~92 instead of the next step. Changed reagents from Classic.</td></tr>
+<tr><td>65-90</td><td>Elixir of Minor Fortitude (50/80/100/120)</td><td>2 Earthroot, 1 Peacebloom, 1 Empty Vial</td><td>One database flags this trainer recipe as deprecated. <span class="badge b-unc">Unconfirmed</span> If the trainer lacks it, keep making Minor Mana Potions.</td></tr>
+<tr><td>90-120</td><td>Elixir of Wisdom (90/120/140/160)</td><td>1 Mageroyal, 2 Briarthorn, 1 Empty Vial</td><td>Tailors: keep some for Gloves of Meditation.</td></tr>
+<tr><td>120-130</td><td>Lesser Mana Potion (120/145/165/185)</td><td>1 Mageroyal, 1 Stranglekelp, 1 Empty Vial</td><td>Good Hunter mana potion for levels 14+.</td></tr>
+<tr><td>125</td><td colspan="3">Train Expert (level 20, 50s).</td></tr>
+<tr><td>130-150</td><td>Fire Oil, makes 2 (130/150/160/170)</td><td>2 Firefin Snapper, 1 Empty Vial</td><td>Keep 30 Fire Oil for the next step. No fish? Make ~20 more Lesser Mana Potions instead.</td></tr>
+<tr><td>150-165</td><td>Elixir of Fire Power (140/165/185/205)</td><td>2 Fire Oil, 1 Kingsblood, 1 Leaded Vial</td><td>Or keep making Lesser Mana Potions to 165 (~22).</td></tr>
+<tr><td>165-195</td><td>Mana Potion (160/180/200/220)</td><td>1 Stranglekelp, 1 Kingsblood, 1 Leaded Vial</td><td><strong>Hunter swap at 185:</strong> Elixir of Agility (185/205/225/245; 1 Stranglekelp, 1 Goldthorn, 1 Leaded Vial) is orange to 205, and Quickdraw Quiver needs one.</td></tr>
+<tr><td>195-225</td><td>Nature Protection Potion (190/210/230/250)</td><td>1 Liferoot, 1 Stranglekelp, 1 Leaded Vial</td><td>Recipe binds on pickup. <span class="horde">Horde:</span> Bronk (Feralas), Glyx Brewright (Stranglethorn), Alchemist Pestlezugg (Tanaris). <span class="alli">Alliance:</span> Logannas (Feralas). No-travel option: Greater Mana Potion from the trainer at 205 (205/220/240/260; Khadgar's Whisker + Goldthorn + Leaded Vial).</td></tr>
+<tr><td>200</td><td colspan="3">Train Artisan (level 35) with Rogvar in Stonard.</td></tr>
+<tr><td>225-230</td><td>Nature Protection Potion</td><td>as above</td><td rowspan="6">Everything from here is <span class="badge b-unc">Unconfirmed</span>: untested above the beta cap.</td></tr>
+<tr><td>230-265</td><td>Draught of Detect Undead (230/245/265/285)</td><td>1 Arthas' Tears, 1 Crystal Vial</td></tr>
+<tr><td>265-275</td><td>Superior Mana Potion (260/275/295/315)</td><td>2 Sungrass, 2 Blindweed, 1 Crystal Vial</td></tr>
+<tr><td colspan="3">Recipe: Algernon (Undercity) for <span class="horde">Horde</span>, Ulthir (Darnassus) for <span class="alli">Alliance</span>. One guide sells it at 1g 20s.</td></tr>
+<tr><td>275-290</td><td>Cheapest of: Superior Mana Potion; Elixir of Greater Defense (265/280/300/320; 2 Stonescale Oil, 1 Sungrass, 1 Crystal Vial; recipe Kor'geld, Orgrimmar); Elixir of Shadow Power (250/265/285/305; 3 Ghost Mushroom, 1 Crystal Vial; recipe Algernon)</td><td>see left</td></tr>
+<tr><td>290-300</td><td>Major Frenzy Potion (290/295/298/300), 240 Merchant's Favor</td><td>3 Plaguebloom, 2 Blindweed, 1 Imbued Vial</td></tr>
+</table></div>
+<p class="note">Alternative routes: foreverartisan.app goes Minor Mana to 92, Elixir of Wisdom to 137, Fire Oil to 161, Free Action Potion, Greater Discolored Healing Potion, Fire Protection Potion to 230, then Detect Undead, Detect Demon and Superior Mana. foreverchanges.pro uses Blackmouth Oil and Swim Speed Potion at 80-130, and finishes with Elixir of Greater Defense and Major Mana Potion. Classic's last points came from Major Healing Potion, which is now First Aid.</p>
+</section>
+
+<section>
+<h2 id="shopping">7. Alchemy shopping list</h2>
+<p>These are the totals one beta guide (wow-professions.com) lists for its route, which is the backbone above. The vials are summed step by step from the same route, so buy a few extra. Yellow and green crafts can miss a point.</p>
+<p><strong>No AH gold prices are given.</strong> Forever has no realms. Each ruleset pool (Normal, PvP, RP) gets its own shared auction house, and they all open empty at launch. Blizzard has not announced an auctions API for Forever, and fan price sites rely on player-uploaded scans. Beta prices won't carry over, so any number now would be a guess.</p>
+<div class="tbl"><table>
+<tr><th>Where</th><th>Item</th><th>1-225</th><th>225-300</th></tr>
+<tr><td rowspan="9">Herbalism or AH</td><td>Peacebloom</td><td>91</td><td>-</td></tr>
+<tr><td>Silverleaf</td><td>45</td><td>-</td></tr>
+<tr><td>Mageroyal</td><td>50</td><td>-</td></tr>
+<tr><td>Earthroot</td><td>54</td><td>-</td></tr>
+<tr><td>Briarthorn</td><td>60</td><td>-</td></tr>
+<tr><td>Stranglekelp</td><td>82</td><td>12</td></tr>
+<tr><td>Kingsblood</td><td>36 + 15</td><td>-</td></tr>
+<tr><td>Liferoot</td><td>36</td><td>12</td></tr>
+<tr><td>Arthas' Tears / Sungrass / Blindweed / Plaguebloom</td><td>-</td><td>45 / 60 / 60 + 34 / 51 (to 300; the guide marks its 275-300 list as not final)</td></tr>
+<tr><td>Fishing or AH</td><td>Firefin Snapper</td><td>40 (or 42 Mageroyal + 42 Stranglekelp instead)</td><td>-</td></tr>
+<tr><td rowspan="4">Vendor</td><td>Empty Vial</td><td>~151</td><td>-</td></tr>
+<tr><td>Leaded Vial</td><td>~87</td><td>~12</td></tr>
+<tr><td>Crystal Vial</td><td>-</td><td>~75</td></tr>
+<tr><td>Imbued Vial</td><td>-</td><td>17</td></tr>
+<tr><td rowspan="3">One-off buys</td><td>Expert training</td><td colspan="2">50s</td></tr>
+<tr><td>Recipe: Nature Protection Potion (binds on pickup)</td><td colspan="2">Vendor; price not listed</td></tr>
+<tr><td>Recipe: Superior Mana Potion</td><td colspan="2">1g 20s (one guide) <span class="badge b-unc">Unconfirmed</span></td></tr>
+</table></div>
+<p class="note">Hunter swap: each Elixir of Agility you make instead of a Mana Potion trades 1 Kingsblood for 1 Goldthorn.</p>
+</section>
+
+<section>
+<h2 id="key">8. Key recipes (Hunter angle)</h2>
+<div class="tbl"><table>
+<tr><th>Recipe</th><th>Skill (colors)</th><th>Reagents</th><th>Effect and source</th></tr>
+<tr><td>Elixir of Minor Agility</td><td>50 (50/80/100/120)</td><td>Swiftthistle, Silverleaf, Empty Vial</td><td>+4 Agility, 1 hr; use level 2. Recipe is a drop.</td></tr>
+<tr><td>Elixir of Lesser Agility</td><td>140 (140/165/185/205)</td><td>Wild Steelbloom, Swiftthistle, Leaded Vial</td><td>+8 Agility, 1 hr; use level 18. Recipe is a drop.</td></tr>
+<tr><td><strong>Elixir of Agility</strong></td><td>185 (185/205/225/245)</td><td>Stranglekelp, Goldthorn, Leaded Vial</td><td>+15 Agility, 1 hr; use level 27. Trainer. <strong>Quickdraw Quiver needs one</strong> (with 12 Thick Leather, 1 Cured Thick Hide, 4 Silken Thread).</td></tr>
+<tr><td>Elixir of Greater Agility</td><td>240 (240/255/275/295)</td><td>Sungrass, Goldthorn, Crystal Vial</td><td>+25 Agility, 1 hr; use level 38. Trainer.</td></tr>
+<tr><td><strong>Elixir of the Mongoose</strong></td><td>280 (280/295/315/335)</td><td>2 Mountain Silversage, 2 Plaguebloom, Crystal Vial</td><td>+25 Agility and +2% crit, 30 min; use level 46. Recipe is a drop, so check the AH.</td></tr>
+<tr><td>Frenzy Potion line (new)</td><td>Minor 40 up to Major 290</td><td>e.g. Frenzy Potion: 2 Fadeleaf, 2 Briarthorn, Leaded Vial</td><td>Frenzy Potion: +28 Attack Power for 30 sec. Mid and high ranks cost Merchant's Favor (Frenzy Potion 45; Major 240). Whether it adds ranged attack power isn't stated. <span class="badge b-unc">Unconfirmed</span></td></tr>
+<tr><td>Potion of Predatory Senses (new)</td><td>195 (195/200/202/205)</td><td>2 Fadeleaf, 2 Goldthorn, Leaded Vial</td><td>Slightly better stealth detection, 90 sec, use level 45. Recipe source unknown. On 16 Oct it became a potion on the combat-potion cooldown with a shorter duration. <span class="badge b-conf">Confirmed</span></td></tr>
+</table></div>
+<h3>Mana potions (Hunters use mana)</h3>
+<div class="tbl"><table>
+<tr><th>Potion</th><th>Skill (colors)</th><th>Reagents</th><th>Restores / use level / recipe</th></tr>
+<tr><td>Minor Mana Potion</td><td>25 (25/65/85/105)</td><td>Mageroyal, Peacebloom, Empty Vial</td><td>140-180 mana / 5 / trainer</td></tr>
+<tr><td>Lesser Mana Potion</td><td>120 (120/145/165/185)</td><td>Mageroyal, Stranglekelp, Empty Vial</td><td>280-360 / 14 / trainer</td></tr>
+<tr><td>Mana Potion</td><td>160 (160/180/200/220)</td><td>Stranglekelp, Kingsblood, Leaded Vial</td><td>455-585 / 22 / trainer</td></tr>
+<tr><td>Greater Mana Potion</td><td>205 (205/220/240/260)</td><td>Khadgar's Whisker, Goldthorn, Leaded Vial</td><td>700-900 / 31 / trainer</td></tr>
+<tr><td>Superior Mana Potion</td><td>260 (260/275/295/315)</td><td>2 Sungrass, 2 Blindweed, Crystal Vial</td><td>900-1500 / 41 / Algernon (Undercity), Ulthir (Darnassus)</td></tr>
+<tr><td>Major Mana Potion</td><td>295 (295/310/330/350)</td><td>3 Dreamfoil, 2 Icecap, Crystal Vial</td><td>1350-2250 / 49 / Magnus Frostwake (Western Plaguelands)</td></tr>
+</table></div>
+<p class="note">All mana potions share a 2-minute cooldown. The launch client (build 70707) changed the use effect of Superior Mana Potion; no source says how. <span class="badge b-data">Datamined</span></p>
+<h3>Camp objects</h3>
+<ul>
+<li>Mana Well (20; Peacebloom + Empty Vial): mana regeneration for everyone sitting nearby, 29 mana every 5 sec at level 60.</li>
+<li>Fermenter (140, blueprint): makes some Alchemy reagents. One site says the blueprint drops from Rath'mael. <span class="badge b-unc">Unconfirmed</span></li>
+<li>Alchemy Laboratory (300, blueprint): needed for the most advanced recipes.</li>
+</ul>
+<p class="note">Flasks still exist, including new Flasks of Natural Accuracy, Aggression, Precision and Swiftness at 300. They need Death Lotus plus Marefoil or Demonsage, whose sources aren't known. <span class="badge b-data">Datamined</span></p>
+</section>
+
+<section>
+<h2 id="healing">9. Healing potions moved to First Aid</h2>
+<ul>
+<li>In Forever, Minor through Major Healing Potion are <strong>First Aid</strong> recipes, with spices added to the reagents. Every character can make them. Several fan sites agree, and the beta client lists them under First Aid. <span class="badge b-data">Datamined</span> One database still lists the old Alchemy healing-potion entries. Another says those spells are gone from the client and only skill-table stubs remain. <span class="badge b-unc">Unconfirmed</span></li>
+<li>Alchemy instead makes <strong>Discolored Healing Potions</strong> in six ranks: Minor (quest recipe), Lesser 85, regular 135, Greater 175, Superior 230 and Major. Each needs a Murloc Eye plus a herb.
+<ul>
+<li>Example: Discolored Healing Potion (Bruiseweed, Murloc Eye, Leaded Vial) heals 600-680, then you take 75% of that back over time as a 6-sec poison or a 12-sec disease.</li>
+<li>Since 8 Oct, that damage no longer breaks crowd control. <span class="badge b-conf">Confirmed</span></li>
+</ul></li>
+<li>For Hunters, this means regular healing potions come from your own First Aid, not from Alchemy.</li>
+</ul>
+</section>
+
+<section>
+<h2 id="transmutes">10. Transmutes and specializations</h2>
+<ul>
+<li><strong>Specializations:</strong> none in Forever. Potion, Elixir and Transmutation Master came with The Burning Crusade and are not included. Two fan sites say so; Blizzard hasn't. <span class="badge b-unc">Unconfirmed</span></li>
+<li><strong>Transmutes exist</strong> <span class="badge b-data">Datamined</span>:
+<ul>
+<li>Iron to Gold and Mithril to Truesilver (225).</li>
+<li>Arcanite (275).</li>
+<li>Elemental essences: Air to Fire, Fire to Earth, Earth to Water, Water to Air, Earth to Life, Life to Earth, Undeath to Water, Water to Undeath (275).</li>
+<li>Elemental Fire (300).</li>
+<li>New: Transmute: Legionite (275; Heavy Thorium Bar + Fel Crystal).</li>
+</ul></li>
+<li><strong>Stones:</strong> Philosopher's Stone (225). Alchemist's Stone can be learned at 275 (300 in Classic). It replaces a Philosopher's Stone for transmutes and boosts healing and mana potions. Its source isn't known.</li>
+<li><strong>Cooldowns:</strong> the launch client changed a value on several transmute spells; no source explains it. <span class="badge b-data">Datamined</span> Expect Classic-style cooldowns until tested. <span class="badge b-cls">Classic-inferred</span></li>
+</ul>
+</section>
+
+<section>
+<h2 id="systems">11. Legacy perks and Merchant's Favor</h2>
+<h3>Legacy perks (account-wide)</h3>
+<ul>
+<li>Working Overtime: +4% skill-up chance per rank, 5 ranks, any tradeskill.</li>
+<li>Dedicated Study: +1 to your lowest primary or secondary tradeskill, 23h cooldown. At all-300 it gives 2-4 elemental essences instead.</li>
+<li>Bountiful Harvest: +20% Scarce materials per rank, 5 ranks. It doesn't add extra herbs.</li>
+<li>Performance Bonus: 5/10/15% chance of double crate Favor.</li>
+<li>Reagent Economy: the Incense Candle costs no reagents.</li>
+</ul>
+<p><span class="badge b-conf">Confirmed</span> (perks exist) <span class="badge b-data">Datamined</span> (values)</p>
+<h3>Merchant's Favor</h3>
+<p>Fill "Waylaid Crate" items (world drops from level 10, also on the AH) and hand them in sealed for Favor. Hand-ins and Alchemy recipes are at:</p>
+<ul>
+<li><span class="horde">Horde:</span> Durotar Supply and Logistics just west of the Crossroads. Apothecary Durelle sells the Alchemy recipes (Barrens 49.8, 29.4).</li>
+<li><span class="alli">Alliance:</span> Azeroth Commerce Authority, Three Corners, Redridge. Nina Surefire sells the Alchemy recipes (10.8, 72.4).</li>
+</ul>
+<ul>
+<li><strong>Herb crates</strong> take one bundle per crate, e.g. 20 Peacebloom, 20 Silverleaf, 10 Kingsblood, 20 Liferoot or 20 Dreamfoil. Bands: Apprentice and Journeyman (level 10), Expert (20), Artisan (35).</li>
+<li><strong>Alchemy Favor recipes</strong> (28 plus the Certification), including:
+<ul>
+<li>45 Favor, skill 65-140: Lesser Mageblood, Lesser Intellect, Lesser Cleric's, Mender's, Spellblasting, Frenzy.</li>
+<li>120 Favor, 165-245: Greater Spirit, Greater Mageblood, Greater Fortitude, Dragonfire.</li>
+<li>180 Favor, 250-285: Phalanx, Cunning, Ferocity, Sages, Whale, Owl, Nature Power, Wicked Regeneration.</li>
+<li>240 Favor, 290-300: Major Frenzy, Grizzly.</li>
+</ul></li>
+</ul>
+<p><span class="badge b-data">Datamined</span></p>
+</section>
+
+<section>
+<h2 id="changes">12. Recent changes (up to 31 Oct)</h2>
+<ul>
+<li><strong>Launch client build 1.60.1.70707 (30 Oct):</strong>
+<ul>
+<li>Use effects changed on Superior Healing Potion, Superior Mana Potion and Swiftness Potion (details not published).</li>
+<li>A value changed on several transmute spells.</li>
+<li>No herb or recipe additions.</li>
+</ul> <span class="badge b-data">Datamined</span></li>
+<li><strong>30 Oct server hotfixes (unannounced):</strong> 36 recipe entries arrived, all Blacksmithing, Leatherworking or Enchanting. None for Alchemy or Herbalism. <span class="badge b-unc">Unconfirmed</span></li>
+<li><strong>26-27 Oct notes:</strong> racial changes only, with no profession changes. <span class="badge b-conf">Confirmed</span></li>
+<li><strong>16 Oct:</strong>
+<ul>
+<li>Vendor sell prices reduced on many profession-crafted items.</li>
+<li>Draught of Predatory Senses became a Potion on the combat-potion cooldown, with a shorter duration.</li>
+<li>Tauren Cultivation cooldown cut to 15 minutes.</li>
+<li>Legacy Bartering no longer discounts training.</li>
+</ul> <span class="badge b-conf">Confirmed</span></li>
+<li><strong>8 Oct:</strong> Discolored Healing Potion damage no longer breaks crowd control. <span class="badge b-conf">Confirmed</span></li>
+<li><strong>1 Oct:</strong> respawn rates raised for creatures and objects in Hillsbrad, Ashenvale, Wetlands, Duskwood and Thousand Needles. <span class="badge b-conf">Confirmed</span></li>
+<li><strong>24 Sep:</strong> Cultivation now needs player level of at least the herb's skill requirement divided by 5. <span class="badge b-conf">Confirmed</span></li>
+</ul>
+<h3>Open conflicts</h3>
+<ul>
+<li>Apprentice level gate (Herbalism and Alchemy): level 5 vs none.</li>
+<li>Training costs: only Expert Alchemy (50s) has a Forever source.</li>
+<li>Elixir of Minor Fortitude: trainer step in two guides, flagged deprecated in one database.</li>
+<li>Whether Alchemy keeps any standard Healing Potion recipe.</li>
+<li>Whether every full Herbalism trainer teaches Artisan.</li>
+<li>Specializations: absent per fan sites, not stated by Blizzard.</li>
+<li>Herbalism routes above ~170 and all Alchemy steps above 225: untested.</li>
+<li>Shopping counts vary by route.</li>
+</ul>
+</section>
+
+<section>
+<h2 id="sources">13. Sources</h2>
+<ul>
+<li><a href="https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-october-26/2360696">Blizzard: WoW Forever Beta Development Notes (updated 26-27 Oct)</a></li>
+<li><a href="https://news.blizzard.com/en-us/article/24301516/gather-around-the-campfire-in-world-of-warcraft-forever">Blizzard: Gather Around the Campfire</a></li>
+<li><a href="https://www.wowhead.com/forever/news/no-more-realms-in-wow-forever-382866">Wowhead: No More Realms in WoW Forever</a></li>
+<li><a href="https://us.forums.blizzard.com/en/blizzard/t/world-of-warcraft-forever-api-namespace/59774">Blizzard API forum: Forever API namespace thread</a></li>
+<li><a href="https://www.wow-professions.com/forever/herbalism-leveling-guide">wow-professions.com: Forever Herbalism guide</a></li>
+<li><a href="https://www.wow-professions.com/forever/herbalism-changes">wow-professions.com: Forever Herbalism changes</a></li>
+<li><a href="https://www.wow-professions.com/forever/alchemy-leveling-guide">wow-professions.com: Forever Alchemy guide</a></li>
+<li><a href="https://foreverartisan.app/guides/alchemy/">ForeverArtisan: Alchemy 1-300</a></li>
+<li><a href="https://foreverchanges.pro/professions/herbalism">ForeverChanges: Herbalism</a></li>
+<li><a href="https://foreverchanges.pro/professions/alchemy">ForeverChanges: Alchemy</a></li>
+<li><a href="https://wowforever.ninja/professions/alchemy/">wowforever.ninja: Alchemy recipes</a></li>
+<li><a href="https://classicwowforever.com/professions/herbalism/">ClassicWoWForever: Herbalism</a></li>
+<li><a href="https://classicwowforever.com/professions/alchemy/">ClassicWoWForever: Alchemy</a></li>
+<li><a href="https://www.warcraftforever.wiki/wiki/Alchemy">Warcraft Forever Wiki: Alchemy</a></li>
+<li><a href="https://www.warcraftforever.wiki/wiki/Herbalism">Warcraft Forever Wiki: Herbalism</a></li>
+<li><a href="https://www.zockify.com/forever/professions/alchemy/">Zockify: Alchemy overview (specializations)</a></li>
+<li><a href="https://foreverguide.net/professions/alchemy/">Forever Guide: Alchemy recipes (healing potions moved)</a></li>
+<li><a href="https://wowdb.wiki/forever/professions/alchemy/discolored-healing-potion">wowdb.wiki: Discolored Healing Potion</a></li>
+<li><a href="https://foreverchanges.pro/item/8949">ForeverChanges: Elixir of Agility</a></li>
+<li><a href="https://foreverchanges.pro/item/13452">ForeverChanges: Elixir of the Mongoose</a></li>
+<li><a href="https://wowforevercodex.com/item/250327-potion-of-predatory-senses">WoW Forever Codex: Potion of Predatory Senses</a></li>
+<li><a href="https://www.icy-veins.com/wow-forever/news/greenhouse-blueprint-found-how-herbalism-seeds-work-in-wow-forever/">Icy Veins: Greenhouse blueprint and seeds</a></li>
+<li><a href="https://foreverdb.net/item/247841">ForeverDB: Wild Harvest</a></li>
+<li><a href="https://bindonforever.com/changes/1.60.1.70707">Bind on Forever: build 70707 changes</a></li>
+<li><a href="https://kami-labs.fr/en/wow-forever/patch-notes-wow-forever-30-octobre-gagnants-perdants/">kami-labs: 30 Oct unofficial hotfix summary</a></li>
+</ul>
+</section>
+<footer>Fan-made guide. World of Warcraft: Forever is a trademark of Blizzard Entertainment. Data is from pre-launch beta clients and may change.</footer>
+</div>
+</body>
+</html>

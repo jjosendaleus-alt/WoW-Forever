@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#b3161e">
+<meta name="description" content="Horde-first Mining, Blacksmithing and Engineering guide for WoW Forever: ranks, skill paths, shopping lists, Forever mechanics and a Hunter angle.">
+<meta property="og:title" content="WoW Forever: Mining, Blacksmithing &amp; Engineering (pre-launch)">
+<meta property="og:description" content="Horde-first Mining, Blacksmithing and Engineering guide for WoW Forever: ranks, skill paths, shopping lists, Forever mechanics and a Hunter angle.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://jjosendaleus-alt.github.io/WoW-Forever/Mining_Blacksmithing_Engineering_Guide.html">
+<meta property="og:site_name" content="WoW Forever Guides">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="WoW Forever: Mining, Blacksmithing &amp; Engineering (pre-launch)">
+<meta name="twitter:description" content="Horde-first Mining, Blacksmithing and Engineering guide for WoW Forever: ranks, skill paths, shopping lists, Forever mechanics and a Hunter angle.">
+<title>WoW Forever: Mining, Blacksmithing &amp; Engineering (pre-launch)</title>
+<style>
+:root{--bg:#0b0708;--panel:#151012;--panel2:#1d1416;--red:#b3161e;--red2:#e0333b;--gold:#d4a54a;--bronze:#a8743a;--text:#ece4dc;--muted:#b9aca2;--line:#3a2326}
+*{box-sizing:border-box}
+body{margin:0;background:radial-gradient(ellipse at top,#1f0b0d 0%,var(--bg) 60%);color:var(--text);font:16px/1.6 Georgia,"Times New Roman",serif}
+.wrap{max-width:980px;margin:0 auto;padding:16px}
+header{border-bottom:3px solid var(--red);padding:20px 0 12px;text-align:center}
+h1{color:var(--gold);font-size:1.9rem;margin:.2em 0;letter-spacing:.02em;text-shadow:0 2px 0 #000}
+.sub{color:var(--muted);margin:0}
+.banner{background:linear-gradient(90deg,#4a0c10,#2a0a0c);border:1px solid var(--red);border-left:6px solid var(--gold);padding:10px 14px;margin:16px 0;border-radius:6px}
+h2{color:var(--gold);border-bottom:2px solid var(--red);padding-bottom:4px;margin-top:2em;font-size:1.4rem}
+h3{color:var(--red2);font-size:1.12rem;margin-bottom:.3em}
+a{color:#f0c46a}a:hover{color:#fff}
+section,nav{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:6px 18px 14px;margin:14px 0}
+nav ol{columns:2;margin:6px 0;padding-left:1.4em}
+@media(max-width:600px){nav ol{columns:1}h1{font-size:1.5rem}}
+.tbl{overflow-x:auto}
+table{border-collapse:collapse;width:100%;margin:8px 0;font-size:.93rem}
+th{background:#3a0d11;color:var(--gold);text-align:left}
+th,td{border:1px solid var(--line);padding:6px 8px;vertical-align:top}
+tr:nth-child(even) td{background:var(--panel2)}
+.badge{display:inline-block;font:bold .72rem/1.4 Arial,sans-serif;padding:1px 7px;border-radius:10px;margin-left:4px;white-space:nowrap;vertical-align:middle}
+.b-conf{background:#1f4a22;color:#d6f5d8;border:1px solid #3e8a43}
+.b-data{background:#4a3a12;color:#ffe9b0;border:1px solid var(--bronze)}
+.b-unc{background:#5c1015;color:#ffd6d8;border:1px solid var(--red2)}
+.b-cls{background:#2b2b44;color:#dcdcff;border:1px solid #6b6bb0}
+.horde{color:#ff6a6f;font-weight:bold}.alli{color:#8fb4ff;font-weight:bold}
+.note{color:var(--muted);font-size:.9rem}
+.legend li{margin:4px 0}
+footer{color:var(--muted);font-size:.85rem;text-align:center;padding:20px 0;border-top:1px solid var(--line);margin-top:24px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+<h1>WoW Forever: Mining, Blacksmithing &amp; Engineering</h1>
+<p class="sub">Horde-first guide for the 4 Nov 2026 launch, with a Hunter angle</p>
+</header>
+
+<div class="banner"><strong>Last updated 31 Oct 2026, pre-launch, based on beta client data.</strong> The beta stopped at character level 30 and skill 225, so anything above 225 has not been tested in play. Everything here can still change at launch.</div>
+
+<section>
+<h2 id="legend">Badge legend</h2>
+<ul class="legend">
+<li><span class="badge b-conf">Confirmed</span> Stated in Blizzard's own posts or patch notes.</li>
+<li><span class="badge b-data">Datamined</span> Read from the beta or launch client files by fan sites, not yet announced or verified in play.</li>
+<li><span class="badge b-unc">Unconfirmed</span> Player reports, one source only, or sources that disagree.</li>
+<li><span class="badge b-cls">Classic-inferred</span> Taken from Classic data; not shown in Forever data yet.</li>
+</ul>
+<p class="note">Unless marked otherwise, recipe, skill-color and reagent numbers are <span class="badge b-data">Datamined</span> from beta builds 1.60.1.70009 to 70707. Color ranges are written orange / yellow / green / grey, meaning the skill at which a recipe or node turns each color.</p>
+</section>
+
+<nav>
+<h2 style="margin-top:.4em">Contents</h2>
+<ol>
+<li><a href="#overview">Overview and shared rules</a></li>
+<li><a href="#mining">Mining (incl. Smelting)</a></li>
+<li><a href="#bs">Blacksmithing</a></li>
+<li><a href="#eng">Engineering</a></li>
+<li><a href="#hunter">Hunter angle</a></li>
+<li><a href="#shopping">Shopping lists</a></li>
+<li><a href="#forever">Forever mechanics</a></li>
+<li><a href="#changes">Recent changes and open conflicts</a></li>
+<li><a href="#sources">Sources</a></li>
+</ol>
+</nav>
+
+<section>
+<h2 id="overview">1. Overview and shared rules</h2>
+<ul>
+<li><strong>Same professions as Classic.</strong> Forever has the same twelve professions as Classic. Mining is a gathering profession and Smelting is part of it, not a separate profession; you smelt bars at a forge. Blacksmithing and Engineering are crafting professions. <span class="badge b-conf">Confirmed</span></li>
+<li><strong>Rank gates.</strong> Each rank needs a minimum skill: Journeyman at 50, Expert at 125, Artisan at 200.
+<ul>
+<li>Beta testers report character-level gates for the crafting professions: Apprentice level 5, Journeyman 10, Expert 20, Artisan 35. These can't be checked above the beta's level-30 cap. <span class="badge b-unc">Unconfirmed</span></li>
+<li>Mining guides say the higher ranks also need character levels, but haven't confirmed the numbers. <span class="badge b-cls">Classic-inferred</span></li>
+</ul></li>
+<li><strong>Grey sooner than Classic.</strong> Many Blacksmithing recipes stop giving skill-ups sooner than in Classic, typically about 25 points earlier, so don't follow Classic leveling guides. <span class="badge b-data">Datamined</span></li>
+<li><strong>Pairing.</strong> Mining feeds both Blacksmithing and Engineering. For a Hunter, the usual endgame pair is Engineering + Mining; for levelling it's Leatherworking + Skinning (see the companion Leatherworking &amp; Skinning page).</li>
+</ul>
+<p><strong>No AH gold prices are given.</strong> The beta had no reliable price data, Forever launches with brand-new empty auction houses (one per ruleset pool), and Blizzard has not announced an auction API for Forever. Any number now would be a guess.</p>
+</section>
+
+<section>
+<h2 id="mining">2. Mining (including Smelting)</h2>
+<h3>Ranks, trainers and costs</h3>
+<div class="tbl"><table>
+<tr><th>Rank (cap)</th><th>Train at</th><th>Cost</th></tr>
+<tr><td>Apprentice (75)</td><td>Any time</td><td>10c</td></tr>
+<tr><td>Journeyman (150)</td><td>Skill 50</td><td>5s</td></tr>
+<tr><td>Expert (225)</td><td>Skill 125</td><td>50s</td></tr>
+<tr><td>Artisan (300)</td><td>Skill 200</td><td>5g</td></tr>
+</table></div>
+<ul>
+<li><span class="horde">Horde full trainers:</span> Makaru (Orgrimmar), Brek Stonehoof (Thunder Bluff), Brom Killian (Undercity), Krunn (Razor Hill), Johan Focht (The Sepulcher, Silverpine).</li>
+<li><span class="horde">Horde Apprentice-only junior trainers:</span> Norzsh (Valley of Trials), Vartha Rockmane (Red Cloud Mesa), Walter Mason (Deathknell).</li>
+<li><span class="alli">Alliance:</span> Gelman Stonehand (Stormwind), Geofram Bouldertoe (Ironforge), Yarr Hammerstone and Dank Drizzlecut (Dun Morogh), Brock Stoneseeker (Thelsamar), Kurdram Stonehammer (Auberdine), Matt Johnson (Darkshire). Junior trainers: Kelsey Fargo, Sally Swiftwrench, Fanorran Stilloak.</li>
+<li><strong>Both factions:</strong> Messana Crestwind and Halavuul Cragwind (Zephras Isle), Pikkle (Gadgetzan), Grungle (Powderfuse Port, Riverglades).</li>
+<li>An early starting-zone quest (around level 3-4) offers the book "Mining for Dummies", which teaches Mining and adds 2 skill.</li>
+<li><strong>Tools:</strong> a Mining Pick (10c from trade goods vendors) must be in your bags. The Gnomish Army Knife also counts as a pick. Turn on Find Minerals to see veins on the minimap.</li>
+<li><strong>Skill boosts:</strong> Goblin Mining Helmet (+5; needs Engineering 205), Enchant Gloves - Mining (+2) and the new Advanced Mining (+5).</li>
+<li><strong>Mining pack:</strong> the 4-slot Apprentice's Mining Pack from the junior trainer in Deathknell. <span class="badge b-unc">Unconfirmed</span></li>
+</ul>
+<h3>Node skill requirements</h3>
+<div class="tbl"><table>
+<tr><th>Node</th><th>Orange / yellow / green / grey</th><th>Extras (stone, gems, new rare)</th></tr>
+<tr><td>Copper Vein</td><td>1 / 25 / 50 / 100</td><td>Rough Stone; Malachite, Tigerseye, Shadowgem; Pyrite</td></tr>
+<tr><td>Tin Vein</td><td>65 / 90 / 115 / 165</td><td>Coarse Stone; Moss Agate, Jade; Pyrite</td></tr>
+<tr><td>Silver Vein</td><td>75 / 100 / 125 / 175</td><td>Moss Agate, Lesser Moonstone; Pyrite</td></tr>
+<tr><td>Iron Deposit</td><td>125 / 150 / 175 / 225</td><td>Heavy Stone; Jade, Citrine, Aquamarine; Pyrite</td></tr>
+<tr><td>Gold Vein</td><td>155 / 180 / 205 / 255</td><td>Jade, Citrine; Bauxite</td></tr>
+<tr><td>Mithril Deposit</td><td>175 / 200 / 225 / 275</td><td>Solid Stone; Aquamarine, Star Ruby; Bauxite</td></tr>
+<tr><td>Truesilver Deposit</td><td>230 / 255 / 280 / 330</td><td>Citrine, Aquamarine, Star Ruby</td></tr>
+<tr><td>Dark Iron Deposit</td><td>230 / 255 / 280 / 330</td><td>Searing Gorge, Burning Steppes, Blackrock</td></tr>
+<tr><td>Small Thorium Vein</td><td>245 / 270 / 295 / 345</td><td>Dense Stone; Star Ruby, Blue Sapphire, Large Opal, Azerothian Diamond</td></tr>
+<tr><td>Rich Thorium Vein</td><td>275 / 300 / 325 / 375</td><td>Dense Stone; Arcane Crystal, Huge Emerald</td></tr>
+<tr><td>Heavy Thorium Vein (new, Mount Hyjal)</td><td>Unknown <span class="badge b-unc">Unconfirmed</span></td><td>Dense Stone; Torbernite, Fel Crystal</td></tr>
+</table></div>
+<p class="note">One vein gives at most one skill point. Where Pitchblende comes from (needed for Azerothium) is unknown. <span class="badge b-unc">Unconfirmed</span></p>
+<h3>Zone and node path, 1-300 (Horde first)</h3>
+<div class="tbl"><table>
+<tr><th>Skill</th><th>Node</th><th>Horde</th><th>Alliance / neutral</th></tr>
+<tr><td>1-65</td><td>Copper</td><td>Durotar (Drygulch Ravine, Thunder Ridge, Razor Hill), Mulgore, Tirisfal/Silverpine, The Barrens</td><td>Elwynn, Dun Morogh, Loch Modan, Darkshore; Zephras Isle</td></tr>
+<tr><td>50</td><td colspan="3">Train Journeyman. Junior trainers won't teach it. At skill 20, learn the Lodestone camp object.</td></tr>
+<tr><td>65-125</td><td>Tin, Silver from 75</td><td>The Barrens, Hillsbrad Foothills, Silverpine, Ashenvale, Stonetalon, Thousand Needles</td><td>Redridge, Wetlands, Duskwood, Loch Modan</td></tr>
+<tr><td>125</td><td colspan="3">Train Expert.</td></tr>
+<tr><td>125-175</td><td>Iron; Gold from 155</td><td>Arathi Highlands, Desolace, Thousand Needles, Stranglethorn Vale, Badlands</td><td>Same contested zones; Duskwood (iron)</td></tr>
+<tr><td>175-225</td><td>Mithril (and Gold)</td><td>Tanaris, The Hinterlands, Azshara, Badlands</td><td>Same</td></tr>
+<tr><td>200</td><td colspan="3">Train Artisan.</td></tr>
+<tr><td>225-275</td><td>Mithril, Truesilver from 230, Small Thorium from 245</td><td colspan="2">Hinterlands, Tanaris, Feralas, Searing Gorge (Dark Iron), Blasted Lands, Un'Goro, Felwood</td></tr>
+<tr><td>275-300</td><td>Small and Rich Thorium</td><td colspan="2">Un'Goro Crater, Winterspring, Eastern/Western Plaguelands, Burning Steppes, Azshara</td></tr>
+</table></div>
+<p class="note">Zones above 225 were picked by guide authors from vein lists, not played on the beta. <span class="badge b-unc">Unconfirmed</span></p>
+<h3>Smelting (part of Mining)</h3>
+<p>Smelting gives skill points up to about 185. Between 140 and 155 there is nothing to smelt, so you have to mine.</p>
+<div class="tbl"><table>
+<tr><th>Smelt</th><th>Learn at / cost</th><th>Skill-ups</th><th>Materials</th></tr>
+<tr><td>Copper</td><td>Start</td><td>Orange to 25, grey 70</td><td>1 Copper Ore</td></tr>
+<tr><td>Tin</td><td>65 / 50c</td><td>Grey 75</td><td>1 Tin Ore</td></tr>
+<tr><td>Bronze</td><td>65 / 2s</td><td>Yellow 65, grey 115</td><td>1 Copper Bar + 1 Tin Bar</td></tr>
+<tr><td>Silver</td><td>75 / 2s</td><td>Orange to 100, grey 125</td><td>1 Silver Ore</td></tr>
+<tr><td>Iron</td><td>125 / 5s</td><td>Orange to 130, grey 140</td><td>1 Iron Ore</td></tr>
+<tr><td>Gold</td><td>155 / 25s</td><td>Orange to 170, grey 185</td><td>1 Gold Ore</td></tr>
+<tr><td>Steel / Mithril / Truesilver / Thorium</td><td>165 / 25s; 175 / 50s; 230 / 1g; 250 / 2g</td><td>No skill-ups (grey when learned)</td><td>Bars only</td></tr>
+<tr><td>Azerothium (new)</td><td>275 / 5g</td><td>Grey</td><td>2 Pitchblende + Coal</td></tr>
+<tr><td>Heavy Thorium (new)</td><td>300 / 5g</td><td>-</td><td>Heavy Thorium Ore; must be smelted next to a Molten Foundry. Foundry blueprint source unknown <span class="badge b-unc">Unconfirmed</span></td></tr>
+<tr><td>Dark Iron</td><td>Quest "The Spectral Chalice" (Blackrock Depths)</td><td>-</td><td>8 ore per bar, Black Forge only <span class="badge b-cls">Classic-inferred</span> (quest confirmed in data)</td></tr>
+</table></div>
+<p>A smelting-only route to 185 uses about 130 Copper Ore, 60 Tin Ore, 70 Silver Ore, 35 Iron Ore and 60 Gold Ore, plus mining from 140 to 155.</p>
+</section>
+
+<section>
+<h2 id="bs">3. Blacksmithing</h2>
+<h3>Trainers</h3>
+<ul>
+<li><span class="horde">Horde:</span>
+<ul>
+<li>Apprentice: Dwukk (Razor Hill), Ug'thok (Orgrimmar), Thrag Stonehoof (Thunder Bluff), Basil Frye (Undercity), Guillaume Sorouy (Silverpine), Gur'dok (Riverglades).</li>
+<li>Journeyman: Snarl (Orgrimmar), Traugh (Crossroads), Karn Stonehoof (Thunder Bluff), James Van Brunt (Undercity), Angus Hammerhand (Tirisfal).</li>
+<li>Expert: Saru Steelfury (Orgrimmar).</li>
+</ul></li>
+<li><span class="alli">Alliance:</span>
+<ul>
+<li>Apprentice: Smith Argus (Goldshire), Dane Lindgren (Stormwind), Groum Stonebeard (Ironforge) and others.</li>
+<li>Journeyman: Therum Deepforge (Stormwind), Rotgath Stonebeard (Ironforge), Clarise Gnarltree (Darkshire).</li>
+<li>Expert: Bengus Deepforge (Ironforge).</li>
+</ul></li>
+<li><strong>Artisan (both factions):</strong> Brikk Keencraft, Booty Bay.</li>
+<li><strong>Costs:</strong> rank training costs for Blacksmithing were not found. Individual recipe costs appear in the route below.</li>
+</ul>
+<h3>Efficient path 1-300</h3>
+<p>This route uses only trainer recipes plus two vendor plans and needs no specialization. Above 225 it is untested. <span class="badge b-unc">Unconfirmed</span></p>
+<div class="tbl"><table>
+<tr><th>Skill</th><th>Craft (qty)</th><th>Each needs</th><th>Learn / colors</th></tr>
+<tr><td>1-25</td><td>Rough Sharpening Stone (26)</td><td>1 Rough Stone</td><td>Known; yellow 15</td></tr>
+<tr><td>25-74</td><td>Rough Grinding Stone (71)</td><td>2 Rough Stone</td><td>Trainer 1s; yellow 45, green 65</td></tr>
+<tr><td>74-100</td><td>Runed Copper Belt (30)</td><td>10 Copper Bar</td><td>Trainer 2s; yellow 85</td></tr>
+<tr><td>100-119</td><td>Heavy Grinding Stone (35)</td><td>3 Heavy Stone</td><td>Trainer 10s; green 112</td></tr>
+<tr><td>119-140</td><td>Patterned Bronze Bracers (27)</td><td>5 Bronze Bar, 2 Coarse Grinding Stone</td><td>Trainer 5s; yellow 125</td></tr>
+<tr><td>140-175</td><td>Green Iron Bracers (38)</td><td>6 Iron Bar, 1 Green Dye</td><td>Trainer 10s; yellow 165</td></tr>
+<tr><td>175-183</td><td>Solid Grinding Stone (18)</td><td>4 Solid Stone</td><td>Trainer 25s; green 180</td></tr>
+<tr><td>183-195</td><td>Golden Scale Bracers (15)</td><td>5 Steel Bar, 2 Heavy Grinding Stone</td><td>Trainer 10s; yellow 185</td></tr>
+<tr><td>195-208</td><td>Heavy Mithril Gauntlet (15)</td><td>6 Mithril Bar, 4 Mageweave Cloth</td><td>Trainer 50s; yellow 200</td></tr>
+<tr><td>208-225</td><td>Mithril Coif (17)</td><td>10 Mithril Bar, 6 Mageweave Cloth</td><td>Trainer 1g 50s; all orange</td></tr>
+<tr><td>225-234</td><td>Dense Grinding Stone (348; only the first ~12 give skill, the rest feed the battleaxes)</td><td>4 Dense Stone</td><td>Trainer 1g; yellow 230, green 232</td></tr>
+<tr><td>234-244</td><td>Heavy Mithril Boots (19)</td><td>14 Mithril Bar, 4 Thick Leather</td><td>Trainer 2g; green 240</td></tr>
+<tr><td>244-261</td><td>Ebon Shiv (18)</td><td>12 Mithril, 6 Truesilver, 2 Star Ruby, Solid Grinding Stone, 2 Thick Leather</td><td>Plans 1g, Magnus Frostwake (Western Plaguelands); yellow 255</td></tr>
+<tr><td>261-300</td><td>Huge Thorium Battleaxe (58)</td><td>40 Thorium Bar, 6 Dense Grinding Stone, 6 Rugged Leather</td><td>Plans 2g, Magnus Frostwake; yellow 280, green 292</td></tr>
+</table></div>
+<p class="note">Another route (WowCamp) takes the 273-300 stretch through Bold Dirk (a Merchant's Favor plan needing Azerothium), Thorium Shield Spike, Dark Iron Shoulders and Radiant gear, and starts with the new Copper Rod. <span class="badge b-unc">Unconfirmed</span></p>
+<h3>Specializations</h3>
+<ul>
+<li><strong>Still in the client:</strong> Armorsmith and Weaponsmith (with Axe/Hammer/Swordsmith). Neither is needed to reach 300. Their Forever requirements are unverified because the beta was capped at level 30. <span class="badge b-unc">Unconfirmed</span></li>
+<li><strong>Quest givers:</strong>
+<ul>
+<li><span class="horde">Horde:</span> Okothos Ironrager (Armorsmith) and Borgosh Corebender (Weaponsmith), both in Orgrimmar.</li>
+<li><span class="alli">Alliance:</span> Grumnus Steelshaper and Ironus Coldsteel (Ironforge).</li>
+</ul></li>
+<li>In Classic the chain opened at skill 200. <span class="badge b-cls">Classic-inferred</span></li>
+<li>New Forever plans need no specialization. <span class="badge b-data">Datamined</span></li>
+</ul>
+<h3>Key recipes</h3>
+<ul>
+<li><strong>New role-based mail and plate sets:</strong> Acolyte's, Crusader's, Guard's, Protector's, Veteran's and others. They are sold for 30-120 Merchant's Favor by <span class="horde">Gor'mak</span> (Durotar Supply and Logistics, near the Crossroads) / <span class="alli">Stondry Darkhammer</span> (Three Corners, Redridge).
+<ul>
+<li>The plans bind on pickup.</li>
+<li>Example: Crusader's Boots (85; level-17 mail with Strength, Stamina and spell power; needs Pristine Leather).</li>
+</ul></li>
+<li><strong>New skill-300 Artisan plans (item level 65):</strong> Azerothium Legplates, Heavy Thorium Gauntlets, Evergreen Shield and others.</li>
+<li><strong>Sharpening and grinding stones:</strong> Rough, Coarse, Heavy, Solid and Dense; the grinding stones also feed other recipes.</li>
+</ul>
+</section>
+
+<section>
+<h2 id="eng">4. Engineering</h2>
+<h3>Trainers</h3>
+<ul>
+<li><span class="horde">Horde:</span>
+<ul>
+<li>Apprentice: Mukdrak (Razor Hill), Thund (Orgrimmar), Twizwick Sprocketgrind (Mulgore), Graham Van Talen (Undercity).</li>
+<li>Journeyman: Nogg (Orgrimmar), Franklin Lloyd (Undercity).</li>
+<li>Expert: Roxxik (Orgrimmar).</li>
+</ul></li>
+<li><span class="alli">Alliance:</span>
+<ul>
+<li>Apprentice: Sprite Jumpsprocket (Stormwind), Jemma Quikswitch (Ironforge) and others.</li>
+<li>Journeyman: Lilliam Sparkspindle (Stormwind), Trixie Quikswitch (Ironforge), Finbus Geargrind (Darkshire).</li>
+<li>Expert: Springspindle Fizzlegear (Ironforge).</li>
+</ul></li>
+<li><strong>Both factions:</strong> Tinkerwiz (Ratchet, Apprentice); Buzzek Bracketswing (Gadgetzan, Artisan).</li>
+<li><strong>Costs:</strong> rank training costs were not found.</li>
+</ul>
+<h3>Efficient path 1-300</h3>
+<p>This route is read from client build 70707 (ForeverChanges). Above 225 it is untested. <span class="badge b-unc">Unconfirmed</span></p>
+<div class="tbl"><table>
+<tr><th>Skill</th><th>Craft (about how many)</th><th>Learn</th></tr>
+<tr><td>1-30</td><td>Rough Blasting Powder (~33)</td><td>Trainer</td></tr>
+<tr><td>30-59</td><td>Handful of Copper Bolts (~50, keep)</td><td>Trainer</td></tr>
+<tr><td>59-75</td><td>Copper Tube (~16)</td><td>Trainer</td></tr>
+<tr><td>75-95</td><td>Coarse Blasting Powder (~46, keep)</td><td>Trainer</td></tr>
+<tr><td>95-106</td><td>Copper Modulator (~14)</td><td>Trainer</td></tr>
+<tr><td>106-111</td><td>Silver Contact (~5, keep)</td><td>Trainer</td></tr>
+<tr><td>111-120</td><td>Practice Lock (~10)</td><td>Trainer</td></tr>
+<tr><td>120-125</td><td>Large Copper Bomb (~8)</td><td>Trainer</td></tr>
+<tr><td>125-135</td><td>Heavy Blasting Powder (~14, keep)</td><td>Trainer</td></tr>
+<tr><td>135-146</td><td>Whirring Bronze Gizmo (~16, keep)</td><td>Trainer</td></tr>
+<tr><td>146-150</td><td>Bronze Framework (~5)</td><td>Trainer</td></tr>
+<tr><td>150-160</td><td>Aquadynamic Fish Attractor (~14)</td><td>Trainer</td></tr>
+<tr><td>160-175</td><td>Ice Deflector (~15)</td><td>Schematic, Rizz Loosebolt (Alterac Mountains)</td></tr>
+<tr><td>175-195</td><td>Solid Blasting Powder (~72, keep)</td><td>Trainer</td></tr>
+<tr><td>195-200</td><td>Iron Grenade (~12)</td><td>Trainer</td></tr>
+<tr><td>200-205</td><td>Inlaid Mithril Cylinder (~5)</td><td>Trainer</td></tr>
+<tr><td>205-210</td><td>Mechanical Repair Kit (~7)</td><td>Trainer</td></tr>
+<tr><td>210-245</td><td>Hi-Impact Mithril Slugs (~81; 210 / 210 / 230 / 250)</td><td>Trainer</td></tr>
+<tr><td>245-262</td><td>Mithril Gyro-Shot (245 / 245 / 265 / 285) with Dense Blasting Powder at 250-258</td><td>Trainer</td></tr>
+<tr><td>262-288</td><td>Thorium Widget (~28)</td><td>Schematic, <span class="horde">Sovik (Orgrimmar)</span> / <span class="alli">Gearcutter Cogspinner (Dun Morogh)</span>, limited stock</td></tr>
+<tr><td>288-300</td><td>Thorium Tube (~13)</td><td>Schematic, Xizzer Fizzbolt (Winterspring)</td></tr>
+</table></div>
+<p class="note">A different route (Warcraft Forever Wiki) uses Rough Copper Bomb, Flying Tiger Goggles, Big Iron Bomb, Mithril Casing and Salt Shaker. Both are built from client data; pick whichever matches your materials. <span class="badge b-unc">Unconfirmed</span></p>
+<h3>Specializations: Gnomish or Goblin</h3>
+<ul>
+<li><strong>Both are in Forever.</strong> They open at skill 200 and character level 30. <span class="badge b-unc">Unconfirmed</span> (level not testable on the beta) Neither is needed to level.</li>
+<li><strong>Gnomish quest:</strong> hand in 6 Mithril Tube, 1 Accurate Scope and 2 Advanced Target Dummy.</li>
+<li><strong>Goblin quest:</strong> hand in 20 Big Iron Bomb, 20 Solid Dynamite and 5 Explosive Sheep.</li>
+<li><strong>Quest givers:</strong> <span class="horde">Graham Van Talen (Undercity)</span>, Tinkerwiz (Ratchet), <span class="alli">Lilliam Sparkspindle (Stormwind)</span>, <span class="alli">Springspindle Fizzlegear (Ironforge)</span>.</li>
+<li><strong>Switching</strong> means unlearning Engineering and relevelling it. <span class="badge b-unc">Unconfirmed</span></li>
+<li><strong>Membership card:</strong> lasts 14 days and costs 2g to renew. <span class="badge b-unc">Unconfirmed</span> <span class="badge b-cls">Classic-inferred</span></li>
+</ul>
+</section>
+
+<section>
+<h2 id="hunter">5. Hunter angle</h2>
+<div class="tbl"><table>
+<tr><th>Item</th><th>Skill (orange / yellow / green / grey)</th><th>Materials</th><th>Notes</th></tr>
+<tr><td>Crude Scope (+1 dmg)</td><td>60 / 60 / 90 / 105 / 120</td><td>Copper Tube, Malachite, Handful of Copper Bolts</td><td>Trainer; wear level 5</td></tr>
+<tr><td>Standard Scope (+2)</td><td>110 / 110 / 135 / 147 / 160</td><td>Bronze Tube, Moss Agate</td><td>Trainer; level 10; needs Arclight Spanner</td></tr>
+<tr><td>Accurate Scope (+3)</td><td>180 / 180 / 200 / 210 / 220</td><td>Bronze Tube, Jade, Citrine</td><td>Schematic (binds on pickup); level 20; also needed for the Gnomish quest</td></tr>
+<tr><td>Deadly Scope (+5)</td><td>210 / 210 / 230 / 240 / 250</td><td>Mithril Tube, 2 Aquamarine, 2 Thick Leather</td><td>Schematic; level 30</td></tr>
+<tr><td>Sniper Scope (+7)</td><td>240 / 240 / 260 / 270 / 280</td><td>Mithril Tube, Star Ruby, 2 Truesilver Bar</td><td>Schematic; level 40</td></tr>
+<tr><td>SAF-T Ultra Precision Scope (new, +2% crit)</td><td>300 / 310 / 317 / 325</td><td>Legionite Bar, 12 Heavy Thorium Bar</td><td>Needs Anarchist's Workbench; level 60</td></tr>
+<tr><td>Crafted Light / Heavy / Solid Shot (200 each)</td><td>30 / 75 / 125</td><td>Blasting powder + Copper or Bronze Bar</td><td>2.0 / 4.5 / 8.5 DPS; levels 5 / 15 / 30</td></tr>
+<tr><td>Hi-Impact Mithril Slugs (200)</td><td>210 / 210 / 210 / 230 / 250</td><td>Mithril Bar, Solid Blasting Powder</td><td>12.5 DPS; level 37; also a levelling step</td></tr>
+<tr><td>Mithril Gyro-Shot (200)</td><td>245 / 245 / 245 / 265 / 285</td><td>2 Mithril Bar, 2 Solid Blasting Powder</td><td>15.0 DPS; level 44</td></tr>
+<tr><td>Thorium Shells (200)</td><td>285 / 305 / 315 / 325</td><td>2 Thorium Bar, Dense Blasting Powder</td><td>17.5 DPS; level 52; schematic is tradeable</td></tr>
+<tr><td>Swiftfeather Arrow / Swiftstrike Shot (new, 200)</td><td>300 / 310 / 315 / 320</td><td>8 Heavy Thorium Bar + 5 Light Feather + Elemental Air (arrow) or 8 Dense Stone + Elemental Earth (shot)</td><td>24.5 DPS; level 60; needs Anarchist's Workbench. One guide says Swiftstrike binds on pickup. <span class="badge b-unc">Unconfirmed</span></td></tr>
+<tr><td>Hyper Deluxe Sniper Rifle Mk XVII (new)</td><td>300 / 310 / 317 / 325</td><td>4 Malleable Essence of Nature, 2 Legionite Bar, 10 Heavy Thorium Bar, Azerothian Diamond</td><td>Item level 65 rifle; needs Anarchist's Workbench</td></tr>
+<tr><td>Gnomish Army Knife</td><td>250</td><td>Mithril Casing, Gold Power Core, 2 Thorium Widget</td><td>270 Merchant's Favor schematic. Counts as Skinning Knife, Mining Pick and Blacksmith Hammer. Whether it needs Honored rep is disputed. <span class="badge b-unc">Unconfirmed</span></td></tr>
+</table></div>
+<ul>
+<li><strong>Blacksmithing for a Hunter:</strong> no Hunter-specific mail set was found in Forever Blacksmithing sources. Forever's Hunter mail line (Stalker's) is made by Leatherworking.
+<ul>
+<li>Blacksmithing's new mail sets carry Strength or spell power.</li>
+<li>Its value for a Hunter is weapons, sharpening stones and weightstones for the melee slot, and the Sharpening Wheel's Strength buff at camp.</li>
+</ul></li>
+<li><strong>Ammo note (16 Oct, Confirmed):</strong> some guns and bows weren't consuming ammo correctly; Blizzard fixed it in the 16 Oct beta build.</li>
+</ul>
+</section>
+
+<section>
+<h2 id="shopping">6. Shopping lists</h2>
+<p>These are full-route totals from the guides above, after subtracting what earlier steps make for later ones. Buy a few extra, because yellow and green crafts sometimes give no point. No AH prices are listed (see section 1).</p>
+<div class="tbl"><table>
+<tr><th>Profession</th><th>Where</th><th>Items (whole route)</th></tr>
+<tr><td>Mining (smelt-only to 185)</td><td>Mine or AH</td><td>~130 Copper Ore, ~60 Tin Ore, ~70 Silver Ore, ~35 Iron Ore, ~60 Gold Ore. Vendor: Mining Pick (10c), training 5g 55s 10c, smelting recipes ~4g, plus 5g each for Azerothium and Heavy Thorium.</td></tr>
+<tr><td rowspan="2">Blacksmithing 1-300</td><td>Mine or AH</td><td>168 Rough Stone, 300 Copper Bar, 105 Heavy Stone, 135 Bronze Bar, 228 Iron Bar, 72 Solid Stone, 75 Steel Bar, 742 Mithril Bar, 1,392 Dense Stone, 108 Truesilver Bar, 36 Star Ruby, 2,320 Thorium Bar</td></tr>
+<tr><td>Vendor / other</td><td>38 Green Dye; 162 Mageweave Cloth, 112 Thick Leather, 348 Rugged Leather (farm or AH); Plans: Ebon Shiv (1g) and Huge Thorium Battleaxe (2g), both bind on pickup</td></tr>
+<tr><td rowspan="3">Engineering 1-300</td><td>Vendor</td><td>26 Weak Flux, 14 Nightcrawlers, 5 Blank Parchment, 5 Engineer's Ink; Arclight Spanner and Blacksmith Hammer as tools</td></tr>
+<tr><td>Mine or AH (1-225)</td><td>33 Rough Stone, 120 Copper Bar, 46 Coarse Stone, 5 Silver Bar, 80 Bronze Bar, 14 Heavy Stone, 144 Solid Stone, 12 Iron Bar, 26 Mithril Bar; also 28 Linen, 21 Wool, 12 Silk, 7 Mageweave Cloth, 5 Medium Leather, 15 Frost Oil</td></tr>
+<tr><td>Mine or AH (225-300)</td><td>88 Mithril Bar, 176 Solid Stone, 30 Dense Stone, 162 Thorium Bar, 28 Runecloth</td></tr>
+</table></div>
+</section>
+
+<section>
+<h2 id="forever">7. Forever mechanics</h2>
+<h3>Camp objects</h3>
+<div class="tbl"><table>
+<tr><th>Profession</th><th>Tier 1 (skill 20)</th><th>Tier 2 (140, blueprint)</th><th>Tier 3 (300, blueprint)</th></tr>
+<tr><td>Mining</td><td>Lodestone: melee attack power, like Blessing of Might (Rough Stone, Copper Bar)</td><td>Rock Garden: spawns an ore vein in camp (2 Heavy Stone, Iron Ore, Silver Bar). Blueprint ~7% from the Relic Guardian, Excavation Site: Wetlands</td><td>Molten Foundry: needed to smelt Heavy Thorium (5 Thorium Bar, 2 Dense Stone, Truesilver Bar). Blueprint source unknown</td></tr>
+<tr><td>Blacksmithing</td><td>Sharpening Wheel: Strength; doesn't stack with Strength of Earth (Rough Stone, Copper Bar)</td><td>Anvil: a usable anvil (5 Bronze Bar, 2 Coarse Grinding Stone, 2 Medium Leather)</td><td>Master Forge: a usable forge (Golem Heart, 5 Thorium Bar, 2 Rugged Leather)</td></tr>
+<tr><td>Engineering</td><td>Reagent Bot: sells reagents (Handful of Copper Bolts, Copper Tube)</td><td>Repair Bot: reagents and repairs (2 Whirring Bronze Gizmo, Bronze Tube, Heavy Leather)</td><td>Anarchist's Workbench: needed for the top schematics (Essence of Anarchy, 2 Thorium Widget)</td></tr>
+</table></div>
+<p class="note">Camp objects need a campfire nearby, share a 1-hour cooldown, and buff players who sit or craft nearby for a minute. <span class="badge b-conf">Confirmed</span> Reagents and blueprint sources are <span class="badge b-data">Datamined</span> or player-reported.</p>
+<h3>Merchant's Favor</h3>
+<ul>
+<li><strong>Earning Favor:</strong> fill Waylaid Crates and hand them in.
+<ul>
+<li>8 of the 30 crate types take ore or bars, for example Apprentice Ore (20 Copper or Tin Ore) or Apprentice Ingots (20 Copper, 20 Tin or 10 Bronze Bar).</li>
+<li>Bar crates pay double the Favor of ore crates: 10 vs 5 at Apprentice, 20 vs 10 at Journeyman.</li>
+<li>The Parts crate takes Engineering parts.</li>
+</ul></li>
+<li><strong>Vendors:</strong>
+<ul>
+<li><span class="horde">Horde:</span> Gor'mak (Blacksmithing) and Fizzlefuse (Engineering) at Durotar Supply and Logistics, west of the Crossroads.</li>
+<li><span class="alli">Alliance:</span> Stondry Darkhammer and Fritz Fizzle at Three Corners, Redridge.</li>
+</ul></li>
+<li><strong>Engineering Favor schematics:</strong>
+<ul>
+<li>45 Favor: SAF-T bombs and similar.</li>
+<li>180 Favor: Bent / Dented / Floppy / Stuckbutton Goggles and others.</li>
+<li>270 Favor: Gnomish Army Knife, Emergency Field Cloak, Loot-A-Rang.</li>
+<li>360 Favor: Gnomish Poultryizer, Ultralight Goblin Glider and others.</li>
+</ul></li>
+<li><strong>Blacksmithing:</strong> 61 plans for 30-120 Favor.</li>
+<li><strong>Titles:</strong> at skill 300, a certification for 1,000 Favor gives an account-wide profession title. The Engineering certification is listed in vendor data. <span class="badge b-data">Datamined</span></li>
+<li><strong>Craftsman's Writs</strong> (Blacksmithing, Engineering and others) ask for one crafted item and give reputation (75 / 125 / 200) plus silver. Examples:
+<ul>
+<li>Blacksmithing: Huge Thorium Battleaxe, Ebon Shiv.</li>
+<li>Engineering: Crafted Solid Shot ×200, Sniper Scope.</li>
+</ul></li>
+</ul>
+<h3>Legacy</h3>
+<ul>
+<li><strong>Legacy points:</strong> crafting professions (Blacksmithing, Engineering) give 1 account-wide point the first time a character reaches 150, 225 and 300. Mining gives none. <span class="badge b-conf">Confirmed</span></li>
+<li><strong>Perks:</strong>
+<ul>
+<li>Working Overtime: +4% skill-up chance per rank, 5 ranks.</li>
+<li>Bountiful Harvest: +20% Scarce materials per rank, including Pyrite and Bauxite from veins.</li>
+<li>Performance Bonus: 5/10/15% chance of double crate Favor.</li>
+<li>Dedicated Study: +1 to your lowest tradeskill, 23h cooldown.</li>
+<li>Reagent Economy: Tier 1 camp objects cost no reagents.</li>
+</ul> <span class="badge b-data">Datamined</span> (values)</li>
+<li><strong>Bartering</strong> no longer discounts training or repairs (16 Oct). <span class="badge b-conf">Confirmed</span></li>
+</ul>
+<h3>New materials</h3>
+<ul>
+<li><strong>Pyrite</strong> (copper, tin, silver, iron veins) becomes Sulfuric Acid (Alchemy).</li>
+<li><strong>Bauxite</strong> (gold, mithril) becomes Sandpaper (Engineering). New Blacksmithing plans from skill 200 to 270 use it.</li>
+<li><strong>Pitchblende</strong> (source unknown) becomes Azerothium Bar.</li>
+<li><strong>Heavy Thorium Ore</strong> (Mount Hyjal) becomes Heavy Thorium Bar.</li>
+<li><strong>Fel Crystal plus Heavy Thorium Bar</strong> make a Legionite Bar (Alchemy transmute).</li>
+<li>One guide reports Alchemy transmutes (iron to gold, mithril to truesilver) on a 1-hour cooldown, which could flood the market with Gold and Truesilver Bars. <span class="badge b-unc">Unconfirmed</span></li>
+</ul>
+</section>
+
+<section>
+<h2 id="changes">8. Recent changes and open conflicts</h2>
+<ul>
+<li><strong>30 Oct (server hotfixes, unannounced):</strong>
+<ul>
+<li>The servers now send Blacksmithing chain-set plans (Veteran's, Guard's, Protector's, Acolyte's, Crusader's; shirt 80, leggings 95, helm 125), bind on pickup.</li>
+<li>Enchanting's Boots - Minor Speed drops from 8% to 4%; a new Boots - Speed (8%) is added.</li>
+</ul> <span class="badge b-unc">Unconfirmed</span></li>
+<li><strong>Launch client build 70707 (30 Oct):</strong> no Mining, Blacksmithing or Engineering recipe changes reported. Hunter: Aspect of the Hawk about halved, Trueshot Aura rank 3 cut from 50 to 30. <span class="badge b-data">Datamined</span></li>
+<li><strong>26-27 Oct notes:</strong> only racial changes. Orc Command (+5% pet damage) returns; Dwarf gets Artisan's Precision (+1% hit). <span class="badge b-conf">Confirmed</span></li>
+<li><strong>16 Oct:</strong>
+<ul>
+<li>Vendor sell prices cut on many profession-crafted items.</li>
+<li>Guns and bows that weren't consuming ammo were fixed.</li>
+<li>Bartering no longer discounts training or repairs.</li>
+</ul> <span class="badge b-conf">Confirmed</span></li>
+<li><strong>1 Oct:</strong>
+<ul>
+<li>Fewer Poor Copper Veins in starter areas.</li>
+<li>Dungeon-drop Blacksmithing plans made available.</li>
+<li>Crafted wands' vendor price cut to 1c, raised to 5c-25s on 8 Oct.</li>
+</ul> <span class="badge b-conf">Confirmed</span></li>
+<li><strong>Auction houses:</strong> one fresh economy per ruleset pool (Normal, PvP, RP). <span class="badge b-conf">Confirmed</span> No Blizzard auction API for Forever has been announced.</li>
+</ul>
+<h3>Open conflicts</h3>
+<ul>
+<li>Character-level gates for higher ranks are not checked above level 30.</li>
+<li>Gnomish/Goblin unlock level: 30 per one guide.</li>
+<li>Gnomish Army Knife: whether it needs Honored rep.</li>
+<li>Two different Engineering routes, and two Blacksmithing routes for 225-300.</li>
+<li>Heavy Thorium Vein skill, Pitchblende source and Molten Foundry blueprint source are all unknown.</li>
+<li>Blacksmithing and Engineering rank training costs not found.</li>
+<li>Mining zones above 225 untested.</li>
+</ul>
+</section>
+
+<section>
+<h2 id="sources">9. Sources</h2>
+<ul>
+<li><a href="https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-october-26/2360696">Blizzard: WoW Forever Beta Development Notes (updated 26-27 Oct)</a></li>
+<li><a href="https://news.blizzard.com/en-us/article/24301516/gather-around-the-campfire-in-world-of-warcraft-forever">Blizzard: Gather Around the Campfire</a></li>
+<li><a href="https://www.wowhead.com/forever/news/no-more-realms-in-wow-forever-382866">Wowhead: No More Realms in WoW Forever</a></li>
+<li><a href="https://www.wowhead.com/forever/guide/wow-forever-profession-pairings-by-class-35082">Wowhead: Profession Pairings by Class</a></li>
+<li><a href="https://wowcamp.fun/en/guides/mining/">WowCamp: Mining guide (updated 29 Oct)</a></li>
+<li><a href="https://wowcamp.fun/en/guides/blacksmithing/">WowCamp: Blacksmithing guide</a></li>
+<li><a href="https://wowcamp.fun/en/guides/engineering/">WowCamp: Engineering guide</a></li>
+<li><a href="https://statrat.info/professions/mining/">StatRat: Mining guide</a></li>
+<li><a href="https://classic.goldgoblin.net/en/mining-forever/">GoldGoblin: Mining guide</a></li>
+<li><a href="https://1mw.io/en/professions/mining">1mw.io: Mining nodes by zone</a></li>
+<li><a href="https://rankedboost.com/world-of-warcraft/forever/professions/mining-leveling/">RankedBoost: Mining routes</a></li>
+<li><a href="https://www.wow-professions.com/forever/mining-leveling-guide">wow-professions.com: Mining guide</a></li>
+<li><a href="https://classicwowforever.com/professions/blacksmithing/leveling/">ClassicWoWForever: Blacksmithing leveling</a></li>
+<li><a href="https://classicwowforever.com/professions/mining/leveling/">ClassicWoWForever: Mining routes</a></li>
+<li><a href="https://www.warcraftforever.wiki/wiki/Blacksmithing">Warcraft Forever Wiki: Blacksmithing</a></li>
+<li><a href="https://www.warcraftforever.wiki/wiki/Engineering">Warcraft Forever Wiki: Engineering</a></li>
+<li><a href="https://foreverchanges.pro/professions/engineering">ForeverChanges: Engineering</a></li>
+<li><a href="https://foreverchanges.pro/merchants-favor">ForeverChanges: Merchant's Favor</a></li>
+<li><a href="https://www.zockify.com/forever/professions/engineering/leveling/">Zockify: Engineering leveling and specializations</a></li>
+<li><a href="https://urgametips.com/wow-forever/professions/engineering/scopes/">UrGameTips: Scopes</a></li>
+<li><a href="https://urgametips.com/wow-forever/professions/engineering/ammunition/">UrGameTips: Ammunition</a></li>
+<li><a href="https://foreverguide.net/professions/engineering/">ForeverGuide: Engineering recipes</a></li>
+<li><a href="https://bindonforever.com/changes/1.60.1.70707">Bind on Forever: build 70707 changes</a></li>
+<li><a href="https://kami-labs.fr/en/wow-forever/patch-notes-wow-forever-30-octobre-gagnants-perdants/">kami-labs: 30 Oct unofficial hotfix summary</a></li>
+</ul>
+</section>
+<footer>Fan-made guide. World of Warcraft: Forever is a trademark of Blizzard Entertainment. Data is from pre-launch beta clients and may change.</footer>
+</div>
+</body>
+</html>

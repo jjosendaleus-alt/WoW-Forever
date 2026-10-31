@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#b3161e">
+<meta name="description" content="Horde-first Cooking and First Aid guide for WoW Forever: 1-300 paths, shopping lists, buff foods, Fishing notes for cooks and the expanded First Aid.">
+<meta property="og:title" content="WoW Forever: Cooking &amp; First Aid Guide (pre-launch)">
+<meta property="og:description" content="Horde-first Cooking and First Aid guide for WoW Forever: 1-300 paths, shopping lists, buff foods, Fishing notes for cooks and the expanded First Aid.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://jjosendaleus-alt.github.io/WoW-Forever/Cooking_First_Aid_Guide.html">
+<meta property="og:site_name" content="WoW Forever Guides">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="WoW Forever: Cooking &amp; First Aid Guide (pre-launch)">
+<meta name="twitter:description" content="Horde-first Cooking and First Aid guide for WoW Forever: 1-300 paths, shopping lists, buff foods, Fishing notes for cooks and the expanded First Aid.">
+<title>WoW Forever: Cooking &amp; First Aid Guide (pre-launch)</title>
+<style>
+:root{--bg:#0b0708;--panel:#151012;--panel2:#1d1416;--red:#b3161e;--red2:#e0333b;--gold:#d4a54a;--bronze:#a8743a;--text:#ece4dc;--muted:#b9aca2;--line:#3a2326}
+*{box-sizing:border-box}
+body{margin:0;background:radial-gradient(ellipse at top,#1f0b0d 0%,var(--bg) 60%);color:var(--text);font:16px/1.6 Georgia,"Times New Roman",serif}
+.wrap{max-width:980px;margin:0 auto;padding:16px}
+header{border-bottom:3px solid var(--red);padding:20px 0 12px;text-align:center}
+h1{color:var(--gold);font-size:1.9rem;margin:.2em 0;letter-spacing:.02em;text-shadow:0 2px 0 #000}
+.sub{color:var(--muted);margin:0}
+.banner{background:linear-gradient(90deg,#4a0c10,#2a0a0c);border:1px solid var(--red);border-left:6px solid var(--gold);padding:10px 14px;margin:16px 0;border-radius:6px}
+h2{color:var(--gold);border-bottom:2px solid var(--red);padding-bottom:4px;margin-top:2em;font-size:1.4rem}
+h3{color:var(--red2);font-size:1.12rem;margin-bottom:.3em}
+a{color:#f0c46a}a:hover{color:#fff}
+section,nav{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:6px 18px 14px;margin:14px 0}
+nav ol{columns:2;margin:6px 0;padding-left:1.4em}
+@media(max-width:600px){nav ol{columns:1}h1{font-size:1.5rem}}
+.tbl{overflow-x:auto}
+table{border-collapse:collapse;width:100%;margin:8px 0;font-size:.93rem}
+th{background:#3a0d11;color:var(--gold);text-align:left}
+th,td{border:1px solid var(--line);padding:6px 8px;vertical-align:top}
+tr:nth-child(even) td{background:var(--panel2)}
+.badge{display:inline-block;font:bold .72rem/1.4 Arial,sans-serif;padding:1px 7px;border-radius:10px;margin-left:4px;white-space:nowrap;vertical-align:middle}
+.b-conf{background:#1f4a22;color:#d6f5d8;border:1px solid #3e8a43}
+.b-data{background:#4a3a12;color:#ffe9b0;border:1px solid var(--bronze)}
+.b-unc{background:#5c1015;color:#ffd6d8;border:1px solid var(--red2)}
+.b-cls{background:#2b2b44;color:#dcdcff;border:1px solid #6b6bb0}
+.horde{color:#ff6a6f;font-weight:bold}.alli{color:#8fb4ff;font-weight:bold}
+.note{color:var(--muted);font-size:.9rem}
+.legend li{margin:4px 0}
+footer{color:var(--muted);font-size:.85rem;text-align:center;padding:20px 0;border-top:1px solid var(--line);margin-top:24px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+<h1>WoW Forever: Cooking &amp; First Aid</h1>
+<p class="sub">Horde-first guide for the 4 Nov 2026 launch, with Hunter notes and the Fishing you need</p>
+</header>
+
+<div class="banner"><strong>Last updated 31 Oct 2026, pre-launch, based on beta client data.</strong> The beta stopped at character level 30 and skill 225, so anything above 225 has not been tested in play. Everything here can still change at launch.</div>
+
+<section>
+<h2 id="legend">Badge legend</h2>
+<ul class="legend">
+<li><span class="badge b-conf">Confirmed</span> Stated in Blizzard's own posts or patch notes.</li>
+<li><span class="badge b-data">Datamined</span> Read from the beta or launch client files by fan sites, not yet announced or verified in play.</li>
+<li><span class="badge b-unc">Unconfirmed</span> Player reports, one source only, or sources that disagree.</li>
+<li><span class="badge b-cls">Classic-inferred</span> Taken from Classic data; not shown in Forever data yet.</li>
+</ul>
+<p class="note">Unless marked otherwise, recipe, reagent, buff and skill-color numbers are <span class="badge b-data">Datamined</span> from beta builds 1.60.1.70124 to 70707. Colors are written as orange / yellow / green / grey: the skill at which a recipe turns each color.</p>
+</section>
+
+<nav>
+<h2 style="margin-top:.4em">Contents</h2>
+<ol>
+<li><a href="#cook-train">Cooking ranks and trainers</a></li>
+<li><a href="#campfire">Campfires and camp cooking</a></li>
+<li><a href="#cook-path">Cooking path 1-300</a></li>
+<li><a href="#cook-shop">Cooking shopping list</a></li>
+<li><a href="#buff">Key buff foods (Hunter first)</a></li>
+<li><a href="#fishing">Fishing notes for cooks</a></li>
+<li><a href="#fa-exists">First Aid in Forever: it exists</a></li>
+<li><a href="#fa-train">First Aid ranks and trainers</a></li>
+<li><a href="#fa-path">First Aid path 1-300</a></li>
+<li><a href="#fa-shop">First Aid shopping list</a></li>
+<li><a href="#fa-recipes">Healing potions and curatives</a></li>
+<li><a href="#systems">Legacy perks and Merchant's Favor</a></li>
+<li><a href="#changes">Recent changes</a></li>
+<li><a href="#sources">Sources</a></li>
+</ol>
+</nav>
+
+<section>
+<h2 id="cook-train">1. Cooking ranks and trainers</h2>
+<p>Cooking is a secondary profession, so it doesn't use one of your two primary slots. In each starting area, the level 4 quest "Camping 101: Cooking" sends you to the local cook. You start knowing Basic Campfire, Charred Wolf Meat, Herb Baked Egg and Roasted Boar Meat.</p>
+<div class="tbl"><table>
+<tr><th>Rank (skill cap)</th><th>How to learn</th><th>Cost</th></tr>
+<tr><td>Apprentice (75)</td><td>Any Cooking trainer, no level gate</td><td>1s</td></tr>
+<tr><td>Journeyman (150)</td><td>Any trainer at skill 50. Level 10 in Classic; one tester trained it earlier and reported it as a possible bug. <span class="badge b-unc">Unconfirmed</span></td><td>5s</td></tr>
+<tr><td>Expert (225)</td><td>Expert Cookbook at skill 125. <span class="horde">Horde:</span> Wulan, Shadowprey Village, Desolace. <span class="alli">Alliance:</span> Shandrina, Mystral Lake, Ashenvale.</td><td>1g</td></tr>
+<tr><td>Artisan (300)</td><td>Quest "Clamlette Surprise" from Dirge Quikcleave in Gadgetzan, level 35 and skill 225. Bring 12 Giant Egg, 10 Zesty Clam Meat and 20 Alterac Swiss. <span class="horde">Horde</span> pick up "To Gadgetzan You Go!" from Zamja in Orgrimmar; <span class="alli">Alliance</span> pick up "I Know A Guy..." from Daryl Riknussun in Ironforge.</td><td>Quest <span class="badge b-unc">Unconfirmed</span> (above the beta cap)</td></tr>
+</table></div>
+<ul>
+<li><span class="horde">Horde trainers:</span> Zamja (Orgrimmar), Aska Mistrunner (Thunder Bluff), Eunice Burch (Undercity), Cook Torka (Razor Hill), Pyall Silentstride (big tent, Bloodhoof Village), William Pickman (inn, Brill), Duhng (The Barrens). Every one teaches Journeyman too.</li>
+<li><span class="alli">Alliance trainers:</span> Stephen Ryback (Stormwind), Daryl Riknussun (Ironforge), Alegorn (Darnassus), Tomas (Goldshire inn), Gremlock Pilsnor and Cook Ghilm (Dun Morogh), Zarrin (Dolanaar), Crystal Boughman (Redridge).</li>
+<li><strong>Zephras Isle:</strong> Nyalah Brightfire (Valanaar), Zerril Softbreeze (Shen'dar Village).</li>
+<li><strong>Spices, water and flour</strong> come from Cooking Supply vendors, such as Xen'to (Orgrimmar), Ronald Burch (Undercity), Naal Mistrunner (Thunder Bluff), and Aza'bek (Barrens) or Kalsey Sanden (Three Corners). Listed prices: Mild Spices 10c, Hot Spices 40c, Soothing Spices 1s 60c, Refreshing Spring Water 25c, Simple Flour 2s. These are vendor prices, not AH prices.</li>
+<li>Raw meat, eggs and clams stack to 20 (10 in Classic). Twelve Classic recipes now bind on pickup, including Big Bear Steak, Lean Venison and Lean Wolf Steak.</li>
+</ul>
+<p class="note">Trainer costs and rank rules come from fan-site client and Wowhead records. <span class="badge b-data">Datamined</span></p>
+</section>
+
+<section>
+<h2 id="campfire">2. Campfires and camp cooking</h2>
+<ul>
+<li>You need a campfire to cook. Cooking fires sit next to most trainers, and in Forever the fire is an item you craft and place. <span class="badge b-conf">Confirmed</span></li>
+<li><strong>Basic Campfire Kit</strong> (skill 1): 1 Simple Wood (38c). Crafting it needs a Flint and Tinder in your bags (1s 35c); placing it doesn't. It holds 3 more camp objects and has a 5-minute cooldown.
+<ul>
+<li><span class="horde">Horde wood and tinder:</span> Xen'to (Orgrimmar), Ronald Burch (Undercity), Naal Mistrunner (Thunder Bluff), Jark (Razor Hill barracks), Moorat Longstride (Bloodhoof), Mrs. Winters (Brill), Aza'bek (Barrens).</li>
+<li><span class="alli">Alliance:</span> Erika Tate (Stormwind), Emrul Riknussun (Ironforge), Fyldan (Darnassus), Brog Hamfist (Goldshire), Kreg Bilmn (Kharanos), Nyoma (Dolanaar).</li>
+</ul></li>
+<li><strong>Journeyman Campfire</strong> (blueprint; Star Wood; 5 objects), <strong>Expert Campfire</strong> (blueprint; Thick Logs; 10 objects), <strong>Cookie's Feast</strong> (140, blueprint; Stamina food for the camp) and <strong>Iron Oven</strong> (300, blueprint; needed for 18 recipes). Sources disagree on the campfire skill levels: Journeyman 90 or 140, Expert 200 or 220. <span class="badge b-unc">Unconfirmed</span></li>
+<li>To get a camp object's buff, sit or craft nearby for 1 minute. The buff lasts 1 hour, and all camp objects share a 1-hour cooldown. <span class="badge b-conf">Confirmed</span></li>
+<li>Since 24 Sep you can also earn the buff while lying down, sleeping or kneeling, and you can craft while you wait. <span class="badge b-conf">Confirmed</span></li>
+</ul>
+</section>
+
+<section>
+<h2 id="cook-path">3. Cooking path 1-300</h2>
+<p>Cook whatever is still orange or yellow; you'll pick up most of the meat while levelling. The backbone below is the route two fan sites calculate from the client tables (Warcraft Forever Wiki and classicwowforever.com), so the shopping list matches it. Horde-friendly swaps are in the last column. Skill ranges match Classic for Classic recipes.</p>
+<div class="tbl"><table>
+<tr><th>Skill</th><th>Cook (colors)</th><th>Each needs</th><th>Horde-friendly swaps</th></tr>
+<tr><td>1-45</td><td>Charred Wolf Meat (1/45/65/85)</td><td>1 Stringy Wolf Meat</td><td>Roasted Boar Meat or Herb Baked Egg (known). Slitherskin Mackerel (recipe Zansoa, Durotar) or Brilliant Smallfish (Harn Longcast, Mulgore; Martine Tramblay, Tirisfal).</td></tr>
+<tr><td>45-80</td><td>Smoked Bear Meat (40/80/100/120)</td><td>1 Bear Meat</td><td>Recipe: Andrew Hilbert, Silverpine (<span class="alli">Alliance:</span> Drac Roughcut, Loch Modan). Or Coyote Steak (trainer), Strider Stew (Tari'qa, Barrens) or Longjaw Mud Snapper (Naal Mistrunner, Thunder Bluff).</td></tr>
+<tr><td>50</td><td colspan="3">Train Journeyman (5s) before you go past 75.</td></tr>
+<tr><td>80-125</td><td>Dry Pork Ribs (80/120/140/160)</td><td>1 Boar Ribs, 1 Mild Spices</td><td>Trainer, 1s 50c. Or Crab Cake (trainer) or Bristle Whisker Catfish (from 100; Naal Mistrunner, Ronald Burch, Kilxx).</td></tr>
+<tr><td>125</td><td colspan="3">Buy the Expert Cookbook (1g) from Wulan in Desolace.</td></tr>
+<tr><td>125-175</td><td>Goblin Deviled Clams (125/165/185/205)</td><td>1 Tangy Clam Meat, 1 Hot Spices</td><td>Trainer, 3s. Or Hot Lion Chops (Zargh, Barrens; Horde only) or Curiously Tasty Omelet (Keena, Arathi).</td></tr>
+<tr><td>175-200</td><td>Barbecued Buzzard Wing (175/215/235/255)</td><td>1 Buzzard Wing, 1 Hot Spices</td><td>One source: trainer, 5s; another: a bind-on-pickup recipe. <span class="badge b-unc">Unconfirmed</span> Or Roast Raptor (Keena or Hammon Karwn, Arathi; Ogg'marr, Dustwallow) or Mithril Headed Trout (Shankys, Orgrimmar; to 225).</td></tr>
+<tr><td>200-225</td><td>Spider Sausage (200/240/260/280)</td><td>2 White Spider Meat</td><td>Trainer, 40s. +15 Stamina food.</td></tr>
+<tr><td>225</td><td colspan="3">Artisan from "Clamlette Surprise" (level 35). Buy Gikkix's recipes at Steamwheedle Port while you're in Tanaris.</td></tr>
+<tr><td>225-265</td><td>Monster Omelet (225/265/285/305)</td><td>1 Giant Egg, 2 Soothing Spices</td><td rowspan="2">Recipe: Bale, Felwood (<span class="horde">Horde</span>); Malygen, Felwood (<span class="alli">Alliance</span>); Himmik, Winterspring. Or <strong>Tender Wolf Steak</strong> (225/265/285/305; Dirge Quikcleave; +15 Agility, a Hunter favourite), Filet of Redgill (Kelsey Yance, Stranglethorn) or Spotted Yellowtail (Gikkix). <span class="badge b-unc">Unconfirmed</span> (untested above 225)</td></tr>
+<tr><td colspan="3" class="note">Monster Omelet is orange to 265.</td></tr>
+<tr><td>265-300</td><td>Nightfin Soup (250/290/310/330)</td><td>1 Raw Nightfin Snapper, 1 Refreshing Spring Water</td><td>Recipe: Gikkix, Tanaris. Other guides finish on Poached Sunscale Salmon, but the client now marks it as needing an <strong>Iron Oven</strong>, so check before you plan around it. <span class="badge b-unc">Unconfirmed</span></td></tr>
+</table></div>
+<p class="note">About 309 crafts in all by one count; luck adds a few. wow-professions.com's route leans more on fish (Brilliant Smallfish, Longjaw, Catfish, Mithril Head Trout, Spotted Yellowtail).</p>
+</section>
+
+<section>
+<h2 id="cook-shop">4. Cooking shopping list</h2>
+<p>These are the totals the Warcraft Forever Wiki lists for the whole 1-300 route above, after subtracting what earlier steps make for later ones. Buy a few extra.</p>
+<p><strong>No AH gold prices are given.</strong> Forever has no realms. Each ruleset pool (Normal, PvP, RP) gets its own shared auction house, and they all open empty at launch. Blizzard has not announced an auctions API for Forever, and fan price sites rely on player-uploaded scans. Beta prices won't carry over, so any number now would be a guess.</p>
+<div class="tbl"><table>
+<tr><th>Where</th><th>Item</th><th>1-225</th><th>225-300</th></tr>
+<tr><td rowspan="6">Hunt (your own kills) or AH</td><td>Stringy Wolf Meat</td><td>45</td><td>-</td></tr>
+<tr><td>Bear Meat</td><td>36</td><td>-</td></tr>
+<tr><td>Boar Ribs</td><td>46</td><td>-</td></tr>
+<tr><td>Tangy Clam Meat</td><td>52</td><td>-</td></tr>
+<tr><td>Buzzard Wing / White Spider Meat</td><td>26 / 52</td><td>-</td></tr>
+<tr><td>Giant Egg</td><td>-</td><td>41 (+12 for the Artisan quest)</td></tr>
+<tr><td>Fishing or AH</td><td>Raw Nightfin Snapper</td><td>-</td><td>37</td></tr>
+<tr><td rowspan="4">Cooking Supply vendor</td><td>Mild Spices</td><td>46</td><td>-</td></tr>
+<tr><td>Hot Spices</td><td>78</td><td>-</td></tr>
+<tr><td>Soothing Spices</td><td>-</td><td>82</td></tr>
+<tr><td>Refreshing Spring Water</td><td>-</td><td>37</td></tr>
+<tr><td rowspan="3">One-off buys</td><td>Training and books</td><td colspan="2">1s + 5s + Expert Cookbook 1g</td></tr>
+<tr><td>Recipes</td><td colspan="2">Smoked Bear Meat, Barbecued Buzzard Wing, Monster Omelet, Nightfin Soup (prices not listed)</td></tr>
+<tr><td>Artisan quest</td><td colspan="2">12 Giant Egg, 10 Zesty Clam Meat, 20 Alterac Swiss</td></tr>
+</table></div>
+<p class="note">The spices split across the 1-225 and 225-300 columns follows the route steps. Hot Spices also feed First Aid's Healing Potion, so share the stock.</p>
+</section>
+
+<section>
+<h2 id="buff">5. Key buff foods (Hunter first)</h2>
+<ul>
+<li><strong>Well Fed:</strong> eat seated for 10 seconds for a 15-minute buff. Most Forever foods give a single stat instead of Classic's Stamina and Spirit.</li>
+<li><strong>Extra kill experience:</strong> the tooltip of 103 foods adds +5% experience from kills. The client shows that line only while a server setting is on, so it isn't confirmed for launch. <span class="badge b-unc">Unconfirmed</span></li>
+<li><strong>Gourmand</strong> (Legacy) makes food buffs last up to 100% longer.</li>
+</ul>
+<div class="tbl"><table>
+<tr><th>Food</th><th>Buff (use level)</th><th>Cooking skill (colors) / recipe</th><th>Notes</th></tr>
+<tr><td>Hot Lion Chops / Lean Wolf Steak</td><td>+5 Agility</td><td>125 / Zargh, Barrens (Horde); Lean Wolf recipe binds on pickup</td><td>Early Hunter food.</td></tr>
+<tr><td>Heavy Crocolisk Stew, Tasty Lion Steak, Hot Wolf Ribs</td><td>+10 Agility</td><td>Recipe sources as in Classic <span class="badge b-cls">Classic-inferred</span></td><td>Mid-level Agility food.</td></tr>
+<tr><td><strong>Tender Wolf Steak</strong></td><td>+15 Agility (35)</td><td>225 (225/265/285/305) / Dirge Quikcleave, Gadgetzan</td><td>Best confirmed Hunter food you can level on. Jungle Stew also gives +15 Agility.</td></tr>
+<tr><td>Swiftstrike Steak / Flank au Poivre (new)</td><td>+20 Agility (45)</td><td>275, needs an Iron Oven; recipe source unknown</td><td>Top Agility food once found. <span class="badge b-unc">Unconfirmed</span> (source)</td></tr>
+<tr><td>Grilled Squid / Hot Smoked Bass</td><td>+1% crit (35)</td><td>240 (240/280/300/320), needs an Iron Oven; Gikkix, Tanaris</td><td>Was +10 Agility in Classic. Winter Squid is seasonal. Health restored differs between databases (358 vs 2,000+). <span class="badge b-unc">Unconfirmed</span></td></tr>
+<tr><td>Mithril Headed Trout / Poached Sunscale Salmon / Mightfish Steak</td><td>+20 / +40 / +40 Attack Power</td><td>175 / 250 / 275 (Salmon and Mightfish need an Iron Oven)</td><td>Whether "Attack Power" counts for ranged isn't stated. <span class="badge b-unc">Unconfirmed</span></td></tr>
+<tr><td>Monster Omelet / Spider Sausage</td><td>+15 Stamina (35)</td><td>225 / 200</td><td>On the leveling route.</td></tr>
+<tr><td>Dirge's Kickin' Chimaerok Chops</td><td>+25 Stamina (45)</td><td>300, Iron Oven, quest recipe</td><td>No extra-XP line.</td></tr>
+<tr><td>Smoked Desert Dumplings</td><td>+20 Strength (45)</td><td>Iron Oven</td><td>Melee food.</td></tr>
+<tr><td>Nightfin Soup / Runn Tum Tuber Surprise</td><td>+22 Spell Damage / +15 Intellect (35)</td><td>250 / 275</td><td>Nightfin was mana regen in Classic.</td></tr>
+<tr><td>Herbal teas (new): Peace, Royal, Root, Triage, Sunny, Sage's</td><td>+2 to +44 Healing Power</td><td>25 to 250; recipes bind on pickup, most sources unknown</td><td>Two herbs each. Peace Tea drops from Frostmane Seers (Dun Morogh).</td></tr>
+<tr><td>Smoothies (new): Venomous to Wicked</td><td>+1 to +20 Spirit</td><td>25 to 250; 30-90 Merchant's Favor</td><td>See section 12.</td></tr>
+<tr><td>Goldthorn Tea</td><td>+15 Herbalism</td><td>175 / Henry Stern, Razorfen Downs</td><td>Gatherer utility.</td></tr>
+</table></div>
+<p class="note">One Well Fed aura changed its effect type in the launch client (build 70707); no source says which foods are affected. <span class="badge b-data">Datamined</span></p>
+</section>
+
+<section>
+<h2 id="fishing">6. Fishing notes for cooks</h2>
+<ul>
+<li><strong>You can skip Fishing for most of the route above:</strong> it runs on meat, eggs and clams. You need fish for Nightfin Soup (265-300), the fish swaps, the Attack Power, crit and Spell Damage foods, and Alchemy's Fire Oil (Firefin Snapper).</li>
+<li><strong>Raw fish from vendors:</strong> Kilxx in the Barrens sells six raw fish, 5 at a time, e.g. Longjaw Mud Snapper 20c, Bristle Whisker Catfish 40c, Rockscale Cod and Spotted Yellowtail 80c. Khara Deepwater (Loch Modan) and Vernon Hale (Redridge) added raw fish too. <span class="badge b-data">Datamined</span></li>
+<li><strong>Ranks:</strong>
+<ul>
+<li>Apprentice from any Fishing trainer, 1s. The Fishing button sits on the professions screen, not in the spellbook (tester report).</li>
+<li>Journeyman at 50, 5s.</li>
+<li>Expert from the book "Expert Fishing - The Bass and You", 1g from Old Man Heming in Booty Bay (skill 125, level 20).</li>
+<li>Artisan from Nat Pagle's quest in Dustwallow Marsh (level 35).</li>
+</ul> <span class="badge b-unc">Unconfirmed</span> (above 225)</li>
+<li><strong>Where:</strong> Horde can fish Stranglethorn's Savage Coast islands near Grom'gol for 150-225, and Tanaris (Steamwheedle Port) for 225-300 (Spotted Yellowtail, Winter Squid in season). <span class="badge b-cls">Classic-inferred</span> (zone skill levels live on the server)</li>
+<li><strong>New in Forever:</strong>
+<ul>
+<li>Find Fish shows pools on the minimap.</li>
+<li>Bait and Tackle camp objects: Fish Bowl at 20, Fishing Rack at 140, Fishing Hut at 300.</li>
+<li>Luremaster (Legacy): 25/50% chance of an extra fish while a lure is on.</li>
+<li>Trophy fish sell for a silver per pound.</li>
+</ul></li>
+</ul>
+</section>
+
+<section>
+<h2 id="fa-exists">7. First Aid in Forever: it exists, and it grew</h2>
+<p><strong>First Aid is still in WoW Forever.</strong> It is one of three secondary professions, with Cooking and Fishing, and doesn't take a primary slot. It was expanded, not removed. It was shown in Blizzard's show-floor demo, and the beta client lists 31 recipes. <span class="badge b-data">Datamined</span> Blizzard has not put out First Aid patch notes.</p>
+<ul>
+<li>Healing Potions (Minor to Major) moved from Alchemy to First Aid, and now also take spices. Alchemy keeps only "Discolored" healing potions, which heal but hurt you afterwards. <span class="badge b-data">Datamined</span></li>
+<li>New curatives:
+<ul>
+<li>Poultices cure diseases.</li>
+<li>Tourniquets cure bleeds, which almost nobody else can remove.</li>
+<li>A fuller Anti-Venom line cures poisons.</li>
+</ul></li>
+<li>Three camp objects: First Aid Kit (20), Toxin Study (140) and Plague Doctor's Laboratory (300).</li>
+<li>31 recipes in the client, 17 of them new. First Aid earns no Legacy points.</li>
+</ul>
+</section>
+
+<section>
+<h2 id="fa-train">8. First Aid ranks and trainers</h2>
+<div class="tbl"><table>
+<tr><th>Rank (skill cap)</th><th>How to learn</th></tr>
+<tr><td>Apprentice (75)</td><td>Any First Aid trainer, no level gate.</td></tr>
+<tr><td>Journeyman (150)</td><td>Any trainer at skill 50 (level 10 in Classic). <span class="badge b-cls">Classic-inferred</span> (level)</td></tr>
+<tr><td>Expert (225)</td><td>Book "Expert First Aid - Under Wraps" at skill 125, no level requirement. <span class="horde">Horde:</span> Balai Lok'Wein, Dustwallow Marsh. <span class="alli">Alliance:</span> Deneb Walker, Arathi Highlands. They also sell the Heavy Silk and Mageweave Bandage manuals.</td></tr>
+<tr><td>Artisan (300)</td><td>Quest "Triage" at skill 225 and level 35. <span class="horde">Horde:</span> Doctor Gregory Victor, Hammerfall (Arathi). <span class="alli">Alliance:</span> Doctor Gustaf VanHowzen, Theramore. Save 15 patients with the Triage Bandages he gives you, critical ones first, and hand in at once. <span class="badge b-unc">Unconfirmed</span> (above the beta cap)</td></tr>
+</table></div>
+<ul>
+<li><span class="horde">Horde trainers:</span> Arnok (Orgrimmar), Pand Stonebinder (Thunder Bluff), Mary Edras (Undercity), Rawrk (Razor Hill barracks), Vira Younghoof (Bloodhoof inn), Nurse Neela (Brill inn).</li>
+<li><span class="alli">Alliance trainers:</span> Shaina Fuller (Stormwind), Nissa Firestone (Ironforge), Dannelor (Darnassus), Michelle Belle (Goldshire inn), Thamner Pol (Kharanos), Byancie (Dolanaar), Fremal Doohickey (Wetlands).</li>
+<li><strong>Zephras Isle:</strong> Melasa Fairmend (Valanaar), Naleeia Tattermend (Shen'dar Village).</li>
+<li><strong>Potion supplies:</strong> Mild and Hot Spices from Cooking Supply vendors; vials from Alchemy or Trade Supplies.
+<ul>
+<li><span class="horde">Horde:</span> spices from Xen'to and vials from Kor'geld (Orgrimmar); spices from Naal Mistrunner and vials from Mani Winterhoof (Thunder Bluff); Felicia Doan (Undercity); Flakk (Razor Hill); Wunna Darkmane (Bloodhoof); Abigail Shiel (Brill).</li>
+<li><span class="alli">Alliance:</span> Edna Mullby (Stormwind); spices from Emrul Riknussun and vials from Gwina Stonebranch (Ironforge); Mythrin'dir (Darnassus); Tharynn Bouden (Goldshire).</li>
+</ul></li>
+</ul>
+</section>
+
+<section>
+<h2 id="fa-path">9. First Aid path 1-300</h2>
+<p>The backbone below is foreverchanges.pro's route, which mixes cloth and herbs; the shopping list matches it. All-cloth and all-herb swaps are in the last column.</p>
+<div class="tbl"><table>
+<tr><th>Skill</th><th>Craft (colors)</th><th>Each needs</th><th>Swaps and notes</th></tr>
+<tr><td>1-41</td><td>Linen Bandage (1/30/45/60)</td><td>1 Linen Cloth</td><td rowspan="3">Herb route: Minor Healing Potion all the way 1-75 (about 81 crafts; 1 Peacebloom, 1 Mild Spices, 1 Empty Vial each).</td></tr>
+<tr><td>41-55</td><td>Heavy Linen Bandage (40/50/75/100)</td><td>2 Linen Cloth</td></tr>
+<tr><td>55-80</td><td>Minor Healing Potion (1/55/75/95)</td><td>1 Peacebloom, 1 Mild Spices, 1 Empty Vial</td></tr>
+<tr><td>50</td><td colspan="3">Train Journeyman.</td></tr>
+<tr><td>80-85</td><td>Wool Bandage (80/80/115/150)</td><td>1 Wool Cloth</td><td>-</td></tr>
+<tr><td>85-90</td><td>Lesser Healing Potion (55/85/105/125)</td><td>1 Briarthorn, 2 Mild Spices, 1 Empty Vial</td><td>-</td></tr>
+<tr><td>90-130</td><td>Simple Poultice, makes 3 (1/90/125/160)</td><td>1 Spider Ichor, 1 Mild Spices, 1 Dalaran Noir</td><td>Trainer recipe; cures diseases. Cloth route: Wool and Heavy Wool Bandages.</td></tr>
+<tr><td>130-135</td><td>Heavy Wool Bandage (115/115/150/185)</td><td>2 Wool Cloth</td><td>-</td></tr>
+<tr><td>135-150</td><td>Healing Potion (110/135/155/175)</td><td>1 Bruiseweed, 1 Hot Spices, 1 Leaded Vial</td><td>Trainer recipe. Keep them; Hunters use them while levelling.</td></tr>
+<tr><td>125</td><td colspan="3">Buy the Expert book from Balai Lok'Wein (Horde) or Deneb Walker (Alliance), plus the two bandage manuals.</td></tr>
+<tr><td>150-180</td><td>Silk Bandage (150/150/180/210)</td><td>1 Silk Cloth</td><td>Greater Healing Potion (155/175/195/215; manual) if you have the recipe.</td></tr>
+<tr><td>180-210</td><td>Heavy Silk Bandage (180/180/210/240)</td><td>2 Silk Cloth</td><td>Manual from the Expert vendor.</td></tr>
+<tr><td>210-225</td><td>Mageweave Bandage (210/210/240/270)</td><td>1 Mageweave Cloth</td><td>Mageweave was scarce in the beta; Heavy Silk to 225 also works.</td></tr>
+<tr><td>225</td><td colspan="3">"Triage" quest (level 35) for Artisan.</td></tr>
+<tr><td>225-240</td><td>Mageweave Bandage</td><td>1 Mageweave Cloth</td><td rowspan="4">Or Superior Healing Potion (215/230/250/270; Sungrass, Soothing Spices, Crystal Vial; manual, source unknown). Everything above 225 is <span class="badge b-unc">Unconfirmed</span>.</td></tr>
+<tr><td>240-260</td><td>Heavy Mageweave Bandage (240/240/270/300)</td><td>2 Mageweave Cloth</td></tr>
+<tr><td>260-290</td><td>Runecloth Bandage (260/260/290/320)</td><td>1 Runecloth</td></tr>
+<tr><td>290-300</td><td>Heavy Runecloth Bandage (290/290/320/350)</td><td>2 Runecloth</td></tr>
+</table></div>
+</section>
+
+<section>
+<h2 id="fa-shop">10. First Aid shopping list</h2>
+<p>These are foreverchanges.pro's totals for the route above. Cloth drops from humanoids while you level. No AH prices are given, for the same reason as in section 4.</p>
+<div class="tbl"><table>
+<tr><th>Where</th><th>Item</th><th>1-225</th><th>225-300</th></tr>
+<tr><td rowspan="5">Cloth (drops) or AH</td><td>Linen Cloth</td><td>73</td><td>-</td></tr>
+<tr><td>Wool Cloth</td><td>20</td><td>-</td></tr>
+<tr><td>Silk Cloth</td><td>126</td><td>-</td></tr>
+<tr><td>Mageweave Cloth</td><td>18</td><td>74</td></tr>
+<tr><td>Runecloth</td><td>-</td><td>64</td></tr>
+<tr><td rowspan="3">Herbalism or AH</td><td>Peacebloom</td><td>40</td><td>-</td></tr>
+<tr><td>Briarthorn</td><td>6</td><td>-</td></tr>
+<tr><td>Bruiseweed</td><td>19</td><td>-</td></tr>
+<tr><td>Drops (spiders) or AH</td><td>Spider Ichor</td><td>59</td><td>-</td></tr>
+<tr><td rowspan="5">Vendor</td><td>Mild Spices</td><td>111</td><td>-</td></tr>
+<tr><td>Hot Spices</td><td>19</td><td>-</td></tr>
+<tr><td>Dalaran Noir</td><td>59</td><td>-</td></tr>
+<tr><td>Empty Vial</td><td>46</td><td>-</td></tr>
+<tr><td>Leaded Vial</td><td>19</td><td>-</td></tr>
+</table></div>
+<p class="note">wow-professions.com's cloth-heavier route lists 130 + 24 Linen (or 81 Peacebloom), 150 Wool, 134 Silk and 17 Mageweave to 225, and 16 Sungrass, 60 Mageweave, 20 Runecloth and 30 Golden Sansam beyond. Its later steps use more potions.</p>
+</section>
+
+<section>
+<h2 id="fa-recipes">11. Healing potions and curatives</h2>
+<h3>Healing potions (First Aid, 2-minute potion cooldown)</h3>
+<div class="tbl"><table>
+<tr><th>Potion</th><th>Learn (colors)</th><th>Reagents</th><th>Heals / source</th></tr>
+<tr><td>Minor Healing Potion</td><td>1 (1/55/75/95)</td><td>Peacebloom, Mild Spices, Empty Vial</td><td>70-90 / trainer</td></tr>
+<tr><td>Lesser Healing Potion</td><td>55 (85/105/125)</td><td>Briarthorn, 2 Mild Spices, Empty Vial</td><td>140-180 / trainer</td></tr>
+<tr><td>Healing Potion</td><td>110 (135/155/175)</td><td>Bruiseweed, Hot Spices, Leaded Vial</td><td>280-360 / trainer</td></tr>
+<tr><td>Greater Healing Potion</td><td>155 (155/175/195/215)</td><td>Liferoot, 3 Hot Spices, Leaded Vial</td><td>455-585 / manual (source unknown)</td></tr>
+<tr><td>Superior Healing Potion</td><td>215 (215/230/250/270)</td><td>Sungrass, Soothing Spices, Crystal Vial</td><td>700-900 / manual (source unknown). The launch client changed its use effect; details not published.</td></tr>
+<tr><td>Major Healing Potion</td><td>275 (275/290/310/330)</td><td>Golden Sansam, 3 Soothing Spices, Crystal Vial</td><td>1050-1750 / manual (source unknown)</td></tr>
+</table></div>
+<h3>Curatives</h3>
+<ul>
+<li><strong>Anti-Venom</strong> (poison):
+<ul>
+<li>Anti-Venom 80, trainer; 1 Small Venom Sac makes 3.</li>
+<li>Strong Anti-Venom 130 (manual, drop).</li>
+<li>Potent Anti-Venom 215 (new; Swollen Venom Sac).</li>
+<li>Powerful Anti-Venom 300.</li>
+</ul></li>
+<li><strong>Poultices</strong> (disease, new), each makes 3:
+<ul>
+<li>Simple, trainer: Spider Ichor, Mild Spices, Dalaran Noir.</li>
+<li>Clever 140: Murloc Fin, Soothing Spices, Thunder Ale.</li>
+<li>Superior 210: Elemental Water, Hot Spices, Skin of Dwarven Stout.</li>
+<li>Powerful 280: Essence of Water, Hot Spices, Flagon of Dwarven Honeymead.</li>
+</ul> The higher ranks come from manuals.</li>
+<li><strong>Tourniquets</strong> (bleed, new):
+<ul>
+<li>Woolen, trainer (1/120/155/190): 2 Wool Cloth, 2 Fine Thread.</li>
+<li>Leather 200: 2 Thick Leather, 2 Silken Thread.</li>
+<li>Surgical 265: Rugged Leather, Runecloth, Heavy Silken Thread.</li>
+</ul> The higher ranks come from manuals.</li>
+<li><strong>Camp objects:</strong>
+<ul>
+<li>First Aid Kit (20; 3 Linen Bandage + Refreshing Spring Water): Stamina for everyone sitting nearby, 56 at level 60. It doesn't stack with Power Word: Fortitude.</li>
+<li>Toxin Study (140, blueprint; Anti-Venom, 2 Mageweave Bandage, 2 Simple Wood): holds healing potions and anti-venom.</li>
+<li>Plague Doctor's Laboratory (300, blueprint): holds healing potions and poultices.</li>
+</ul></li>
+</ul>
+<p class="note">The 8 Oct beta build left some poultice and anti-venom tooltips blank in the client. <span class="badge b-data">Datamined</span></p>
+</section>
+
+<section>
+<h2 id="systems">12. Legacy perks and Merchant's Favor</h2>
+<h3>Legacy perks (account-wide)</h3>
+<ul>
+<li>Master Chef: 10-50% chance of an extra Cooking result, 5 ranks.</li>
+<li>Gourmand: food buffs last 33/67/100% longer.</li>
+<li>Field Medicine: shortens Recently Bandaged by 5/10 sec, outside dungeons, raids and battlegrounds.</li>
+<li>Luremaster: extra fish chance while a lure is on.</li>
+<li>Working Overtime: +4% skill-up chance per rank, any tradeskill.</li>
+<li>Dedicated Study: +1 to your lowest primary or secondary tradeskill, 23h cooldown. It works well on Cooking and First Aid.</li>
+<li>Permanence: camp rest benefits last 50% longer.</li>
+<li>Cooking, First Aid and Fishing earn no Legacy points.</li>
+</ul>
+<p><span class="badge b-conf">Confirmed</span> (perks exist) <span class="badge b-data">Datamined</span> (values)</p>
+<h3>Merchant's Favor (Cooking)</h3>
+<ul>
+<li><span class="horde">Horde:</span> Aza'bek at Durotar Supply and Logistics, just west of the Crossroads (Barrens 49.6, 29.2).</li>
+<li><span class="alli">Alliance:</span> Kalsey Sanden at Three Corners, Redridge (10.8, 72.4).</li>
+<li>They sell six smoothie recipes: Venomous (25), Slimy (100) and Mrrggl Smrrthle (125) for 30 Favor each; Calcified (180) and Spicy (200) for 60; Wicked (250) for 90.</li>
+<li>Favor comes from filling "Waylaid Crate" items and handing them in sealed.</li>
+<li>No First Aid Favor recipes are listed.</li>
+</ul>
+<p><span class="badge b-data">Datamined</span></p>
+</section>
+
+<section>
+<h2 id="changes">13. Recent changes (up to 31 Oct)</h2>
+<ul>
+<li><strong>Launch client build 1.60.1.70707 (30 Oct):</strong>
+<ul>
+<li>One Well Fed aura changed its effect type.</li>
+<li>Superior Healing Potion's use effect changed (details not published).</li>
+<li>No new Cooking or First Aid recipes.</li>
+</ul> <span class="badge b-data">Datamined</span></li>
+<li><strong>30 Oct server hotfixes (unannounced):</strong> 36 recipe entries arrived, none for Cooking or First Aid. <span class="badge b-unc">Unconfirmed</span></li>
+<li><strong>26-27 Oct notes:</strong> racial changes only. <span class="badge b-conf">Confirmed</span></li>
+<li><strong>16 Oct:</strong>
+<ul>
+<li>Vendor sell prices reduced on many profession-crafted items.</li>
+<li>Drink tooltips now show the correct total mana.</li>
+<li>Master Chef and Luremaster moved one row left in the Legacy UI (visual only).</li>
+<li>Your own fishing bobber is always targetable with a gamepad.</li>
+</ul> <span class="badge b-conf">Confirmed</span></li>
+<li><strong>8 Oct:</strong> Recipe: Peace Tea now sells to vendors for 10c. <span class="badge b-conf">Confirmed</span> In the same build, 21 Cooking recipes changed skill colors, and Raging Raptor Ribs dropped from 275 to 180. <span class="badge b-data">Datamined</span></li>
+<li><strong>1 Oct:</strong>
+<ul>
+<li>Campfires no longer hurt players below level 5, and they deal less damage to players under 90% health.</li>
+<li>Savory Whimsyfin Delight now uses orc Ninja and Pirate outfits.</li>
+</ul> <span class="badge b-conf">Confirmed</span> The client also stopped listing skill levels for 14 camp objects, including First Aid and Fishing ones. <span class="badge b-data">Datamined</span></li>
+<li><strong>24 Sep:</strong> campfire buffs can be earned while lying down, sleeping or kneeling, and you can craft while waiting. <span class="badge b-conf">Confirmed</span></li>
+</ul>
+<h3>Open conflicts</h3>
+<ul>
+<li>Journeyman Cooking level 10 gate (tester trained earlier).</li>
+<li>Barbecued Buzzard Wing: trainer recipe or bind-on-pickup drop.</li>
+<li>Journeyman and Expert Campfire skill levels.</li>
+<li>Poached Sunscale Salmon and Grilled Squid now need an Iron Oven, but two leveling guides don't mention it.</li>
+<li>Grilled Squid health value differs between databases.</li>
+<li>Whether the +5% kill-XP food line is live at launch.</li>
+<li>Whether fish "Attack Power" foods add ranged attack power.</li>
+<li>Manual sources for Greater, Superior and Major Healing Potion.</li>
+<li>All steps above 225 are untested.</li>
+</ul>
+</section>
+
+<section>
+<h2 id="sources">14. Sources</h2>
+<ul>
+<li><a href="https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-october-26/2360696">Blizzard: WoW Forever Beta Development Notes (updated 26-27 Oct)</a></li>
+<li><a href="https://news.blizzard.com/en-us/article/24301516/gather-around-the-campfire-in-world-of-warcraft-forever">Blizzard: Gather Around the Campfire</a></li>
+<li><a href="https://www.wowhead.com/forever/news/no-more-realms-in-wow-forever-382866">Wowhead: No More Realms in WoW Forever</a></li>
+<li><a href="https://us.forums.blizzard.com/en/blizzard/t/world-of-warcraft-forever-api-namespace/59774">Blizzard API forum: Forever API namespace thread</a></li>
+<li><a href="https://blizzardwatch.com/2026/10/16/first-aid-getting-new-recipes-updates-world-warcraft-forever/">Blizzard Watch: First Aid overhaul in Forever</a></li>
+<li><a href="https://www.warcrafttavern.com/forever/news/first-aid-profession-preview-for-world-of-warcraft-forever/">Warcraft Tavern: First Aid preview (floor demo)</a></li>
+<li><a href="https://www.wow-professions.com/forever/cooking-leveling-guide">wow-professions.com: Forever Cooking guide</a></li>
+<li><a href="https://www.wow-professions.com/forever/first-aid-leveling-guide">wow-professions.com: Forever First Aid guide</a></li>
+<li><a href="https://foreverchanges.pro/professions/cooking">ForeverChanges: Cooking</a></li>
+<li><a href="https://foreverchanges.pro/professions/first-aid">ForeverChanges: First Aid</a></li>
+<li><a href="https://wowforever.ninja/professions/first-aid/">wowforever.ninja: First Aid recipes</a></li>
+<li><a href="https://wowforever.ninja/professions/cooking/">wowforever.ninja: Cooking recipes</a></li>
+<li><a href="https://classicwowforever.com/professions/cooking/">ClassicWoWForever: Cooking</a></li>
+<li><a href="https://classicwowforever.com/professions/fishing/">ClassicWoWForever: Fishing</a></li>
+<li><a href="https://www.warcraftforever.wiki/wiki/Cooking">Warcraft Forever Wiki: Cooking</a></li>
+<li><a href="https://www.warcraftforever.wiki/wiki/First_Aid">Warcraft Forever Wiki: First Aid</a></li>
+<li><a href="https://foreverchanges.pro/item/18045">ForeverChanges: Tender Wolf Steak</a></li>
+<li><a href="https://foreverchanges.pro/item/13928/grilled-squid">ForeverChanges: Grilled Squid</a></li>
+<li><a href="https://wowgoldfarms.com/guides/forever/xp-food-cooking-wow-forever/">wowgoldfarms: Forever XP food</a></li>
+<li><a href="https://foreverdb.net/article/build-1-60-1-70291-game-files">ForeverDB: build 70291 changes</a></li>
+<li><a href="https://wow-forever.online/patch-notes/">wow-forever.online: beta changes by build</a></li>
+<li><a href="https://bindonforever.com/changes/1.60.1.70707">Bind on Forever: build 70707 changes</a></li>
+<li><a href="https://kami-labs.fr/en/wow-forever/patch-notes-wow-forever-30-octobre-gagnants-perdants/">kami-labs: 30 Oct unofficial hotfix summary</a></li>
+</ul>
+</section>
+<footer>Fan-made guide. World of Warcraft: Forever is a trademark of Blizzard Entertainment. Data is from pre-launch beta clients and may change.</footer>
+</div>
+</body>
+</html>
