@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#b3161e">
+<meta name="description" content="Horde-first Leatherworking and Skinning guide for Hunters in WoW Forever: breakpoints, Hunter recipes, an efficient 1-225 path, shopping list and Skinning tips.">
+<meta property="og:title" content="WoW Forever: Leatherworking &amp; Skinning for Hunters (pre-launch)">
+<meta property="og:description" content="Horde-first Leatherworking and Skinning guide for Hunters in WoW Forever: breakpoints, Hunter recipes, an efficient 1-225 path, shopping list and Skinning tips.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://jjosendaleus-alt.github.io/WoW-Forever/Leatherworking_Skinning_Guide.html">
+<meta property="og:site_name" content="WoW Forever Guides">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="WoW Forever: Leatherworking &amp; Skinning for Hunters (pre-launch)">
+<meta name="twitter:description" content="Horde-first Leatherworking and Skinning guide for Hunters in WoW Forever: breakpoints, Hunter recipes, an efficient 1-225 path, shopping list and Skinning tips.">
+<title>WoW Forever: Leatherworking &amp; Skinning for Hunters (pre-launch)</title>
+<style>
+:root{--bg:#0b0708;--panel:#151012;--panel2:#1d1416;--red:#b3161e;--red2:#e0333b;--gold:#d4a54a;--bronze:#a8743a;--text:#ece4dc;--muted:#b9aca2;--line:#3a2326}
+*{box-sizing:border-box}
+body{margin:0;background:radial-gradient(ellipse at top,#1f0b0d 0%,var(--bg) 60%);color:var(--text);font:16px/1.6 Georgia,"Times New Roman",serif}
+.wrap{max-width:980px;margin:0 auto;padding:16px}
+header{border-bottom:3px solid var(--red);padding:20px 0 12px;text-align:center}
+h1{color:var(--gold);font-size:1.9rem;margin:.2em 0;letter-spacing:.02em;text-shadow:0 2px 0 #000}
+.sub{color:var(--muted);margin:0}
+.banner{background:linear-gradient(90deg,#4a0c10,#2a0a0c);border:1px solid var(--red);border-left:6px solid var(--gold);padding:10px 14px;margin:16px 0;border-radius:6px}
+h2{color:var(--gold);border-bottom:2px solid var(--red);padding-bottom:4px;margin-top:2em;font-size:1.4rem}
+h3{color:var(--red2);font-size:1.12rem;margin-bottom:.3em}
+a{color:#f0c46a}a:hover{color:#fff}
+section,nav{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:6px 18px 14px;margin:14px 0}
+nav ol{columns:2;margin:6px 0;padding-left:1.4em}
+@media(max-width:600px){nav ol{columns:1}h1{font-size:1.5rem}}
+.tbl{overflow-x:auto}
+table{border-collapse:collapse;width:100%;margin:8px 0;font-size:.93rem}
+th{background:#3a0d11;color:var(--gold);text-align:left}
+th,td{border:1px solid var(--line);padding:6px 8px;vertical-align:top}
+tr:nth-child(even) td{background:var(--panel2)}
+.badge{display:inline-block;font:bold .72rem/1.4 Arial,sans-serif;padding:1px 7px;border-radius:10px;margin-left:4px;white-space:nowrap;vertical-align:middle}
+.b-conf{background:#1f4a22;color:#d6f5d8;border:1px solid #3e8a43}
+.b-data{background:#4a3a12;color:#ffe9b0;border:1px solid var(--bronze)}
+.b-unc{background:#5c1015;color:#ffd6d8;border:1px solid var(--red2)}
+.b-cls{background:#2b2b44;color:#dcdcff;border:1px solid #6b6bb0}
+.horde{color:#ff6a6f;font-weight:bold}.alli{color:#8fb4ff;font-weight:bold}
+.note{color:var(--muted);font-size:.9rem}
+.legend li{margin:4px 0}
+footer{color:var(--muted);font-size:.85rem;text-align:center;padding:20px 0;border-top:1px solid var(--line);margin-top:24px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+<h1>WoW Forever: Leatherworking &amp; Skinning for Hunters</h1>
+<p class="sub">Horde-first guide for the 4 Nov 2026 launch</p>
+</header>
+
+<div class="banner"><strong>Last updated 31 Oct 2026, pre-launch, based on beta client data.</strong> The beta stopped at character level 30 and skill 225, so anything above 225 has not been tested in play. Everything here can still change at launch.</div>
+
+<section>
+<h2 id="legend">Badge legend</h2>
+<ul class="legend">
+<li><span class="badge b-conf">Confirmed</span> Stated in Blizzard's own posts or patch notes.</li>
+<li><span class="badge b-data">Datamined</span> Read from the beta or launch client files by fan sites, not yet announced or verified in play.</li>
+<li><span class="badge b-unc">Unconfirmed</span> Player reports, one source only, or sources that disagree.</li>
+<li><span class="badge b-cls">Classic-inferred</span> Taken from Classic data; not shown in Forever data yet.</li>
+</ul>
+<p class="note">Unless marked otherwise, recipe, skill-color and reagent numbers are <span class="badge b-data">Datamined</span> from beta builds 1.60.1.70124 to 70707.</p>
+</section>
+
+<nav>
+<h2 style="margin-top:.4em">Contents</h2>
+<ol>
+<li><a href="#breakpoints">Leatherworking breakpoints</a></li>
+<li><a href="#recipes">Hunter recipes</a></li>
+<li><a href="#path">Efficient path 1-225</a></li>
+<li><a href="#shopping">Shopping list</a></li>
+<li><a href="#skinning">Skinning</a></li>
+<li><a href="#when">When to level</a></li>
+<li><a href="#changes">Recent changes</a></li>
+<li><a href="#sources">Sources</a></li>
+</ol>
+</nav>
+
+<section>
+<h2 id="breakpoints">1. Leatherworking breakpoints</h2>
+<div class="tbl"><table>
+<tr><th>Rank (skill cap)</th><th>Requirement</th><th>Trainer</th></tr>
+<tr><td>Apprentice (75)</td><td>Character level 5, or none <span class="badge b-unc">Unconfirmed</span> (sources disagree)</td><td><span class="horde">Horde:</span> Kamari (Orgrimmar), Mak (Thunder Bluff), Dan Golthas (Undercity), Chaw Stronghide (Bloodhoof Village), Shelene Rhobart (SE of Brill). Durotar has none.<br><span class="alli">Alliance:</span> Randal Worth (Stormwind), Gretta Finespindle (Ironforge), Darianna (Darnassus), Adele Fielder (Elwynn), Nadyia Maneweaver (Teldrassil)</td></tr>
+<tr><td>Journeyman (150)</td><td>Skill 50, level 10</td><td><span class="horde">Horde:</span> Karolek (Orgrimmar), Tarn (Thunder Bluff), Arthur Moore (Undercity), Krulmoo Fullmoon (Camp Taurajo)<br><span class="alli">Alliance:</span> Simon Tanner (Stormwind), Fimble Finespindle (Ironforge), Faldron (Darnassus)</td></tr>
+<tr><td>Expert (225)</td><td>Skill 125, level 20, 50s</td><td><span class="horde">Horde:</span> Una (Thunder Bluff)<br><span class="alli">Alliance:</span> Telonis (Darnassus)</td></tr>
+<tr><td>Artisan (300)</td><td>Skill 200, level 35 <span class="badge b-unc">Unconfirmed</span> (above the beta cap)</td><td><span class="horde">Horde:</span> Hahrana Ironhide (Camp Mojache, Feralas)<br><span class="alli">Alliance:</span> Drakk Stonehand (Aerie Peak, Hinterlands)</td></tr>
+</table></div>
+<h3>Milestones that matter</h3>
+<ul>
+<li><strong>Skill 20: Camp Tent.</strong> Everyone sitting nearby gets rested XP, topped up to 5% of a level. <span class="badge b-conf">Confirmed</span></li>
+<li><strong>Skill 125-140: Tanning Rack.</strong>
+<ul>
+<li>48 Leatherworking recipes can only be crafted next to a rack, including every Stalker's piece and the Trapper's legguards.</li>
+<li>The first rack recipes open at 125, but you need 140 to learn and place a rack. Below 140 you can craft at another leatherworker's rack.</li>
+<li>Get the blueprint from Happy Camper for 15s, just outside Ironforge at Dun Morogh 51.6, 40.0. He also sells to Horde, but Ironforge guards stand nearby. It also drops from Razorclaw the Butcher in Shadowfang Keep, very rarely.</li>
+<li>Each rack costs 5 Medium Leather, 3 Fine Thread and 2 Simple Wood. It is used up when you place it and lasts 15 minutes.</li>
+<li>All camp objects share a 1-hour cooldown.</li>
+</ul>
+<span class="badge b-data">Datamined</span> <span class="badge b-unc">Unconfirmed</span> (vendor and drop rate are player reports)</li>
+<li><strong>Skill 150, 225 and 300:</strong> one account-wide Legacy point each, the first time any character on the account reaches them. <span class="badge b-conf">Confirmed</span></li>
+<li><strong>Skill 300:</strong> Sewing Machine (from a blueprint), plus the "Leatherworker" title from a certification costing 1,000 Merchant's Favor. <span class="badge b-data">Datamined</span></li>
+</ul>
+</section>
+
+<section>
+<h2 id="recipes">2. Hunter recipes</h2>
+<p>Hunters wear leather until level 40 and mail after. Leatherworking makes both. Many of Forever's new crafted pieces bind on pickup, so you have to make them yourself.</p>
+<h3>Merchant's Favor (new currency)</h3>
+<p>Fill "Waylaid Crate" items, which are rare monster drops and also sold on the AH, and hand them in for Merchant's Favor. A crate pays 5-20 Favor.</p>
+<ul>
+<li><span class="horde">Horde:</span> crates go to Dokimi and Leatherworking recipes come from Pawani, at Durotar Supply and Logistics just west of the Crossroads (Barrens 49.6, 29.6).</li>
+<li><span class="alli">Alliance:</span> Daniel Stitchsong at Three Corners, Redridge.</li>
+</ul>
+<p>Hunter tip: a Journeyman Fabrics crate takes 2 Cured Medium Hide and pays 20 Favor. <span class="badge b-data">Datamined</span></p>
+<div class="tbl"><table>
+<tr><th>Level band</th><th>Recipe</th><th>Skill / source</th><th>Notes</th></tr>
+<tr><td>Wear level 5+</td><td>Light Leather Quiver / Small Leather Ammo Pouch</td><td>25, trainer</td><td>4 Light Leather + 2 Coarse Thread / 3 Light Leather + 4 Coarse Thread. Low value: vendor quivers give the same 10% haste. <span class="badge b-cls">Classic-inferred</span> (haste values)</td></tr>
+<tr><td>Wear level 10</td><td>Dark Leather Boots (Agility)</td><td>35; pattern 5g from Granny Finespindle, Ironforge</td><td>24 Light Leather, 2 Cured Light Hide, 1 Gray Dye. Grey at 40. <span class="badge b-unc">Unconfirmed</span> Horde pattern source not found.</td></tr>
+<tr><td>Wear levels 12-25</td><td>Trapper's set (Hunter line)</td><td>Merchant's Favor patterns, 30 Favor each: belt 60, gloves 75, boots 85, hood 100, tunic 110, legguards 125</td><td>
+<ul>
+<li>Needs Pristine Leather: belt 2, gloves 2, boots 3, hood 4, tunic 6, legguards 8.</li>
+<li>Also needs Deviate Scale.</li>
+<li>Wear levels: belt 12, gloves 15, boots 17, hood 20.</li>
+<li>The legguards need a Tanning Rack.</li>
+<li>Trapper's Armor (75), Pants (100) and Helm (125) patterns are now tradeable recipe items. <span class="badge b-unc">Unconfirmed</span> (datamined 30 Oct)</li>
+</ul></td></tr>
+<tr><td>Wear level 30</td><td>Heavy Quiver / Heavy Leather Ammo Pouch</td><td>Trainer, orange 125 / yellow 145</td><td>8 Heavy Leather + 2 Fine Thread. 14 slots, 12% ranged haste. Vendors also sell the Heavy Quiver for 18-20s (Stormwind, Ironforge, Undercity).</td></tr>
+<tr><td>Wear level 30</td><td>Stalker's Leather Belt</td><td>150; pattern seen at Karolek, Orgrimmar, 18s <span class="badge b-unc">Unconfirmed</span></td><td>8 Heavy Leather, 2 Cured Medium Hide, 1 Elemental Air. Needs a Tanning Rack.</td></tr>
+<tr><td>Wear levels 30-50</td><td>Stalker's line (leather, then mail)</td><td>Gloves 175 (60 Favor); Mail Shoulders 210 (60); Mail Bracers 225 (90); Mail Sabatons 235 (90); Mail Belt 250 (90); Mail Gauntlets 250 (pattern)</td><td>Needs a Tanning Rack (gloves through bracers), Pristine Hide/Leather and Elemental Air.</td></tr>
+<tr><td>Wear level 40</td><td>Stalker's Mail Boots</td><td>200, pattern (source not found) <span class="badge b-unc">Unconfirmed</span></td><td>188 armor, +11 Agility, +7 Stamina, +7 Intellect, +5 Spirit. Needs a Tanning Rack. A third-party site lists it as best in slot at level 40 for all Hunter specs.</td></tr>
+<tr><td>Wear level 40</td><td>Quickdraw Quiver / Thick Leather Ammo Pouch</td><td>Trainer, ~200 <span class="badge b-unc">Unconfirmed</span> (one page says 225)</td><td>Quiver: 12 Thick Leather, 1 Cured Thick Hide, 1 Elixir of Agility, 4 Silken Thread. 16 slots, 13% haste.<br>Pouch: 10 Thick Leather, 1 Cured Thick Hide, 1 Elixir of Defense, 6 Silken Thread.</td></tr>
+<tr><td>All levels</td><td>Armor kits</td><td>Light 1, Medium 75, Heavy 125, Thick 175, Rugged 225; Forceful variants from patterns</td><td>Forceful kits add attack power. An 8 Oct fix stopped them granting double ranged attack power. <span class="badge b-conf">Confirmed</span></td></tr>
+</table></div>
+</section>
+
+<section>
+<h2 id="path">3. Efficient path, 1-225</h2>
+<p>Craft the cheapest recipe that is still orange or yellow, and move on when it turns green. Many recipes go grey earlier than in Classic, so don't follow Classic guides. The route below combines the beta guides; their exact counts differ.</p>
+<div class="tbl"><table>
+<tr><th>Skill</th><th>Craft</th><th>Each needs</th></tr>
+<tr><td>1-30/36</td><td>Light Leather (keep it)</td><td>3 Ruined Leather Scraps</td></tr>
+<tr><td>to ~45-50</td><td>Light Armor Kit (orange to 30, grey 60), or Cured Light Hide (30-55, keep)</td><td>1 Light Leather / 1 Light Hide + 1 Salt</td></tr>
+<tr><td>50</td><td colspan="2">Train Journeyman (level 10)</td></tr>
+<tr><td>~51-84</td><td>Embossed Leather Gloves</td><td>3 Light Leather, 2 Coarse Thread</td></tr>
+<tr><td>~84-105</td><td>Fine Leather Belt (keep ~10)</td><td>6 Light Leather, 2 Coarse Thread</td></tr>
+<tr><td>~105-117</td><td>Light Leather Pants</td><td>10 Light Leather, 1 Cured Light Hide, 1 Fine Thread</td></tr>
+<tr><td>~117-131</td><td>Dark Leather Belt</td><td>1 Fine Leather Belt, 1 Cured Medium Hide, 2 Fine Thread, 1 Gray Dye</td></tr>
+<tr><td>125</td><td colspan="2">Train Expert (level 20, 50s)</td></tr>
+<tr><td>~125-145</td><td>Cured Heavy Hide (keep), or Hillman's Shoulders / Gloves</td><td>1 Heavy Hide + 3 Salt / Medium Leather + Fine Thread</td></tr>
+<tr><td>~140-162</td><td>Hillman's Leather Gloves</td><td>14 Medium Leather, 4 Fine Thread</td></tr>
+<tr><td>~165-199</td><td>Guardian Gloves</td><td>4 Heavy Leather, 1 Cured Heavy Hide, 1 Silken Thread</td></tr>
+<tr><td>200-213</td><td>Nightscape Headband</td><td>5 Thick Leather, 2 Silken Thread</td></tr>
+<tr><td>213-225</td><td>Thick Leather Ammo Pouch (also a Hunter upgrade)</td><td>10 Thick Leather, 1 Cured Thick Hide, 1 Elixir of Defense, 6 Silken Thread</td></tr>
+</table></div>
+<p class="note">Beyond 225 <span class="badge b-unc">Unconfirmed</span> (planned routes, untested): Cured Rugged Hide, then Rugged Armor Kit, Wicked Leather Gauntlets, Frostsaber Boots and Heavy Scorpid Helm.</p>
+</section>
+
+<section>
+<h2 id="shopping">4. Shopping list (skill 1-125)</h2>
+<p>These are counts for one beta route (wow-professions.com), summed step by step, so buy a few extra. The 1-225 totals are what that guide lists.</p>
+<p><strong>No AH gold prices are given.</strong> The beta had no reliable price data, Forever launches with brand-new empty auction houses (one per ruleset pool), and Blizzard has not announced an auction API for Forever. Any number now would be a guess.</p>
+<div class="tbl"><table>
+<tr><th>Where</th><th>Item</th><th>1-125</th><th>1-225 (guide total)</th></tr>
+<tr><td rowspan="5">Vendor (Trade / Leatherworking Supplies)</td><td>Coarse Thread</td><td>~80</td><td>~130 <span class="badge b-unc">Unconfirmed</span> (other route)</td></tr>
+<tr><td>Fine Thread</td><td>~44</td><td>~60-100 (routes differ)</td></tr>
+<tr><td>Salt</td><td>~37</td><td>up to ~180 (route-dependent)</td></tr>
+<tr><td>Gray Dye</td><td>10</td><td>10</td></tr>
+<tr><td>Silken Thread</td><td>-</td><td>~100-165 (routes differ)</td></tr>
+<tr><td rowspan="5">Farm (Skinning) or AH</td><td>Ruined Leather Scraps</td><td>100 (or ~60 Light Leather instead)</td><td>100</td></tr>
+<tr><td>Light Leather</td><td>~415</td><td>415</td></tr>
+<tr><td>Light Hide</td><td>27</td><td>27</td></tr>
+<tr><td>Medium Hide</td><td>10</td><td>10</td></tr>
+<tr><td>Medium / Heavy / Thick Leather; Heavy Hide</td><td>-</td><td>310 Medium; 20 Heavy Hide + ~120 Heavy Leather, plus 104 Heavy Leather; 26 Cured Heavy Hide; 315 Thick</td></tr>
+<tr><td rowspan="3">One-off vendor buys</td><td>Expert training</td><td colspan="2">50s</td></tr>
+<tr><td>Blueprint: Tanning Rack (Happy Camper)</td><td colspan="2">15s <span class="badge b-unc">Unconfirmed</span></td></tr>
+<tr><td>Heavy Quiver (if you skip crafting it)</td><td colspan="2">18-20s</td></tr>
+</table></div>
+</section>
+
+<section>
+<h2 id="skinning">5. Skinning</h2>
+<h3>Ranks and trainers</h3>
+<div class="tbl"><table>
+<tr><th>Rank (cap)</th><th>Train at</th><th>Cost</th></tr>
+<tr><td>Apprentice (75)</td><td>Any time</td><td>10c</td></tr>
+<tr><td>Journeyman (150)</td><td>Skill 50</td><td>5s</td></tr>
+<tr><td>Expert (225)</td><td>Skill 125</td><td>50s</td></tr>
+<tr><td>Artisan (300)</td><td>Skill 200 (one source adds character level 35 <span class="badge b-unc">Unconfirmed</span>)</td><td>5g</td></tr>
+</table></div>
+<p class="note">Training costs come from one guide. <span class="badge b-unc">Unconfirmed</span></p>
+<ul>
+<li><span class="horde">Horde full trainers:</span> Thuwd (Orgrimmar 63.2, 45.4), Mooranta (Thunder Bluff), Killian Hagey (Undercity), Dranh (Barrens 45, 59), Yonn Deepcut (Bloodhoof Village), Rand Rhobart (Tirisfal), Malux (Desolace), Kulleg Stonehorn (Feralas).</li>
+<li><span class="horde">Horde Apprentice-only junior trainers:</span> Kagil (Valley of Trials), Nawka Wildsong (Camp Narache), Margaret Weaver (Deathknell).</li>
+<li><span class="alli">Alliance:</span> Maris Granger (Stormwind), Balthus Stoneflayer (Ironforge), Eladriel (Darnassus), Helene Peltskinner (Goldshire), Radnaal Maneweaver (Teldrassil), Jayla (Ashenvale), Wilma Ranthal (Redridge). Junior trainers: Riley Peltskinner, Brighid Stormflayer, Terunne Bearshaper.</li>
+<li><strong>Both factions:</strong> Ishlee Breezewhisper and Mendalass Tattermend (Zephras Isle).</li>
+<li>An early quest in each starting zone offers the book "Pelt Collecting for Beginners". It teaches Skinning and adds 2 skill. You need a Skinning Knife in your bags, not equipped.</li>
+</ul>
+<h3>Skill needed by creature level</h3>
+<div class="tbl"><table>
+<tr><th>Creature level</th><th>Skill needed</th></tr>
+<tr><td>1-10</td><td>1</td></tr>
+<tr><td>11-20</td><td>(level - 10) x 10, e.g. 15 needs 50, 20 needs 100</td></tr>
+<tr><td>21+</td><td>level x 5, e.g. 30 needs 150, 40 needs 200, 60 needs 300, 61 needs 305</td></tr>
+</table></div>
+<p class="note">Skill-up colors: within 25 points above the requirement is orange, 25-50 yellow, 50-100 green, over 100 grey. <span class="badge b-cls">Classic-inferred</span></p>
+<h3>Zone path 1-300 (Horde-friendly)</h3>
+<div class="tbl"><table>
+<tr><th>Skill</th><th>Where</th></tr>
+<tr><td>1-75</td><td>Any starting zone. Starter mobs give points all the way to 75. Horde: Valley of Trials boars, then Durotar.</td></tr>
+<tr><td>50</td><td>Train Journeyman. Junior trainers won't teach it.</td></tr>
+<tr><td>75-150</td><td>The Barrens (Sunscale Scytheclaw, Zhevra Charger, Ornery Plainstrider; raptor camp west of Northwatch Hold, levels 16-18). Optional: Wetlands Mottled Scytheclaw/Razormaw (levels 25-27) for 125-150.</td></tr>
+<tr><td>125</td><td>Train Expert.</td></tr>
+<tr><td>150-225</td><td>Hillsbrad yeti cave (Cave/Ferocious Yeti, levels 30-32; from Tarren Mill), or Stranglethorn Vale, Thousand Needles, Alterac Mountains.</td></tr>
+<tr><td>200</td><td>Train Artisan.</td></tr>
+<tr><td>225-280</td><td>Feralas, Feral Scar Vale yetis (levels 43-46; from Camp Mojache). Also Stranglethorn, Tanaris, Hinterlands.</td></tr>
+<tr><td>280-300</td><td>Un'Goro Crater dinosaurs (levels 50-55), Winterspring, Silithus, Eastern Plaguelands.</td></tr>
+</table></div>
+<h3>Forever-specific Skinning</h3>
+<ul>
+<li><strong>One skin per creature:</strong> since the 1 Oct beta build, a creature can be skinned once, even with several skinners in the group. <span class="badge b-conf">Confirmed</span></li>
+<li><strong>Pristine Leather</strong> (new Scarce material) goes into about 126 recipes. Trapper's gear needs it.
+<ul>
+<li>One guide: skinned in Loch Modan and the Barrens, and also dropped as loot. <span class="badge b-unc">Unconfirmed</span></li>
+<li>A player test: only skinners at character level 25 or lower get it, from level 10-25 beasts outside starting zones. <span class="badge b-unc">Unconfirmed</span></li>
+<li>Either way, stock up while levelling.</li>
+</ul></li>
+<li><strong>Pristine Hide</strong> (Wetlands Maddened Rotclaws) and <strong>Pristine Scale</strong> are also new.</li>
+<li><strong>Camp Chair</strong> (skill 20; 3 Light Leather, 2 Simple Wood): 2% crit for everyone sitting nearby. It doesn't stack with Moonkin Aura. <span class="badge b-conf">Confirmed</span>
+<ul>
+<li>Upgrades: Field Guide (140; grants Track Beasts; blueprint from Lady Anacondra, Wailing Caverns).</li>
+<li>Trapper's Workbench (300; holds a trap; blueprint from Houndmaster Loksey, Scarlet Monastery, very rare).</li>
+</ul> <span class="badge b-data">Datamined</span></li>
+<li><strong>Keen Skinning Knife:</strong> +3 Skinning. Reward from the <span class="horde">Horde</span> quest "Unwelcome Guests" (Barrens, quest level 14). It counts as a skinning knife and is a caster dagger. Its item level dropped 19 to 18 in the 27 Oct build. <span class="badge b-data">Datamined</span></li>
+<li><strong>Other skill boosts:</strong> Enchant Gloves - Skinning (+5) and the new Advanced Skinning (+10); Cartilage Shapers (+4).</li>
+<li><strong>Apprentice's Skinning Satchel</strong> (4 slots) from junior trainers. Hides now stack to 20.</li>
+<li><strong>Legacy perks:</strong>
+<ul>
+<li>Bountiful Harvest: +20% Scarce materials per rank, 5 ranks.</li>
+<li>Working Overtime: +4% skill-up chance per rank, 5 ranks.</li>
+<li>Performance Bonus: 5/10/15% chance of double crate Favor.</li>
+<li>Dedicated Study: +1 to your lowest tradeskill, 23h cooldown.</li>
+<li>Skinning itself earns no Legacy points.</li>
+</ul> <span class="badge b-conf">Confirmed</span> (perks exist) <span class="badge b-data">Datamined</span> (values)</li>
+</ul>
+</section>
+
+<section>
+<h2 id="when">6. When to level, and pairing</h2>
+<ul>
+<li><strong>Pairing:</strong> Leatherworking + Skinning while levelling. Every major guide agrees, and Hunters kill beasts all day anyway. Common endgame swap: Engineering + Mining.</li>
+<li><strong>Level 1-10:</strong> take Skinning at once (book or junior trainer) and skin everything. Learn Leatherworking by level 5-10 and push it to 50.</li>
+<li><strong>Level 10:</strong> train Journeyman in both. Start filling crates for Favor.</li>
+<li><strong>Levels 10-20:</strong> aim for LW 125 by level 20, when Expert opens, and 140 for the Tanning Rack. Buy Trapper's patterns as your Favor allows: hood first (wear level 20), then boots, gloves, belt. Hoard Pristine Leather while you are level 25 or lower.</li>
+<li><strong>Levels 30-40:</strong> Heavy Quiver or Ammo Pouch and the Stalker's belt at 30. LW 200 for Stalker's Mail Boots and the Quickdraw Quiver at 40.</li>
+<li><strong>Level 35:</strong> Artisan training.</li>
+</ul>
+</section>
+
+<section>
+<h2 id="changes">7. Recent changes (up to 31 Oct)</h2>
+<ul>
+<li><strong>27 Oct notes:</strong> the official notes from 26-27 Oct only cover racial abilities, with no profession changes. Orc Command (+5% Hunter pet damage) is back, and Troll Berserking now lasts 15s. <span class="badge b-conf">Confirmed</span></li>
+<li><strong>Launch client build 1.60.1.70707 (30 Oct):</strong>
+<ul>
+<li>Aspect of the Hawk cut roughly in half (rank 5: 90 to 47 attack power).</li>
+<li>Trueshot Aura rank 3: 50 to 30.</li>
+<li>No Leatherworking or Skinning recipe changes.</li>
+</ul> <span class="badge b-data">Datamined</span></li>
+<li><strong>30 Oct server hotfixes (unannounced):</strong>
+<ul>
+<li>The servers now send 36 recipe entries, including tradeable patterns for the Trapper's, Brawler's and other sets: armor at 75, pants at 100, helm at 125.</li>
+<li>Toughened Leather Armor becomes an uncommon bind-on-equip item with Stamina and Spirit.</li>
+</ul> <span class="badge b-unc">Unconfirmed</span></li>
+<li><strong>16 Oct:</strong> vendor sell prices reduced on many profession-crafted items (amount not given). Legacy Bartering no longer discounts training or repairs. <span class="badge b-conf">Confirmed</span></li>
+<li><strong>1 Oct:</strong>
+<ul>
+<li>One skin per creature restored.</li>
+<li>Dungeon-drop Blacksmithing and Leatherworking recipes made available.</li>
+<li>Fewer Poor Copper Veins in starter areas.</li>
+</ul> <span class="badge b-conf">Confirmed</span></li>
+<li><strong>Auction houses:</strong> Forever has no realms. Players are grouped into ruleset pools (Normal, PvP, RP), each with a fresh economy at launch. <span class="badge b-conf">Confirmed</span> Blizzard has not announced a Game Data API namespace for Forever auctions. Fan price sites rely on player-uploaded scans.</li>
+</ul>
+<h3>Open conflicts</h3>
+<ul>
+<li>Apprentice LW level gate: level 5 vs none.</li>
+<li>Quickdraw Quiver training skill: ~200 vs 225.</li>
+<li>Pristine Leather rules: zone list vs the level-25 skinner limit.</li>
+<li>Artisan Skinning level 35: one source only.</li>
+<li>Horde source for Dark Leather Boots: unknown.</li>
+<li>Stalker's Mail Boots pattern source: unknown.</li>
+<li>Shopping counts vary by route.</li>
+</ul>
+</section>
+
+<section>
+<h2 id="sources">8. Sources</h2>
+<ul>
+<li><a href="https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-october-26/2360696">Blizzard: WoW Forever Beta Development Notes (updated 26-27 Oct)</a></li>
+<li><a href="https://news.blizzard.com/en-us/article/24301516/gather-around-the-campfire-in-world-of-warcraft-forever">Blizzard: Gather Around the Campfire</a></li>
+<li><a href="https://www.wowhead.com/forever/news/no-more-realms-in-wow-forever-382866">Wowhead: No More Realms in WoW Forever</a></li>
+<li><a href="https://www.wowhead.com/forever/guide/wow-forever-profession-pairings-by-class-35082">Wowhead: Profession Pairings by Class</a></li>
+<li><a href="https://www.wowhead.com/forever/guide/professions/skinning/overview-leveling">Wowhead: Skinning overview</a></li>
+<li><a href="https://us.forums.blizzard.com/en/blizzard/t/world-of-warcraft-forever-api-namespace/59774">Blizzard API forum: Forever API namespace thread</a></li>
+<li><a href="https://www.wow-professions.com/forever/leatherworking-leveling-guide">wow-professions.com: Forever Leatherworking guide</a></li>
+<li><a href="https://www.wow-professions.com/forever/skinning-leveling-guide">wow-professions.com: Forever Skinning guide</a></li>
+<li><a href="https://foreverartisan.app/guides/leatherworking/">ForeverArtisan: Leatherworking 1-300</a></li>
+<li><a href="https://foreverchanges.pro/professions/leatherworking">ForeverChanges: Leatherworking</a></li>
+<li><a href="https://foreverchanges.pro/tanning-rack">ForeverChanges: Tanning Rack</a></li>
+<li><a href="https://foreverchanges.pro/merchants-favor">ForeverChanges: Merchant's Favor</a></li>
+<li><a href="https://wowforever.ninja/professions/leatherworking/">wowforever.ninja: Leatherworking recipes</a></li>
+<li><a href="https://classicwowforever.com/professions/best/hunter/">ClassicWoWForever: Best Hunter professions</a></li>
+<li><a href="https://classicwowforever.com/professions/skinning/">ClassicWoWForever: Skinning</a></li>
+<li><a href="https://conquestcapped.com/guides/wow-forever/wow-forever-skinning/">ConquestCapped: Forever Skinning guide</a></li>
+<li><a href="https://www.stillsixty.com/professions/skinning/leveling">stillsixty: Skinning leveling</a></li>
+<li><a href="https://theforeverera.com/en/items/252562/">The Forever Era: Stalker's Mail Boots</a></li>
+<li><a href="https://wowdb.wiki/forever/professions/leatherworking/quickdraw-quiver">wowdb.wiki: Quickdraw Quiver</a></li>
+<li><a href="https://bindonforever.com/changes/1.60.1.70707">Bind on Forever: build 70707 changes</a></li>
+<li><a href="https://metammo.com/wow-forever/patch-notes/1.60.1.70630">METAMMO: build 70630 notes</a></li>
+<li><a href="https://kami-labs.fr/en/wow-forever/patch-notes-wow-forever-30-octobre-gagnants-perdants/">kami-labs: 30 Oct unofficial hotfix summary</a></li>
+</ul>
+</section>
+<footer>Fan-made guide. World of Warcraft: Forever is a trademark of Blizzard Entertainment. Data is from pre-launch beta clients and may change.</footer>
+</div>
+</body>
+</html>
