@@ -4,16 +4,16 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#b3161e">
-<meta name="description" content="Horde-first Cooking and First Aid guide for WoW Forever: 1-300 paths, shopping lists, buff foods, Fishing notes for cooks and the expanded First Aid.">
-<meta property="og:title" content="WoW Forever: Cooking &amp; First Aid Guide (pre-launch)">
-<meta property="og:description" content="Horde-first Cooking and First Aid guide for WoW Forever: 1-300 paths, shopping lists, buff foods, Fishing notes for cooks and the expanded First Aid.">
+<meta property="og:title" content="WoW Forever: Cooking, Fishing &amp; First Aid Guide (pre-launch)">
+<meta property="og:description" content="Horde-first WoW Forever guide to Cooking, Fishing and First Aid 1-300, with a combined Fishing and Cooking route to 300 by level 35.">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://jjosendaleus-alt.github.io/WoW-Forever/Cooking_First_Aid_Guide.html">
+<meta property="og:url" content="https://wowforeverguides.github.io/WoW-Forever/Cooking_First_Aid_Guide.html">
 <meta property="og:site_name" content="WoW Forever Guides">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="WoW Forever: Cooking &amp; First Aid Guide (pre-launch)">
-<meta name="twitter:description" content="Horde-first Cooking and First Aid guide for WoW Forever: 1-300 paths, shopping lists, buff foods, Fishing notes for cooks and the expanded First Aid.">
-<title>WoW Forever: Cooking &amp; First Aid Guide (pre-launch)</title>
+<meta name="twitter:title" content="WoW Forever: Cooking, Fishing &amp; First Aid Guide (pre-launch)">
+<meta name="twitter:description" content="Horde-first WoW Forever guide to Cooking, Fishing and First Aid 1-300, with a combined Fishing and Cooking route to 300 by level 35.">
+<title>WoW Forever: Cooking, Fishing &amp; First Aid Guide (pre-launch)</title>
+<meta name="description" content="Horde-first WoW Forever guide to Cooking, Fishing and First Aid 1-300, with a combined Fishing and Cooking route to 300 by level 35.">
 <style>
 :root{--bg:#0b0708;--panel:#151012;--panel2:#1d1416;--red:#b3161e;--red2:#e0333b;--gold:#d4a54a;--bronze:#a8743a;--text:#ece4dc;--muted:#b9aca2;--line:#3a2326}
 *{box-sizing:border-box}
@@ -42,6 +42,8 @@ tr:nth-child(even) td{background:var(--panel2)}
 .horde{color:#ff6a6f;font-weight:bold}.alli{color:#8fb4ff;font-weight:bold}
 .note{color:var(--muted);font-size:.9rem}
 .legend li{margin:4px 0}
+.vid{display:inline-block;font:bold .7rem/1.4 Arial,sans-serif;padding:0 6px;border-radius:4px;margin-left:4px;background:#2a1a0a;color:var(--gold);border:1px dashed var(--bronze);text-decoration:none;vertical-align:middle}
+.ver{display:inline-block;font:bold .8rem/1.4 Arial,sans-serif;padding:2px 8px;border-radius:4px;background:#3a0d11;color:var(--gold);border:1px solid var(--gold)}
 footer{color:var(--muted);font-size:.85rem;text-align:center;padding:20px 0;border-top:1px solid var(--line);margin-top:24px}
 </style>
 </head>
@@ -78,11 +80,12 @@ html{scroll-padding-top:64px}
 <!-- SITE-NAV:END -->
 <div class="wrap">
 <header>
-<h1>WoW Forever: Cooking &amp; First Aid</h1>
-<p class="sub">Horde-first guide for the 4 Nov 2026 launch, with Hunter notes and the Fishing you need</p>
+<h1>WoW Forever: Cooking, Fishing &amp; First Aid</h1>
+<p class="sub">Horde-first guide for the 4 Nov 2026 launch, with Hunter notes and a combined Fishing and Cooking route</p>
+<p><span class="ver">Version v2026-11-01.1 &middot; 1 Nov 2026</span></p>
 </header>
 
-<div class="banner"><strong>Last updated 31 Oct 2026, pre-launch, based on beta client data.</strong> The beta stopped at character level 30 and skill 225, so anything above 225 has not been tested in play. Everything here can still change at launch.</div>
+<div class="banner"><strong>Last updated 1 Nov 2026 (version v2026-11-01.1), pre-launch, based on beta client data and a public guide video.</strong> The beta stopped at character level 30 and skill 225, so anything above 225, and anything that needs level 35 (both Artisan quests), has not been tested in play. Everything here can still change at launch.</div>
 
 <section>
 <h2 id="legend">Badge legend</h2>
@@ -91,6 +94,7 @@ html{scroll-padding-top:64px}
 <li><span class="badge b-data">Datamined</span> Read from the beta or launch client files by fan sites, not yet announced or verified in play.</li>
 <li><span class="badge b-unc">Unconfirmed</span> Player reports, one source only, or sources that disagree.</li>
 <li><span class="badge b-cls">Classic-inferred</span> Taken from Classic data; not shown in Forever data yet.</li>
+<li><a class="vid" href="#src-video">video</a> Said or shown in Icosiol's public guide video "WoW Forever Fishing &amp; Cooking | 300 by Level 35" (31 Oct 2026). The badge beside it says how far other sources back it up.</li>
 </ul>
 <p class="note">Unless marked otherwise, recipe, reagent, buff and skill-color numbers are <span class="badge b-data">Datamined</span> from beta builds 1.60.1.70124 to 70707. Colors are written as orange / yellow / green / grey: the skill at which a recipe turns each color.</p>
 </section>
@@ -103,7 +107,9 @@ html{scroll-padding-top:64px}
 <li><a href="#cook-path">Cooking path 1-300</a></li>
 <li><a href="#cook-shop">Cooking shopping list</a></li>
 <li><a href="#buff">Key buff foods (Hunter first)</a></li>
-<li><a href="#fishing">Fishing notes for cooks</a></li>
+<li><a href="#fishing">Fishing 1-300: ranks, trainers and spots</a></li>
+<li><a href="#combo">Fishing + Cooking route to 300 by level 35</a></li>
+<li><a href="#fish-gear">Fishing gear and useful items</a></li>
 <li><a href="#fa-exists">First Aid in Forever: it exists</a></li>
 <li><a href="#fa-train">First Aid ranks and trainers</a></li>
 <li><a href="#fa-path">First Aid path 1-300</a></li>
@@ -121,9 +127,9 @@ html{scroll-padding-top:64px}
 <div class="tbl"><table>
 <tr><th>Rank (skill cap)</th><th>How to learn</th><th>Cost</th></tr>
 <tr><td>Apprentice (75)</td><td>Any Cooking trainer, no level gate</td><td>1s</td></tr>
-<tr><td>Journeyman (150)</td><td>Any trainer at skill 50. Level 10 in Classic; one tester trained it earlier and reported it as a possible bug. <span class="badge b-unc">Unconfirmed</span></td><td>5s</td></tr>
-<tr><td>Expert (225)</td><td>Expert Cookbook at skill 125. <span class="horde">Horde:</span> Wulan, Shadowprey Village, Desolace. <span class="alli">Alliance:</span> Shandrina, Mystral Lake, Ashenvale.</td><td>1g</td></tr>
-<tr><td>Artisan (300)</td><td>Quest "Clamlette Surprise" from Dirge Quikcleave in Gadgetzan, level 35 and skill 225. Bring 12 Giant Egg, 10 Zesty Clam Meat and 20 Alterac Swiss. <span class="horde">Horde</span> pick up "To Gadgetzan You Go!" from Zamja in Orgrimmar; <span class="alli">Alliance</span> pick up "I Know A Guy..." from Daryl Riknussun in Ironforge.</td><td>Quest <span class="badge b-unc">Unconfirmed</span> (above the beta cap)</td></tr>
+<tr><td>Journeyman (150)</td><td>Any trainer at skill 50. Level 10 in Classic, and the public guide video also says level 10 <a class="vid" href="#src-video">video</a>. One tester trained it earlier and reported it as a possible bug. <span class="badge b-unc">Unconfirmed</span></td><td>5s</td></tr>
+<tr><td>Expert (225)</td><td>Expert Cookbook at skill 125. <span class="horde">Horde:</span> Wulan, Shadowprey Village, Desolace (fly to Shadowprey). <span class="alli">Alliance:</span> Shandrina, Mystral Lake, southern Ashenvale (fly to Astranaar). The video says to buy it at level 20 and skill 150, once you hit the Journeyman cap <a class="vid" href="#src-video">video</a>.</td><td>1g</td></tr>
+<tr><td>Artisan (300)</td><td>Quest "Clamlette Surprise" from Dirge Quikcleave at the Gadgetzan inn, level 35 and skill 225 (the video agrees <a class="vid" href="#src-video">video</a>; farming tips in <a href="#combo">section 7</a>). Bring 12 Giant Egg, 10 Zesty Clam Meat and 20 Alterac Swiss. <span class="horde">Horde</span> pick up "To Gadgetzan You Go!" from Zamja in Orgrimmar; <span class="alli">Alliance</span> pick up "I Know A Guy..." from Daryl Riknussun in Ironforge.</td><td>Quest <span class="badge b-unc">Unconfirmed</span> (above the beta cap)</td></tr>
 </table></div>
 <ul>
 <li><span class="horde">Horde trainers:</span> Zamja (Orgrimmar), Aska Mistrunner (Thunder Bluff), Eunice Burch (Undercity), Cook Torka (Razor Hill), Pyall Silentstride (big tent, Bloodhoof Village), William Pickman (inn, Brill), Duhng (The Barrens). Every one teaches Journeyman too.</li>
@@ -163,12 +169,12 @@ html{scroll-padding-top:64px}
 <tr><td>125-175</td><td>Goblin Deviled Clams (125/165/185/205)</td><td>1 Tangy Clam Meat, 1 Hot Spices</td><td>Trainer, 3s. Or Hot Lion Chops (Zargh, Barrens; Horde only) or Curiously Tasty Omelet (Keena, Arathi).</td></tr>
 <tr><td>175-200</td><td>Barbecued Buzzard Wing (175/215/235/255)</td><td>1 Buzzard Wing, 1 Hot Spices</td><td>One source: trainer, 5s; another: a bind-on-pickup recipe. <span class="badge b-unc">Unconfirmed</span> Or Roast Raptor (Keena or Hammon Karwn, Arathi; Ogg'marr, Dustwallow) or Mithril Headed Trout (Shankys, Orgrimmar; to 225).</td></tr>
 <tr><td>200-225</td><td>Spider Sausage (200/240/260/280)</td><td>2 White Spider Meat</td><td>Trainer, 40s. +15 Stamina food.</td></tr>
-<tr><td>225</td><td colspan="3">Artisan from "Clamlette Surprise" (level 35). Buy Gikkix's recipes at Steamwheedle Port while you're in Tanaris.</td></tr>
-<tr><td>225-265</td><td>Monster Omelet (225/265/285/305)</td><td>1 Giant Egg, 2 Soothing Spices</td><td rowspan="2">Recipe: Bale, Felwood (<span class="horde">Horde</span>); Malygen, Felwood (<span class="alli">Alliance</span>); Himmik, Winterspring. Or <strong>Tender Wolf Steak</strong> (225/265/285/305; Dirge Quikcleave; +15 Agility, a Hunter favourite), Filet of Redgill (Kelsey Yance, Stranglethorn) or Spotted Yellowtail (Gikkix). <span class="badge b-unc">Unconfirmed</span> (untested above 225)</td></tr>
+<tr><td>225</td><td colspan="3">Artisan from "Clamlette Surprise" (level 35). Buy Gikkix's recipes (Nightfin Soup, Poached Sunscale Salmon and more) at Steamwheedle Port while you're in Tanaris. Fishers: Kelsey Yance in the Booty Bay Port Authority sells Filet of Redgill <a class="vid" href="#src-video">video</a>.</td></tr>
+<tr><td>225-265</td><td>Monster Omelet (225/265/285/305)</td><td>1 Giant Egg, 2 Soothing Spices</td><td rowspan="2">Recipe: Bale, Felwood (<span class="horde">Horde</span>); Malygen, Felwood (<span class="alli">Alliance</span>); Himmik, Winterspring. Or <strong>Tender Wolf Steak</strong> (225/265/285/305; Dirge Quikcleave; +15 Agility, a Hunter favourite), Filet of Redgill (Kelsey Yance, Booty Bay; 225/265/285/305) or Spotted Yellowtail (Gikkix). The video cooks Filet of Redgill for all of 225-300 instead <a class="vid" href="#src-video">video</a>. <span class="badge b-unc">Unconfirmed</span> (untested above 225)</td></tr>
 <tr><td colspan="3" class="note">Monster Omelet is orange to 265.</td></tr>
-<tr><td>265-300</td><td>Nightfin Soup (250/290/310/330)</td><td>1 Raw Nightfin Snapper, 1 Refreshing Spring Water</td><td>Recipe: Gikkix, Tanaris. Other guides finish on Poached Sunscale Salmon, but the client now marks it as needing an <strong>Iron Oven</strong>, so check before you plan around it. <span class="badge b-unc">Unconfirmed</span></td></tr>
+<tr><td>265-300</td><td>Nightfin Soup (250/290/310/330)</td><td>1 Raw Nightfin Snapper, 1 Refreshing Spring Water</td><td>Recipe: Gikkix, Tanaris. Other guides, and the video <a class="vid" href="#src-video">video</a>, use Poached Sunscale Salmon as a finisher, but the client now marks it as needing an <strong>Iron Oven</strong>, so check before you plan around it. <span class="badge b-unc">Unconfirmed</span></td></tr>
 </table></div>
-<p class="note">About 309 crafts in all by one count; luck adds a few. wow-professions.com's route leans more on fish (Brilliant Smallfish, Longjaw, Catfish, Mithril Head Trout, Spotted Yellowtail).</p>
+<p class="note">About 309 crafts in all by one count; luck adds a few. wow-professions.com's route leans more on fish (Brilliant Smallfish, Longjaw, Catfish, Mithril Head Trout, Spotted Yellowtail). If you level Fishing too, the all-fish route in <a href="#combo">section 7</a> needs almost no meat or spices.</p>
 </section>
 
 <section>
@@ -193,6 +199,7 @@ html{scroll-padding-top:64px}
 <tr><td>Artisan quest</td><td colspan="2">12 Giant Egg, 10 Zesty Clam Meat, 20 Alterac Swiss</td></tr>
 </table></div>
 <p class="note">The spices split across the 1-225 and 225-300 columns follows the route steps. Hot Spices also feed First Aid's Healing Potion, so share the stock.</p>
+<p class="note">On the fish route in section 7 you catch the fish yourself; the video's counts are at least 80 Raw Brilliant Smallfish, 40+ Raw Longjaw Mud Snapper, 100+ Raw Bristle Whisker Catfish, Raw Mithril Head Trout to 225 and Raw Redgill to 300, plus the Clamlette Surprise items. Lures are listed in section 8. <a class="vid" href="#src-video">video</a></p>
 </section>
 
 <section>
@@ -215,37 +222,110 @@ html{scroll-padding-top:64px}
 <tr><td>Smoked Desert Dumplings</td><td>+20 Strength (45)</td><td>Iron Oven</td><td>Melee food.</td></tr>
 <tr><td>Nightfin Soup / Runn Tum Tuber Surprise</td><td>+22 Spell Damage / +15 Intellect (35)</td><td>250 / 275</td><td>Nightfin was mana regen in Classic.</td></tr>
 <tr><td>Herbal teas (new): Peace, Royal, Root, Triage, Sunny, Sage's</td><td>+2 to +44 Healing Power</td><td>25 to 250; recipes bind on pickup, most sources unknown</td><td>Two herbs each. Peace Tea drops from Frostmane Seers (Dun Morogh).</td></tr>
-<tr><td>Smoothies (new): Venomous to Wicked</td><td>+1 to +20 Spirit</td><td>25 to 250; 30-90 Merchant's Favor</td><td>See section 12.</td></tr>
+<tr><td>Smoothies (new): Venomous to Wicked</td><td>+1 to +20 Spirit</td><td>25 to 250; 30-90 Merchant's Favor</td><td>See section 14.</td></tr>
 <tr><td>Goldthorn Tea</td><td>+15 Herbalism</td><td>175 / Henry Stern, Razorfen Downs</td><td>Gatherer utility.</td></tr>
+<tr><td>Fishing foods: six fish dishes from Loch Frenzy Delight to Filet of Redgill, including Bristle Whisker Catfish</td><td>+3 to +18 Fishing</td><td>50 to 225 / fish recipe vendors</td><td>The tooltip text says Fishing, but the client builds the buff like the Intellect one. <span class="badge b-data">Datamined</span> The video says Bristle Whisker Catfish gives +8 Fishing, and eats it once the lures run out <a class="vid" href="#src-video">video</a>. <span class="badge b-unc">Unconfirmed</span></td></tr>
 </table></div>
 <p class="note">One Well Fed aura changed its effect type in the launch client (build 70707); no source says which foods are affected. <span class="badge b-data">Datamined</span></p>
 </section>
 
 <section>
-<h2 id="fishing">6. Fishing notes for cooks</h2>
+<h2 id="fishing">6. Fishing 1-300: ranks, trainers and spots</h2>
+<p><strong>Cooks can skip Fishing for most of the meat route in section 3,</strong> which runs on meat, eggs and clams. You need fish for Nightfin Soup (265-300), the fish swaps, the Attack Power, crit, Spell Damage and Fishing foods, and Alchemy's Fire Oil (Firefin Snapper). If you do level Fishing, section 7 levels both together.</p>
+<div class="tbl"><table>
+<tr><th>Rank (skill cap)</th><th>How to learn</th><th>Cost</th></tr>
+<tr><td>Apprentice (75)</td><td>Any Fishing trainer. The Fishing button sits on the professions screen, not in the spellbook (tester report). The video says you need level 5, a Fishing Pole (23c, Kilxx in the Barrens) and a Shiny Bauble <a class="vid" href="#src-video">video</a>.</td><td>1s <span class="badge b-data">Datamined</span></td></tr>
+<tr><td>Journeyman (150)</td><td>Any trainer at skill 50. A tester and the video both say it still needs level 10 <a class="vid" href="#src-video">video</a>.</td><td>5s <span class="badge b-unc">Unconfirmed</span> (level)</td></tr>
+<tr><td>Expert (225)</td><td>Book "Expert Fishing - The Bass and You" from Old Man Heming, in the bottom shack of Booty Bay. Client data: skill 125 and level 20; the book doesn't bind, so you can buy one for an alt. The video buys it at level 20 and skill 150 <a class="vid" href="#src-video">video</a>.</td><td>1g <span class="badge b-data">Datamined</span></td></tr>
+<tr><td>Artisan (300)</td><td>Quest "Nat Pagle, Angler Extreme" from Nat Pagle, on a small island in Dustwallow Marsh, at level 35 (225 skill in Classic). Catch one each of the four fish below and hand them in. The video says one Bright Baubles lure per spot is usually enough; bring at least four <a class="vid" href="#src-video">video</a>.</td><td>Quest <span class="badge b-unc">Unconfirmed</span> (above the beta cap)</td></tr>
+</table></div>
+<div class="tbl"><table>
+<tr><th>Nat Pagle fish</th><th>Where</th></tr>
+<tr><td>Sar'theris Striker</td><td>Off the coast of Sar'theris Strand, Desolace</td></tr>
+<tr><td>Feralas Ahi</td><td>Verdantis River, Feralas (one stretch only, per the video)</td></tr>
+<tr><td>Misty Reed Mahi Mahi</td><td>Misty Reed Strand, Swamp of Sorrows</td></tr>
+<tr><td>Savage Coast Blue Sailfin</td><td>Along the Savage Coast, Stranglethorn Vale</td></tr>
+</table></div>
+<p class="note">The same fish and places as in Classic; the guide video agrees <a class="vid" href="#src-video">video</a> <span class="badge b-cls">Classic-inferred</span></p>
+<h3>Fishing trainers</h3>
 <ul>
-<li><strong>You can skip Fishing for most of the route above:</strong> it runs on meat, eggs and clams. You need fish for Nightfin Soup (265-300), the fish swaps, the Attack Power, crit and Spell Damage foods, and Alchemy's Fire Oil (Firefin Snapper).</li>
-<li><strong>Raw fish from vendors:</strong> Kilxx in the Barrens sells six raw fish, 5 at a time, e.g. Longjaw Mud Snapper 20c, Bristle Whisker Catfish 40c, Rockscale Cod and Spotted Yellowtail 80c. Khara Deepwater (Loch Modan) and Vernon Hale (Redridge) added raw fish too. <span class="badge b-data">Datamined</span></li>
-<li><strong>Ranks:</strong>
-<ul>
-<li>Apprentice from any Fishing trainer, 1s. The Fishing button sits on the professions screen, not in the spellbook (tester report).</li>
-<li>Journeyman at 50, 5s.</li>
-<li>Expert from the book "Expert Fishing - The Bass and You", 1g from Old Man Heming in Booty Bay (skill 125, level 20).</li>
-<li>Artisan from Nat Pagle's quest in Dustwallow Marsh (level 35).</li>
-</ul> <span class="badge b-unc">Unconfirmed</span> (above 225)</li>
-<li><strong>Where:</strong> Horde can fish Stranglethorn's Savage Coast islands near Grom'gol for 150-225, and Tanaris (Steamwheedle Port) for 225-300 (Spotted Yellowtail, Winter Squid in season). <span class="badge b-cls">Classic-inferred</span> (zone skill levels live on the server)</li>
-<li><strong>New in Forever:</strong>
+<li><span class="horde">Horde:</span> Lumak (Orgrimmar), Kah Mistrunner (Thunder Bluff), Armand Cromwell (Undercity), Lau'Tiki (Sen'jin Village, Durotar), Uthan Stillwater (Stonebull Lake, Mulgore), Clyde Kellen (Brill). <span class="badge b-cls">Classic-inferred</span> (names from Classic)</li>
+<li><span class="alli">Alliance:</span> Arnold Leland (Stormwind), Grimnur Stonebrand (Ironforge), Astaia (Darnassus), Lee Brown (Elwynn Forest), Paxton Ganter (Iceflow Lake, Dun Morogh), Androl Oakhand (Teldrassil). Donald Rabonne on the Southshore pier (Hillsbrad) also trains Journeyman, handy on the way to the 75-150 spot <a class="vid" href="#src-video">video</a>. <span class="badge b-cls">Classic-inferred</span></li>
+<li><strong>Zephras Isle:</strong> Fenn Fairweather, Baelann Swiftcurrent. <span class="badge b-data">Datamined</span></li>
+<li><strong>Camping 101: Fishing</strong> at skill 20 teaches the Fish Bowl, e.g. from Paxton Ganter. <span class="badge b-data">Datamined</span></li>
+</ul>
+<h3>Where to fish</h3>
+<div class="tbl"><table>
+<tr><th>Skill</th><th><span class="horde">Horde</span></th><th><span class="alli">Alliance</span></th><th>Notes</th></tr>
+<tr><td>1-75</td><td>Orcs and Trolls: the pond at Sen'jin Village, Durotar. Tauren: Stonebull Lake, Mulgore. Undead: take the zeppelin and fish the pond at Jaggedswine Farm just outside Orgrimmar, because Tirisfal's lakes give mostly trash fish.</td><td>Humans: the little pond at Goldshire, not Crystal Lake. Dwarves and Gnomes: Iceflow Lake, Dun Morogh. Night Elves: Lake Al'Ameth, Teldrassil. Skyborne: Windsong Lake, or Valanaar.</td><td>Aim for at least 80 Raw Brilliant Smallfish and keep fishing past 75 to get them. Shiny Bauble on before the first cast. <a class="vid" href="#src-video">video</a> <span class="badge b-unc">Unconfirmed</span> The Tirisfal trash-fish point matches a second fan site. <span class="badge b-data">Datamined</span></td></tr>
+<tr><td>75-150</td><td colspan="2">The river in Hillsbrad Foothills, both factions. Over 100 Raw Bristle Whisker Catfish and more Longjaw. Use Nightcrawlers; you lose some catches until skill plus lure reaches 150.</td><td><a class="vid" href="#src-video">video</a> <span class="badge b-unc">Unconfirmed</span> Other guide: any capital city. <span class="badge b-cls">Classic-inferred</span></td></tr>
+<tr><td>150-225</td><td colspan="2">The twin lakes outside Stromgarde Keep, Arathi Highlands: no wandering mobs and the most Raw Mithril Head Trout, plus catfish. The video says you need 225 skill (lure included) here to stop losing catches, and warns it can be rough on PvP rulesets. Use Bright Baubles.</td><td><a class="vid" href="#src-video">video</a> <span class="badge b-unc">Unconfirmed</span> Alternatives: <span class="horde">Horde</span> the two small Savage Coast islands south-east of Grom'gol (Stranglethorn); <span class="alli">Alliance</span> Dustwallow Marsh. <span class="badge b-cls">Classic-inferred</span></td></tr>
+<tr><td>225-300</td><td>The rivers of Feralas near Camp Mojache, or Moonglade.</td><td>Moonglade, the Feralas rivers where you caught the Feralas Ahi, or the lakes in The Hinterlands.</td><td>Target Raw Redgill. About 4-5 hours with lures; empty your bags first. <a class="vid" href="#src-video">video</a> <span class="badge b-unc">Unconfirmed</span> Alternative: Tanaris, Steamwheedle Port (Spotted Yellowtail, Winter Squid or Summer Bass by season). <span class="badge b-cls">Classic-inferred</span></td></tr>
+</table></div>
+<p class="note">Zone skill requirements live on the server, so none of these spots can be checked in the client files. The beta stopped at skill 225, so the 225-300 spots are untested in Forever.</p>
+<h3>New in Forever</h3>
 <ul>
 <li>Find Fish shows pools on the minimap.</li>
-<li>Bait and Tackle camp objects: Fish Bowl at 20, Fishing Rack at 140, Fishing Hut at 300.</li>
+<li>Bait and Tackle camp objects: Fish Bowl at 20 (1 Raw Brilliant Smallfish, 1 Empty Vial; +8% all attributes, doesn't stack with Blessing of Kings), Fishing Rack at 140 (blueprint; uncommon fish for an hour), Fishing Hut at 300 (blueprint; rare fish for an hour). The video says to save some Smallfish for Fish Bowls <a class="vid" href="#src-video">video</a>.</li>
 <li>Luremaster (Legacy): 25/50% chance of an extra fish while a lure is on.</li>
-<li>Trophy fish sell for a silver per pound.</li>
-</ul></li>
+<li>Trophy fish sell for a silver per pound, and ten Bloated fish are now uncommon and bind on pickup.</li>
+<li>New catches: Whimsyfin (Redridge, tester report), Plated Armorfish, and Seasonal Fish Steaks cut with a Chef's Knife (Fishing 275) from Winter Squid or Summer Bass.</li>
+</ul>
+<p class="note"><span class="badge b-data">Datamined</span> unless marked.</p>
+</section>
+
+<section>
+<h2 id="combo">7. Fishing + Cooking route to 300 by level 35</h2>
+<p>This is the route from Icosiol's guide video <a class="vid" href="#src-video">video</a>: you fish everything you cook, so you need almost no meat or spices. The skill colors are <span class="badge b-data">Datamined</span> and agree with where the video says to stop. The video calls the route "300 by level 35", but the beta was capped at level 30 and skill 225, so stages 4 and 5 are <span class="badge b-unc">Unconfirmed</span> in Forever.</p>
+<div class="tbl"><table>
+<tr><th>Stage (level)</th><th>Fish</th><th>Cook</th><th>Buy and learn</th></tr>
+<tr><td>1. Apprentice (5+)</td><td>Starter pond (section 6) to 75, then keep going until you have 80+ Raw Brilliant Smallfish. You also get 40+ Raw Longjaw Mud Snapper.</td><td>Brilliant Smallfish 1-65 (green at 65). Then Longjaw Mud Snapper to 75 and stop. Save the spare Smallfish for Fish Bowls and the Longjaw for stage 2.</td><td>Apprentice Fishing and Cooking, Fishing Pole, 1 Shiny Bauble.</td></tr>
+<tr><td>2. Journeyman (10+, skill 50)</td><td>Hillsbrad river to 150 with Nightcrawlers. You catch 100+ Bristle Whisker Catfish and need every one.</td><td>Longjaw Mud Snapper 75-110 (green at 110). Bristle Whisker Catfish 110-150, then stop and save the rest.</td><td>Journeyman both; 5 Nightcrawlers. Recipe: Bristle Whisker Catfish (level 15): <span class="horde">Horde</span> Derak Nightfall, the cook in Tarren Mill; <span class="alli">Alliance</span> Lindea Rabonne, Southshore pier. Recipe: Mithril Head Trout now or later: <span class="horde">Horde</span> Shankys (Orgrimmar) or Lizbeth Cromwell (Undercity); <span class="alli">Alliance</span> Lindea Rabonne.</td></tr>
+<tr><td>3. Expert (20+, skill 150)</td><td>Twin lakes outside Stromgarde Keep, Arathi, to 225 with 12 Bright Baubles; then eat Bristle Whisker Catfish for its Fishing buff.</td><td>Bristle Whisker Catfish 150-175 (mostly green; grey at 180). Mithril Headed Trout 175-225 (yellow from 215). Sell spare trout.</td><td>Booty Bay: Expert Fishing book (Old Man Heming); Kelsey Yance in the Port Authority for Mithril Head Trout, Filet of Redgill and his other recipes. Expert Cookbook: <span class="horde">Horde</span> Wulan, Shadowprey Village; <span class="alli">Alliance</span> Shandrina, southern Ashenvale.</td></tr>
+<tr><td>4. Artisan quests (35, both at 225)</td><td>"Nat Pagle, Angler Extreme": the four fish in section 6, with 4+ Bright Baubles.</td><td>"Clamlette Surprise" for Dirge Quikcleave (Gadgetzan inn): 12 Giant Egg, 10 Zesty Clam Meat, 20 Alterac Swiss.</td><td>Then Gikkix at Steamwheedle Port: Nightfin Soup, Poached Sunscale Salmon and the rest.</td></tr>
+<tr><td>5. Artisan (35)</td><td>Redgill spot (section 6) to 300 with 24+ Bright Baubles, about 4-5 hours.</td><td>Filet of Redgill 225-300 (green at 285). Top up with Nightfin Soup or Poached Sunscale Salmon if short; the Salmon may need an Iron Oven (section 3).</td><td>The video skips Aquadynamic Fish Attractors: they last only 5 minutes, so they cost more over time.</td></tr>
+</table></div>
+<h3>Clamlette Surprise items (video tips)</h3>
+<ul>
+<li><strong>Giant Egg:</strong> owlbeasts in The Hinterlands, or the Fire Rocs in Tanaris. At level 35, the "Birds of Prey" by the lake north of Dalaran in Alterac Mountains dropped many in the beta; they are a new mob and the rate may change. <span class="badge b-unc">Unconfirmed</span></li>
+<li><strong>Zesty Clam Meat:</strong> from Big-Mouth Clams, often dropped by Steeljaw Snappers on Tanaris' east coast. Sand Crawlers in the new Riverglades zone dropped them often in the beta. <span class="badge b-unc">Unconfirmed</span></li>
+<li><strong>Alterac Swiss:</strong> sold by many vendors, such as one in Thunder Bluff (<span class="horde">Horde</span>) or Stormwind (<span class="alli">Alliance</span>).</li>
+<li>The video buys the eggs and clams on the AH; see section 4 for why this page gives no AH prices.</li>
+</ul>
+<p class="note">The video expects Nightfin Soup and Poached Sunscale Salmon to sell well. That is based on Classic; no Forever price data exists yet.</p>
+</section>
+
+<section>
+<h2 id="fish-gear">8. Fishing gear and useful items</h2>
+<h3>Lures (10 minutes unless noted)</h3>
+<div class="tbl"><table>
+<tr><th>Lure</th><th>Bonus</th><th>Needs / source</th><th>Route use (video)</th></tr>
+<tr><td>Shiny Bauble</td><td>+25</td><td>Kilxx (Barrens), 50c</td><td>1 for 1-75</td></tr>
+<tr><td>Nightcrawlers</td><td>+50</td><td>Fishing 50; Kilxx 1s, or drops</td><td>5 for 75-150</td></tr>
+<tr><td>Bright Baubles</td><td>+75</td><td>Fishing 100; Kilxx 2s 50c</td><td>12 for 150-225, 4+ for Nat Pagle, 24+ for 225-300</td></tr>
+<tr><td>Aquadynamic Fish Attractor</td><td>+100 for 5 minutes</td><td>Fishing 100; Kilxx 2s 50c, or Engineering</td><td>Skipped: costs more over time</td></tr>
+<tr><td>"Secret" Bait / Shiny Silver Coin (new)</td><td>+25 (10 min) / +30 (30 min)</td><td>Source unknown</td><td>-</td></tr>
+</table></div>
+<p class="note">Lure bonuses and prices <span class="badge b-data">Datamined</span>; lure counts <a class="vid" href="#src-video">video</a>.</p>
+<h3>Poles and gear</h3>
+<ul>
+<li><strong>Fishing Pole</strong> (Kilxx, 23c) and <strong>Strong Fishing Pole</strong> (Fishing 10, level 5; Kilxx, 9s 1c, +5). <span class="badge b-data">Datamined</span></li>
+<li><strong>Big Iron Fishing Pole</strong> (+20 in Classic; Fishing 100, level 25): drink Water Breathing and open the Shellfish Traps underwater south of Shadowprey Village, Desolace, until one has the pole. Some traps spawn a level 33-34 Drysnap Crawler. <a class="vid" href="#src-video">video</a> <span class="badge b-data">Datamined</span> (source)</li>
+<li><strong>Nat Pagle's Extreme Angler FC-5000</strong> (+25 in Classic; Horde-only quest "Snapjaws, Mon!") and <strong>Arcanite Fishing Pole</strong> (+35; Master Angler at the Stranglethorn Fishing Extravaganza). <span class="badge b-cls">Classic-inferred</span> (bonuses)</li>
+<li><strong>Wide-Brimmed Fishing Hat</strong> (new): puts a +25 lure on your pole every 10 minutes; source unknown. <span class="badge b-data">Datamined</span></li>
+<li><strong>Ravaged Fishing Pole</strong> (new): the video says it was in the beta database, with no other details. <a class="vid" href="#src-video">video</a> <span class="badge b-unc">Unconfirmed</span></li>
+</ul>
+<p class="note">Poles, the Lucky Fishing Hat and Nat Pagle's boots still carry a Fishing stat in the beta client, but without a readable amount, so the bonuses above are Classic's.</p>
+<h3>Other useful items</h3>
+<ul>
+<li><strong>Cookie's Stirring Rod</strong>: a wand from Cookie at the end of the Deadmines. The video says it speeds up Cooking by 25% while equipped, so only wand users benefit. No other source mentions the cooking effect yet. <a class="vid" href="#src-video">video</a> <span class="badge b-unc">Unconfirmed</span></li>
+<li><strong>Fishing foods</strong> (section 5): the video eats Bristle Whisker Catfish (+8) while fishing 150-225 and has Filet of Redgill for 225-300. <a class="vid" href="#src-video">video</a></li>
+<li><strong>Fishing Rack</strong> (140): the video advises against using it while leveling, because it fills your bags with fish you don't need. <a class="vid" href="#src-video">video</a></li>
 </ul>
 </section>
 
 <section>
-<h2 id="fa-exists">7. First Aid in Forever: it exists, and it grew</h2>
+<h2 id="fa-exists">9. First Aid in Forever: it exists, and it grew</h2>
 <p><strong>First Aid is still in WoW Forever.</strong> It is one of three secondary professions, with Cooking and Fishing, and doesn't take a primary slot. It was expanded, not removed. It was shown in Blizzard's show-floor demo, and the beta client lists 31 recipes. <span class="badge b-data">Datamined</span> Blizzard has not put out First Aid patch notes.</p>
 <ul>
 <li>Healing Potions (Minor to Major) moved from Alchemy to First Aid, and now also take spices. Alchemy keeps only "Discolored" healing potions, which heal but hurt you afterwards. <span class="badge b-data">Datamined</span></li>
@@ -261,7 +341,7 @@ html{scroll-padding-top:64px}
 </section>
 
 <section>
-<h2 id="fa-train">8. First Aid ranks and trainers</h2>
+<h2 id="fa-train">10. First Aid ranks and trainers</h2>
 <div class="tbl"><table>
 <tr><th>Rank (skill cap)</th><th>How to learn</th></tr>
 <tr><td>Apprentice (75)</td><td>Any First Aid trainer, no level gate.</td></tr>
@@ -282,7 +362,7 @@ html{scroll-padding-top:64px}
 </section>
 
 <section>
-<h2 id="fa-path">9. First Aid path 1-300</h2>
+<h2 id="fa-path">11. First Aid path 1-300</h2>
 <p>The backbone below is foreverchanges.pro's route, which mixes cloth and herbs; the shopping list matches it. All-cloth and all-herb swaps are in the last column.</p>
 <div class="tbl"><table>
 <tr><th>Skill</th><th>Craft (colors)</th><th>Each needs</th><th>Swaps and notes</th></tr>
@@ -308,7 +388,7 @@ html{scroll-padding-top:64px}
 </section>
 
 <section>
-<h2 id="fa-shop">10. First Aid shopping list</h2>
+<h2 id="fa-shop">12. First Aid shopping list</h2>
 <p>These are foreverchanges.pro's totals for the route above. Cloth drops from humanoids while you level. No AH prices are given, for the same reason as in section 4.</p>
 <div class="tbl"><table>
 <tr><th>Where</th><th>Item</th><th>1-225</th><th>225-300</th></tr>
@@ -331,7 +411,7 @@ html{scroll-padding-top:64px}
 </section>
 
 <section>
-<h2 id="fa-recipes">11. Healing potions and curatives</h2>
+<h2 id="fa-recipes">13. Healing potions and curatives</h2>
 <h3>Healing potions (First Aid, 2-minute potion cooldown)</h3>
 <div class="tbl"><table>
 <tr><th>Potion</th><th>Learn (colors)</th><th>Reagents</th><th>Heals / source</th></tr>
@@ -375,7 +455,7 @@ html{scroll-padding-top:64px}
 </section>
 
 <section>
-<h2 id="systems">12. Legacy perks and Merchant's Favor</h2>
+<h2 id="systems">14. Legacy perks and Merchant's Favor</h2>
 <h3>Legacy perks (account-wide)</h3>
 <ul>
 <li>Master Chef: 10-50% chance of an extra Cooking result, 5 ranks.</li>
@@ -400,8 +480,9 @@ html{scroll-padding-top:64px}
 </section>
 
 <section>
-<h2 id="changes">13. Recent changes (up to 31 Oct)</h2>
+<h2 id="changes">15. Recent changes (up to 31 Oct)</h2>
 <ul>
+<li><strong>31 Oct, public guide video:</strong> Icosiol posted a Fishing and Cooking route for Forever. It adds the Fishing route, recipe vendors, Artisan quest farming spots and useful items now on this page; nothing in it is a patch change. <a class="vid" href="#src-video">video</a></li>
 <li><strong>Launch client build 1.60.1.70707 (30 Oct):</strong>
 <ul>
 <li>One Well Fed aura changed its effect type.</li>
@@ -435,15 +516,22 @@ html{scroll-padding-top:64px}
 <li>Whether the +5% kill-XP food line is live at launch.</li>
 <li>Whether fish "Attack Power" foods add ranged attack power.</li>
 <li>Manual sources for Greater, Superior and Major Healing Potion.</li>
-<li>All steps above 225 are untested.</li>
+<li>Expert book timing: client data says skill 125 (Fishing book also level 20); the video buys both books at level 20 and skill 150.</li>
+<li>Cooking 225-300: this page's backbone (Monster Omelet, then Nightfin Soup) or the video's all-Filet of Redgill route. Both work on paper; Redgill turns green at 285.</li>
+<li>Fishing spots: the video uses Hillsbrad (75-150), Arathi's Stromgarde lakes (150-225) and Moonglade, Feralas or The Hinterlands (225-300); another fan guide uses capital cities, Stranglethorn or Dustwallow, and Tanaris. Zone skill levels can't be checked in the client.</li>
+<li>Fishing food values: the video's +8 for Bristle Whisker Catfish versus client text of +3 to +18 built like an Intellect buff.</li>
+<li>Cookie's Stirring Rod +25% cooking speed: video only.</li>
+<li>Journeyman Fishing and Cooking level 10: a tester and the video say yes; another tester trained Cooking earlier.</li>
+<li>All steps above 225, and both level 35 Artisan quests, are untested.</li>
 </ul>
 </section>
 
 <section>
-<h2 id="sources">14. Sources</h2>
+<h2 id="sources">16. Sources</h2>
 <ul>
 <li><a href="https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-october-26/2360696">Blizzard: WoW Forever Beta Development Notes (updated 26-27 Oct)</a></li>
 <li><a href="https://news.blizzard.com/en-us/article/24301516/gather-around-the-campfire-in-world-of-warcraft-forever">Blizzard: Gather Around the Campfire</a></li>
+<li id="src-video"><a href="https://www.youtube.com/watch?v=SxQ0akozRL4">Icosiol (YouTube): WoW Forever Fishing &amp; Cooking | 300 by Level 35 (31 Oct 2026)</a></li>
 <li><a href="https://www.wowhead.com/forever/news/no-more-realms-in-wow-forever-382866">Wowhead: No More Realms in WoW Forever</a></li>
 <li><a href="https://us.forums.blizzard.com/en/blizzard/t/world-of-warcraft-forever-api-namespace/59774">Blizzard API forum: Forever API namespace thread</a></li>
 <li><a href="https://blizzardwatch.com/2026/10/16/first-aid-getting-new-recipes-updates-world-warcraft-forever/">Blizzard Watch: First Aid overhaul in Forever</a></li>
@@ -467,7 +555,7 @@ html{scroll-padding-top:64px}
 <li><a href="https://kami-labs.fr/en/wow-forever/patch-notes-wow-forever-30-octobre-gagnants-perdants/">kami-labs: 30 Oct unofficial hotfix summary</a></li>
 </ul>
 </section>
-<footer>Fan-made guide. World of Warcraft: Forever is a trademark of Blizzard Entertainment. Data is from pre-launch beta clients and may change.</footer>
+<footer>Fan-made guide. World of Warcraft: Forever is a trademark of Blizzard Entertainment. Data is from pre-launch beta clients and public guides, and may change. Version v2026-11-01.1, 1 Nov 2026.</footer>
 </div>
 <!-- SITE-FOOTNAV:START -->
 <nav class="wf-foot" aria-label="Site footer"><a class="wf-home" href="./"><span class="wf-stone"><svg class="wf-rune" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12.6 12.2c.2-1-.9-1.6-1.6-1-1 .8-.4 2.5.9 2.7 1.9.3 3.2-1.6 2.6-3.4-.8-2.4-3.9-3-5.8-1.5-2.5 2-2 6 .8 7.4 3.2 1.6 7-.6 7.3-4.2"/><path d="M5.2 7.4l1.1.6M18.4 5.6l-.7 1M19.6 16.8l-1-.5M6.4 18.6l.6-1" class="wf-tick"/></svg></span><span class="wf-label"><span>← Back to all guides</span></span></a></nav>
